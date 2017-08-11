@@ -13,7 +13,7 @@ import SnapKit
 class RootViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     let tableView = UITableView()
-    let controllerArrays = NSArray()
+    var controllerArrays = <UIViewController>
     
     
     override func viewDidLoad()
@@ -23,24 +23,13 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.view.addSubview(tableView)
         
-        let box = UIView()
-        box.backgroundColor = UIColor.yellow
-        self.view.addSubview(box)
         
-        box.snp.makeConstraints { (make) -> Void in
-            make.width.equalTo(100)
-            make.height.equalTo(100)
-            make.center.equalTo(self.view)
+        
+        tableView.backgroundColor = UIColor.yellow
+        tableView.snp.makeConstraints { (make) in
+
+        make.top.right.bottom.left.equalTo(self.view)
         }
-        
-        
-//        tableView.mas_makeConstraints { (make) in
-//
-//            make?.top.equalTo()(self.view)?.setOffset(100)
-//            make?.left.equalTo()(self.view)?.setOffset(100)
-//            make?.right.equalTo()(self.view)?.setOffset(100)
-//            make?.bottom.equalTo()(self.view)?.setOffset(100)
-//        }        
         
 
     }
