@@ -14,6 +14,7 @@
 		01EA735D1F3D4B5E003A92F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EA735B1F3D4B5E003A92F6 /* LaunchScreen.storyboard */; };
 		01EA73681F3D4B5E003A92F6 /* StruggleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73671F3D4B5E003A92F6 /* StruggleSwiftTests.swift */; };
 		01EA73731F3D4B5E003A92F6 /* StruggleSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73721F3D4B5E003A92F6 /* StruggleSwiftUITests.swift */; };
+		F69377A6478E57A2E6B16EF5 /* Pods_StruggleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		01EA736E1F3D4B5E003A92F6 /* StruggleSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StruggleSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EA73721F3D4B5E003A92F6 /* StruggleSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StruggleSwiftUITests.swift; sourceTree = "<group>"; };
 		01EA73741F3D4B5E003A92F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D2F86C8C3A7123491CE3CA /* Pods-StruggleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		2809A0C99C9AD5265B888182 /* Pods-StruggleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.release.xcconfig"; sourceTree = "<group>"; };
+		620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StruggleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F69377A6478E57A2E6B16EF5 /* Pods_StruggleSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				01EA73661F3D4B5E003A92F6 /* StruggleSwiftTests */,
 				01EA73711F3D4B5E003A92F6 /* StruggleSwiftUITests */,
 				01EA73501F3D4B5E003A92F6 /* Products */,
+				0AB2A122A174E1F1AF682903 /* Pods */,
+				62FD716F38AD6EF7376B4518 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = StruggleSwiftUITests;
 			sourceTree = "<group>";
 		};
+		0AB2A122A174E1F1AF682903 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23D2F86C8C3A7123491CE3CA /* Pods-StruggleSwift.debug.xcconfig */,
+				2809A0C99C9AD5265B888182 /* Pods-StruggleSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62FD716F38AD6EF7376B4518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01EA73771F3D4B5E003A92F6 /* Build configuration list for PBXNativeTarget "StruggleSwift" */;
 			buildPhases = (
+				6BF166327FE5860969DFFA4C /* [CP] Check Pods Manifest.lock */,
 				01EA734B1F3D4B5E003A92F6 /* Sources */,
 				01EA734C1F3D4B5E003A92F6 /* Frameworks */,
 				01EA734D1F3D4B5E003A92F6 /* Resources */,
+				8E070B17ECC09AEA50BBAB3B /* [CP] Embed Pods Frameworks */,
+				8D845262CAD25336721A524B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BF166327FE5860969DFFA4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D845262CAD25336721A524B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E070B17ECC09AEA50BBAB3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01EA734B1F3D4B5E003A92F6 /* Sources */ = {
@@ -412,6 +487,7 @@
 		};
 		01EA73781F3D4B5E003A92F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D2F86C8C3A7123491CE3CA /* Pods-StruggleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StruggleSwift/Info.plist;
@@ -424,6 +500,7 @@
 		};
 		01EA73791F3D4B5E003A92F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2809A0C99C9AD5265B888182 /* Pods-StruggleSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StruggleSwift/Info.plist;

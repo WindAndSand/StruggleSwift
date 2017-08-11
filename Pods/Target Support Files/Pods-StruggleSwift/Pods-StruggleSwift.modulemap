@@ -1,0 +1,6 @@
+framework module Pods_StruggleSwift {
+  umbrella header "Pods-StruggleSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
