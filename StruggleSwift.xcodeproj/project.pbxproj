@@ -14,6 +14,7 @@
 		01EA735D1F3D4B5E003A92F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EA735B1F3D4B5E003A92F6 /* LaunchScreen.storyboard */; };
 		01EA73681F3D4B5E003A92F6 /* StruggleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73671F3D4B5E003A92F6 /* StruggleSwiftTests.swift */; };
 		01EA73731F3D4B5E003A92F6 /* StruggleSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73721F3D4B5E003A92F6 /* StruggleSwiftUITests.swift */; };
+		01EA73851F3D4D41003A92F6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73841F3D4D41003A92F6 /* RootViewController.swift */; };
 		F69377A6478E57A2E6B16EF5 /* Pods_StruggleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,8 @@
 		01EA736E1F3D4B5E003A92F6 /* StruggleSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StruggleSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EA73721F3D4B5E003A92F6 /* StruggleSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StruggleSwiftUITests.swift; sourceTree = "<group>"; };
 		01EA73741F3D4B5E003A92F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01EA73801F3D4D10003A92F6 /* StruggleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StruggleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		01EA73841F3D4D41003A92F6 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		23D2F86C8C3A7123491CE3CA /* Pods-StruggleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		2809A0C99C9AD5265B888182 /* Pods-StruggleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StruggleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,7 @@
 				01EA73501F3D4B5E003A92F6 /* Products */,
 				0AB2A122A174E1F1AF682903 /* Pods */,
 				62FD716F38AD6EF7376B4518 /* Frameworks */,
+				01EA73801F3D4D10003A92F6 /* StruggleSwift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */,
+				01EA73841F3D4D41003A92F6 /* RootViewController.swift */,
 				01EA73541F3D4B5E003A92F6 /* ViewController.swift */,
 				01EA73561F3D4B5E003A92F6 /* Main.storyboard */,
 				01EA73591F3D4B5E003A92F6 /* Assets.xcassets */,
@@ -220,6 +225,7 @@
 				TargetAttributes = {
 					01EA734E1F3D4B5E003A92F6 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					01EA73621F3D4B5E003A92F6 = {
@@ -336,6 +342,7 @@
 			files = (
 				01EA73551F3D4B5E003A92F6 /* ViewController.swift in Sources */,
 				01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */,
+				01EA73851F3D4D41003A92F6 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,10 +497,13 @@
 			baseConfigurationReference = 23D2F86C8C3A7123491CE3CA /* Pods-StruggleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = StruggleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HongBeiXin.StruggleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StruggleSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -503,10 +513,12 @@
 			baseConfigurationReference = 2809A0C99C9AD5265B888182 /* Pods-StruggleSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = StruggleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HongBeiXin.StruggleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StruggleSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -584,6 +596,7 @@
 				01EA73791F3D4B5E003A92F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01EA737A1F3D4B5E003A92F6 /* Build configuration list for PBXNativeTarget "StruggleSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +605,7 @@
 				01EA737C1F3D4B5E003A92F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01EA737D1F3D4B5E003A92F6 /* Build configuration list for PBXNativeTarget "StruggleSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +614,7 @@
 				01EA737F1F3D4B5E003A92F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
