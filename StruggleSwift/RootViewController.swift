@@ -16,7 +16,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     private var controllers = [UIViewController]()
-    private var controllerTitles = ["Snapkit 约束"]
+    private var controllerTitles = ["Snapkit 约束", "setLayoutNeeds"]
     
     
     
@@ -43,7 +43,9 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.view.addSubview(tableView)
         
         let controllerOne = ViewController()
+        let controllerTwo = LayoutViewController()
         controllers.append(controllerOne)
+        controllers.append(controllerTwo)
         
         
         
