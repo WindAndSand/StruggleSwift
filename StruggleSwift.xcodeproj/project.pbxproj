@@ -15,6 +15,7 @@
 		01EA73681F3D4B5E003A92F6 /* StruggleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73671F3D4B5E003A92F6 /* StruggleSwiftTests.swift */; };
 		01EA73731F3D4B5E003A92F6 /* StruggleSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73721F3D4B5E003A92F6 /* StruggleSwiftUITests.swift */; };
 		01EA73851F3D4D41003A92F6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73841F3D4D41003A92F6 /* RootViewController.swift */; };
+		01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D451F3FE1C9004F8B2C /* LayoutViewController.m */; };
 		F69377A6478E57A2E6B16EF5 /* Pods_StruggleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		01EA73741F3D4B5E003A92F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01EA73801F3D4D10003A92F6 /* StruggleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StruggleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		01EA73841F3D4D41003A92F6 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		01F64D441F3FE1C9004F8B2C /* LayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
+		01F64D451F3FE1C9004F8B2C /* LayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutViewController.m; sourceTree = "<group>"; };
 		23D2F86C8C3A7123491CE3CA /* Pods-StruggleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		2809A0C99C9AD5265B888182 /* Pods-StruggleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StruggleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +113,8 @@
 			children = (
 				01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */,
 				01EA73841F3D4D41003A92F6 /* RootViewController.swift */,
-				01EA73541F3D4B5E003A92F6 /* ViewController.swift */,
+				01F64D421F3FDF57004F8B2C /* 约束 */,
+				01F64D431F3FDF70004F8B2C /* LayoutIfNeeds */,
 				01EA73561F3D4B5E003A92F6 /* Main.storyboard */,
 				01EA73591F3D4B5E003A92F6 /* Assets.xcassets */,
 				01EA735B1F3D4B5E003A92F6 /* LaunchScreen.storyboard */,
@@ -135,6 +139,23 @@
 				01EA73741F3D4B5E003A92F6 /* Info.plist */,
 			);
 			path = StruggleSwiftUITests;
+			sourceTree = "<group>";
+		};
+		01F64D421F3FDF57004F8B2C /* 约束 */ = {
+			isa = PBXGroup;
+			children = (
+				01EA73541F3D4B5E003A92F6 /* ViewController.swift */,
+			);
+			name = "约束";
+			sourceTree = "<group>";
+		};
+		01F64D431F3FDF70004F8B2C /* LayoutIfNeeds */ = {
+			isa = PBXGroup;
+			children = (
+				01F64D441F3FE1C9004F8B2C /* LayoutViewController.h */,
+				01F64D451F3FE1C9004F8B2C /* LayoutViewController.m */,
+			);
+			name = LayoutIfNeeds;
 			sourceTree = "<group>";
 		};
 		0AB2A122A174E1F1AF682903 /* Pods */ = {
@@ -342,6 +363,7 @@
 			files = (
 				01EA73551F3D4B5E003A92F6 /* ViewController.swift in Sources */,
 				01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */,
+				01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */,
 				01EA73851F3D4D41003A92F6 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
