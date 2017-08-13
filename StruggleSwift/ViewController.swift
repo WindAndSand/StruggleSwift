@@ -33,17 +33,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.groupTableViewBackground
         
-//        self.centerOfView()
         
-//        self.firstOfView()
-//
+        
+        
+        self.centerOfView()
+        
+        self.firstOfView()
+
         self.secondOfViwe()
-//
+
         self.threeOfView()
-//
+
         self.fourOfView()
-//
+
         self.fiveOfView()
+ 
     }
     
 //    swift 3.0 后用这个加载视图
@@ -148,7 +152,7 @@ class ViewController: UIViewController {
         }
         
         /*
-        等价于：
+        等价于：view4 对象相对于父视图的边距(offset)的距离
         view4.snp.makeConstraints { (make) in
             make.top.equalTo(view3).offset(20)
             make.left.equalTo(view3).offset(20)
