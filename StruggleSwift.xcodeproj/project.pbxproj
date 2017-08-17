@@ -15,6 +15,8 @@
 		01EA73681F3D4B5E003A92F6 /* StruggleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73671F3D4B5E003A92F6 /* StruggleSwiftTests.swift */; };
 		01EA73731F3D4B5E003A92F6 /* StruggleSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73721F3D4B5E003A92F6 /* StruggleSwiftUITests.swift */; };
 		01EA73851F3D4D41003A92F6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73841F3D4D41003A92F6 /* RootViewController.swift */; };
+		01EFB5201F4490DE000121A9 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 01EFB51F1F4490DE000121A9 /* chat.png */; };
+		01F082821F4453D100FA12AD /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F082811F4453D100FA12AD /* test.swift */; };
 		01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D451F3FE1C9004F8B2C /* LayoutViewController.m */; };
 		01F64D491F3FE2E0004F8B2C /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D481F3FE2E0004F8B2C /* TestView.m */; };
 		01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D4E1F405159004F8B2C /* TheBasics.swift */; };
@@ -55,6 +57,8 @@
 		01EA73741F3D4B5E003A92F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01EA73801F3D4D10003A92F6 /* StruggleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StruggleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		01EA73841F3D4D41003A92F6 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		01EFB51F1F4490DE000121A9 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
+		01F082811F4453D100FA12AD /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		01F64D441F3FE1C9004F8B2C /* LayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
 		01F64D451F3FE1C9004F8B2C /* LayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutViewController.m; sourceTree = "<group>"; };
 		01F64D471F3FE2E0004F8B2C /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				01EA73541F3D4B5E003A92F6 /* ViewController.swift */,
+				01EFB51F1F4490DE000121A9 /* chat.png */,
 			);
 			name = "约束";
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			children = (
 				01F64D4E1F405159004F8B2C /* TheBasics.swift */,
 				01F64D521F4082E7004F8B2C /* Closures.swift */,
+				01F082811F4453D100FA12AD /* test.swift */,
 			);
 			name = "Swift基础";
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 				01EA735D1F3D4B5E003A92F6 /* LaunchScreen.storyboard in Resources */,
 				01EA735A1F3D4B5E003A92F6 /* Assets.xcassets in Resources */,
 				01EA73581F3D4B5E003A92F6 /* Main.storyboard in Resources */,
+				01EFB5201F4490DE000121A9 /* chat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +392,7 @@
 				01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */,
 				01F64D491F3FE2E0004F8B2C /* TestView.m in Sources */,
 				01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */,
+				01F082821F4453D100FA12AD /* test.swift in Sources */,
 				01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */,
 				01EA73851F3D4D41003A92F6 /* RootViewController.swift in Sources */,
 			);

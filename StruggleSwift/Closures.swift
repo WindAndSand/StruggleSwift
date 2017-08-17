@@ -26,7 +26,9 @@ class Closures: NSObject {
     func backwards(s1: String, s2:String) -> Bool
     {
         return s1 > s2
+//        print("")
     }
+    
     
     /*
 //    Swift 标准库提供了 sort 函数，会根据您提供的基于输出类型排序的闭包函数将已知类型数组中的值进行排序

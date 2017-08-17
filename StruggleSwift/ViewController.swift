@@ -36,17 +36,19 @@ class ViewController: UIViewController {
         
         
         
-        self.centerOfView()
-        
-        self.firstOfView()
-
+//        self.centerOfView()
+//        
+//        self.firstOfView()
+//
         self.secondOfViwe()
 
         self.threeOfView()
 
-        self.fourOfView()
-
-        self.fiveOfView()
+//        self.fourOfView()
+//
+//        self.fiveOfView()
+//        
+//        self.chatOfBubble()
  
     }
     
@@ -144,7 +146,9 @@ class ViewController: UIViewController {
         view3.snp.makeConstraints { (make) in
             make.height.width.equalTo(100)
             make.top.equalTo(view2.snp.bottom).inset(-20)
-            make.left.equalTo((20))
+            make.left.equalTo(self.view).inset(20)
+            
+//            make.left.equalTo((20))
         }
         
         view4.snp.makeConstraints { (make) in
@@ -152,14 +156,35 @@ class ViewController: UIViewController {
         }
         
         /*
-        等价于：view4 对象相对于父视图的边距(offset)的距离
+        等价于：view4 对象相对于父视图的边距(offset)的距离    没有任何效果,仍然紧贴顶部修改为：make.left.equalTo(view3.snp.left).offset(20)，make.left.equalTo(view3.snp.left).inset(20),也没效果
         view4.snp.makeConstraints { (make) in
             make.top.equalTo(view3).offset(20)
             make.left.equalTo(view3).offset(20)
             make.bottom.equalTo(view3).offset(-40)
             make.right.equalTo(view3).offset(-40)
         }
- */
+         
+         
+         
+         make.size  //设置大小
+         
+         make.center //设置中心点
+         
+         make.topMargin //设置边距
+         
+         make.baseline //设置基线位置
+         
+         make.leading//相当于left
+         
+         make.trailing//相当于right
+         
+         make.width
+         
+         make.height
+         
+         
+         链接：http://www.jianshu.com/p/a36180c0e790
+*/
         
  
     }
@@ -205,6 +230,31 @@ class ViewController: UIViewController {
             make.center.equalTo(view7)
             make.size.equalTo(view7).multipliedBy(1.5)
         }
+        
+    }
+    
+    
+//    制作一个发文件的冒泡控件
+    func chatOfBubble()
+    {
+        let whole = UIButton(frame: CGRect.zero)
+        let bubble = UIImageView(frame: CGRect.zero)
+        let fileIcon = UIImage()
+        let fileFont = UILabel(frame: CGRect.zero)
+        let fileSize  = UILabel(frame: CGRect.zero)
+        
+        whole.backgroundColor = UIColor.black
+        self.view.addSubview(whole)
+        whole.snp.makeConstraints { (make) in
+            make.bottom.equalTo(self.view.snp.bottom).offset(-40)
+            make.left.equalTo(self.view.snp.left).offset(20)
+            make.width.equalTo(300)
+            make.height.equalTo(60)
+        }
+        
+        whole.addSubview(bubble)
+        
+        
         
     }
     
