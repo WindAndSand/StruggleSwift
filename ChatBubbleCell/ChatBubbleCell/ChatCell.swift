@@ -13,10 +13,15 @@ class ChatCell: UITableViewCell {
     
     let headPortrait = UIButton(frame: CGRect.zero) //头像
     let whole = UIButton(frame: CGRect.zero)    //最下面按钮
-    let bubble = UIImageView(frame: CGRect.zero)    //气泡案
-    let fileIcon = UIImage(frame: CGRect.zero)    //文件图标
+//    let bubble = UIImageView(frame: CGRect.zero)    //气泡案
+    let bubble = UIImageView(image: UIImage(named: "bubble@2x.png"))
+    let fileIcon = UIImageView(frame: CGRect.zero)    //文件图标
     let fileName = UILabel(frame: CGRect.zero)  //文件名字
     let fileSize  = UILabel(frame: CGRect.zero) //文件大小
+    
+//    保存约束(引用约束)
+    var headOfLeftConstraint: Constraint?
+    
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: UITableViewCellStyle.default, reuseIdentifier: reuseIdentifier)
@@ -38,7 +43,7 @@ class ChatCell: UITableViewCell {
         headPortrait.snp.makeConstraints{(make) in
             make.height.width.equalTo(38)
             make.top.equalTo(self.snp.top).inset(5) //相对于父视图 top 向下偏移5个像素
-            make.left.equalTo(self).inset(15)
+           self.headOfLeftConstraint = make.left.equalTo(self).inset(15).constraint
             
         
         }
@@ -47,10 +52,15 @@ class ChatCell: UITableViewCell {
 //        底部 button 加入到视图中
         self.addSubview(whole)
 //        let iconWhole = UIImage(named:"bubble@2x.png")?.withRenderingMode(.alwaysOriginal)
+        self.whole.contentMode = UIViewContentMode.scaleAspectFill
+        let iconWhole = UIImage(named:"bubble@2x.png")
+//        let resizeImage = iconWhole?.resizableImage(withCapInsets: UIEdgeInsetsMake(10, 10, 10, 10))
 //        self.whole.setImage(iconWhole, for: .normal)
-//        self.whole.contentMode = UIViewContentMode.scaleToFill
-//        let iconWhole = UIImage(named:"bubble@2x.png")
+
+//        self.whole.setBackgroundImage(resizeImage, for: UIControlState.normal)
 //        self.whole.setBackgroundImage(iconWhole, for: UIControlState.normal)
+                self.whole.setImage(iconWhole, for: .normal)
+
         self.whole.layer.cornerRadius = 10
         self.whole.backgroundColor = UIColor.yellow
         self.whole.snp.makeConstraints { (make) in
@@ -64,10 +74,33 @@ class ChatCell: UITableViewCell {
         }
         
         
+//        气泡
 //        self.whole.addSubview(self.bubble)
+//        bubble.backgroundColor = UIColor.red
+//        self.bubble.snp.makeConstraints { (make) in
+//            make.top.equalTo(self.whole)
+//            make.left.equalTo(self.whole)
+//            make.bottom.equalTo(self.whole)
+//            make.right.equalTo(self.whole)
+//        }
+        
+        
+        
+        
+        
+        
         
 //        文件图标
         self.whole.addSubview(self.fileIcon)
+        self.fileIcon.backgroundColor = UIColor.blue
+        self.fileIcon.snp.makeConstraints { (make) in
+            make.width.height.equalTo(50)
+//            make.top.equalTo(self.whole).inset(10)
+            make.centerY.equalTo(self.whole)
+            make.right.equalTo(self.whole).inset(10)
+//            make.bottom.equalTo(self.whole).inset(10)
+        }
+        
         
         
 //        文件名称
@@ -110,6 +143,8 @@ class ChatCell: UITableViewCell {
             make.bottom.equalTo(self.whole).inset(10)
             
         }
+ 
+ 
         
         
         
@@ -125,6 +160,23 @@ class ChatCell: UITableViewCell {
                        green: ((CGFloat)((rgbValue & 0xFF00) >> 8)) / 255.0,
                        blue: ((CGFloat)(rgbValue & 0xFF)) / 255.0,
                        alpha: 1.0)
+    }
+    
+//    MARK: 更新头像左边的约束
+    
+    func updateHeadOfLeftConstraint()
+    {
+        self.headPortrait.snp.remakeConstraints { (make) in
+            make.height.width.equalTo(38)
+            make.top.equalTo(self.snp.top).inset(5) //相对于父视图 top 向下偏移5个像素
+            make.right.equalTo(self).inset(15)
+        }
+        self.whole.snp.remakeConstraints { (make) in
+            make.top.equalTo(headPortrait)
+            make.bottom.equalTo(self.snp.bottom).inset(7)
+            make.right.equalTo(self.headPortrait.snp.left).inset(-5)    //距离头像 5 个像素
+            make.left.lessThanOrEqualTo(67) //右边的距离大于等于67
+        }
     }
     
   
