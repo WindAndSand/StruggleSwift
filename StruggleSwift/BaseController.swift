@@ -13,10 +13,26 @@ class BaseController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let CAS = ClassAndStruct()
-        CAS.printSomeThing()
+        
+//        self.classAndStruct()
+        
+        self.properties()
+        
         
 
+    }
+    
+    
+//    类和结构体
+    func classAndStruct() {
+        let CAS = ClassAndStruct()
+        CAS.printSomeThing()
+    }
+    
+//    属性
+    func properties()  {
+        let properties = Properties()
+        properties.printSomeThing()
     }
 
     override func didReceiveMemoryWarning() {
