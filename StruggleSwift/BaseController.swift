@@ -16,7 +16,9 @@ class BaseController: UIViewController {
         
 //        self.classAndStruct()
         
-        self.properties()
+//        self.properties()
+        
+        self.method()
         
         
 
@@ -34,11 +36,34 @@ class BaseController: UIViewController {
         let properties = Properties()
         properties.printSomeThing()
     }
+    
+//    方法
+    func method()  {
+        let metod = Methods()
+        metod.printSomeThing()
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
+    
     
 
     /*

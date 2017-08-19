@@ -18,6 +18,7 @@
 		01EA73731F3D4B5E003A92F6 /* StruggleSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73721F3D4B5E003A92F6 /* StruggleSwiftUITests.swift */; };
 		01EA73851F3D4D41003A92F6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73841F3D4D41003A92F6 /* RootViewController.swift */; };
 		01EB1E401F474E0100418E37 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB1E3F1F474E0100418E37 /* Properties.swift */; };
+		01EB1E431F47F6A600418E37 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB1E421F47F6A600418E37 /* Methods.swift */; };
 		01EFB5201F4490DE000121A9 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 01EFB51F1F4490DE000121A9 /* chat.png */; };
 		01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D451F3FE1C9004F8B2C /* LayoutViewController.m */; };
 		01F64D491F3FE2E0004F8B2C /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D481F3FE2E0004F8B2C /* TestView.m */; };
@@ -62,6 +63,7 @@
 		01EA73801F3D4D10003A92F6 /* StruggleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StruggleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		01EA73841F3D4D41003A92F6 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		01EB1E3F1F474E0100418E37 /* Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		01EB1E421F47F6A600418E37 /* Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
 		01EFB51F1F4490DE000121A9 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		01F64D441F3FE1C9004F8B2C /* LayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
 		01F64D451F3FE1C9004F8B2C /* LayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutViewController.m; sourceTree = "<group>"; };
@@ -189,10 +191,11 @@
 			isa = PBXGroup;
 			children = (
 				015522911F45CE7700C16EA0 /* BaseController.swift */,
-				01EB1E3F1F474E0100418E37 /* Properties.swift */,
 				01F64D4E1F405159004F8B2C /* TheBasics.swift */,
 				01F64D521F4082E7004F8B2C /* Closures.swift */,
 				0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */,
+				01EB1E3F1F474E0100418E37 /* Properties.swift */,
+				01EB1E421F47F6A600418E37 /* Methods.swift */,
 			);
 			name = "Swift基础";
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				01F64D491F3FE2E0004F8B2C /* TestView.m in Sources */,
 				01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */,
 				015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */,
+				01EB1E431F47F6A600418E37 /* Methods.swift in Sources */,
 				01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */,
 				01EB1E401F474E0100418E37 /* Properties.swift in Sources */,
 				01EA73851F3D4D41003A92F6 /* RootViewController.swift in Sources */,
