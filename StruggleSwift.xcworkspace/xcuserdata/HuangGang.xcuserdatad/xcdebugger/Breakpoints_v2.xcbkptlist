@@ -201,12 +201,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StruggleSwift/ClassAndStruct.swift"
-            timestampString = "524676690.603635"
+            filePath = "StruggleSwift/Properties.swift"
+            timestampString = "524808373.067563"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "printSomeThing()"
             landmarkType = "7">
          </BreakpointContent>
@@ -217,14 +217,78 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StruggleSwift/Properties.swift"
-            timestampString = "524808373.067563"
+            filePath = "StruggleSwift/AffiliatedScript.swift"
+            timestampString = "524831221.914887"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "printSomeThing()"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "AffiliatedScript"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StruggleSwift.AffiliatedScript.threeTimesTable.getter : StruggleSwift.TimesTable"
+                  moduleName = "StruggleSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/AffiliatedScript.swift"
+                  timestampString = "524831416.525447"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StruggleSwift.AffiliatedScript.init () -&gt; StruggleSwift.AffiliatedScript"
+                  moduleName = "StruggleSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/AffiliatedScript.swift"
+                  timestampString = "524831416.526714"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StruggleSwift/BaseController.swift"
+            timestampString = "524831360.261801"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "affiliatedScript()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StruggleSwift/AffiliatedScript.swift"
+            timestampString = "524831409.091262"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "TimesTable"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

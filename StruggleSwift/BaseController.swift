@@ -18,7 +18,9 @@ class BaseController: UIViewController {
         
 //        self.properties()
         
-        self.method()
+//        self.method()
+        
+        self.affiliatedScript()
         
         
 
@@ -43,7 +45,12 @@ class BaseController: UIViewController {
         metod.printSomeThing()
     }
     
-    
+//    附属脚本
+    func affiliatedScript() {
+        let affiliatedScript = AffiliatedScript()
+        affiliatedScript.printSomeThing()
+        
+    }
     
     
     
