@@ -13,6 +13,7 @@ class BaseController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.enumeration()
         
 //        self.classAndStruct()
         
@@ -20,7 +21,8 @@ class BaseController: UIViewController {
         
 //        self.method()
         
-        self.affiliatedScript()
+//        self.affiliatedScript()
+        
         
         
 
@@ -49,6 +51,13 @@ class BaseController: UIViewController {
     func affiliatedScript() {
         let affiliatedScript = AffiliatedScript()
         affiliatedScript.printSomeThing()
+        
+    }
+    
+//    枚举
+    func enumeration() {
+        let enumeration = Enumeration()
+        enumeration.printSomeThing()
         
     }
     

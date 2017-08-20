@@ -234,7 +234,7 @@
                   moduleName = "StruggleSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/AffiliatedScript.swift"
-                  timestampString = "524831416.525447"
+                  timestampString = "524885073.629529"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -249,7 +249,7 @@
                   moduleName = "StruggleSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/AffiliatedScript.swift"
-                  timestampString = "524831416.526714"
+                  timestampString = "524885073.631462"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -265,13 +265,27 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StruggleSwift/BaseController.swift"
-            timestampString = "524831360.261801"
+            filePath = "StruggleSwift/AffiliatedScript.swift"
+            timestampString = "524831409.091262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "affiliatedScript()"
+            endingLineNumber = "50">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StruggleSwift/Enumeration.swift"
+            timestampString = "524885027.592401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "printSomeThing()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -281,14 +295,151 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StruggleSwift/AffiliatedScript.swift"
-            timestampString = "524831409.091262"
+            filePath = "StruggleSwift/Enumeration.swift"
+            timestampString = "524885076.089599"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "TimesTable"
-            landmarkType = "14">
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "Planet1"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StruggleSwift.Planet1.rawValue.getter : Swift.Int"
+                  moduleName = "StruggleSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/Enumeration.swift"
+                  timestampString = "524885077.029445"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StruggleSwift.Planet1.init (rawValue : Swift.Int) -&gt; Swift.Optional&lt;StruggleSwift.Planet1&gt;"
+                  moduleName = "StruggleSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/Enumeration.swift"
+                  timestampString = "524885077.031477"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StruggleSwift.Planet1.init (rawValue : Swift.Int) -&gt; Swift.Optional&lt;StruggleSwift.Planet1&gt;"
+                  moduleName = "StruggleSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/Enumeration.swift"
+                  timestampString = "524885077.03317"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StruggleSwift.Planet1.init (rawValue : Swift.Int) -&gt; Swift.Optional&lt;StruggleSwift.Planet1&gt;"
+                  moduleName = "StruggleSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/Enumeration.swift"
+                  timestampString = "524885077.034844"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StruggleSwift.Planet1.init (rawValue : Swift.Int) -&gt; Swift.Optional&lt;StruggleSwift.Planet1&gt;"
+                  moduleName = "StruggleSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/Enumeration.swift"
+                  timestampString = "524885077.036571"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StruggleSwift.Planet1.init (rawValue : Swift.Int) -&gt; Swift.Optional&lt;StruggleSwift.Planet1&gt;"
+                  moduleName = "StruggleSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/Enumeration.swift"
+                  timestampString = "524885077.0388"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "117">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StruggleSwift.Planet1.init (rawValue : Swift.Int) -&gt; Swift.Optional&lt;StruggleSwift.Planet1&gt;"
+                  moduleName = "StruggleSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/Enumeration.swift"
+                  timestampString = "524885077.040595"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "141">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StruggleSwift.Planet1.init (rawValue : Swift.Int) -&gt; Swift.Optional&lt;StruggleSwift.Planet1&gt;"
+                  moduleName = "StruggleSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/Enumeration.swift"
+                  timestampString = "524885077.042707"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "165">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StruggleSwift.Planet1.init (rawValue : Swift.Int) -&gt; Swift.Optional&lt;StruggleSwift.Planet1&gt;"
+                  moduleName = "StruggleSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huanggang/Desktop/StruggleSwift/StruggleSwift/Enumeration.swift"
+                  timestampString = "524885077.044942"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "189">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
