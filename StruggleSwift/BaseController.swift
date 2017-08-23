@@ -16,6 +16,8 @@ class BaseController: UIViewController {
         let CAS = ClassAndStruct()
         CAS.printSomeThing()
         
+        self.arc()
+        
 
     }
 
@@ -25,6 +27,11 @@ class BaseController: UIViewController {
     }
     
 
+    
+    func arc() {
+        let arc = ARC()
+        arc.printSomeThing()
+    }
     /*
     // MARK: - Navigation
 
