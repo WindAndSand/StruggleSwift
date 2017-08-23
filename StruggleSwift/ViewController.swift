@@ -60,6 +60,8 @@ class ViewController: UIViewController {
         blueView.backgroundColor=UIColor.blue
         self.view .addSubview(blueView)
         
+        print("CocoaChina的按钮干货：http://www.cocoachina.com/swift/20150730/12825.html")
+        
 
     }
     
@@ -145,8 +147,10 @@ class ViewController: UIViewController {
         
         view3.snp.makeConstraints { (make) in
             make.height.width.equalTo(100)
-            make.top.equalTo(view2.snp.bottom).inset(-20)
-            make.left.equalTo(self.view).inset(20)
+//            make.top.equalTo(view2.snp.bottom).inset(-20)
+//            make.left.equalTo(self.view).inset(20)
+            make.centerY.equalTo(view)
+            make.right.equalTo(self.view).inset(40)
             
 //            make.left.equalTo((20))
         }

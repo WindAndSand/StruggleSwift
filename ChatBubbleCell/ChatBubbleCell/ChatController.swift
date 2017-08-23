@@ -43,7 +43,7 @@ class ChatController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
        
-        return 1
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,28 +64,42 @@ class ChatController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
+        var cell:ChatCell?
 //      1.1 创建cell，不需要判断是否为空，当没有可重用cell的时候会自动创建
-        let cell = tableView.dequeueReusableCell(withIdentifier: chatIdentifier, for: indexPath) as! ChatCell
-
-//        2.2 手动创建 cell
-//        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: chatIdentifier)
-//        if cell == nil
-//        {
-////            2.2 自定义cell使用此方法
-//            cell = UITableViewCell(style: .subtitle, reuseIdentifier: chatIdentifier)
-//            print("------cell:\(String(describing: cell))")
-////            2.2 xib加载cell使用此方法
-////            cell = Bundle.main.loadNibNamed("chatCell", owner: nil, options: nil)?.last as? ChatCell
-//        }
-//        if cell == nil
-//        {
-////            cell = ChatCell(style:UITableViewCellStyle.default, ruseIdentifier:chatIdentifier)
-//            cell = ChatCell.init(style: UITableViewCellStyle.default, reuseIdentifier: chatIdentifier)
-//        }
         
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        if indexPath.section == 0 {
+            cell = tableView.dequeueReusableCell(withIdentifier: chatIdentifier, for: indexPath) as? ChatCell
+            
+            //        2.2 手动创建 cell
+            //        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: chatIdentifier)
+            //        if cell == nil
+            //        {
+            ////            2.2 自定义cell使用此方法
+            //            cell = UITableViewCell(style: .subtitle, reuseIdentifier: chatIdentifier)
+            //            print("------cell:\(String(describing: cell))")
+            ////            2.2 xib加载cell使用此方法
+            ////            cell = Bundle.main.loadNibNamed("chatCell", owner: nil, options: nil)?.last as? ChatCell
+            //        }
+            //        if cell == nil
+            //        {
+            ////            cell = ChatCell(style:UITableViewCellStyle.default, ruseIdentifier:chatIdentifier)
+            //            cell = ChatCell.init(style: UITableViewCellStyle.default, reuseIdentifier: chatIdentifier)
+            //        }
+            
+            cell?.selectionStyle = UITableViewCellSelectionStyle.none
+        }
+        else{
+            cell = tableView.dequeueReusableCell(withIdentifier: chatIdentifier, for: indexPath) as? ChatCell
+            
+//            self.updateViewConstraints()
+            cell?.updateHeadOfLeftConstraint()
+            cell?.selectionStyle = UITableViewCellSelectionStyle.none
+            cell?.backgroundColor = UIColor.purple
         
-        return cell
+        }
+        
+        
+        return cell!
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -13,13 +13,67 @@ class BaseController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let CAS = ClassAndStruct()
-        CAS.printSomeThing()
+        self.enumeration()
         
-        self.arc()
+//        self.classAndStruct()
+        
+//        self.properties()
+        
+//        self.method()
+        
+//        self.affiliatedScript()
+        
+        
         
 
     }
+    
+    
+//    类和结构体
+    func classAndStruct() {
+        let CAS = ClassAndStruct()
+        CAS.printSomeThing()
+    }
+    
+//    属性
+    func properties()  {
+        let properties = Properties()
+        properties.printSomeThing()
+    }
+    
+//    方法
+    func method()  {
+        let metod = Methods()
+        metod.printSomeThing()
+    }
+    
+//    附属脚本
+    func affiliatedScript() {
+        let affiliatedScript = AffiliatedScript()
+        affiliatedScript.printSomeThing()
+        
+        self.arc()
+     
+    }
+    
+//    枚举
+    func enumeration() {
+        let enumeration = Enumeration()
+        enumeration.printSomeThing()
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
