@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */; };
 		015522921F45CE7700C16EA0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015522911F45CE7700C16EA0 /* BaseController.swift */; };
+		01792CEF1F4DC164003B22F9 /* ARC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01792CEE1F4DC164003B22F9 /* ARC.swift */; };
 		01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */; };
 		01EA73551F3D4B5E003A92F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73541F3D4B5E003A92F6 /* ViewController.swift */; };
 		01EA73581F3D4B5E003A92F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EA73561F3D4B5E003A92F6 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassAndStruct.swift; sourceTree = "<group>"; };
 		015522911F45CE7700C16EA0 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		01792CEE1F4DC164003B22F9 /* ARC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
 		01EA734F1F3D4B5E003A92F6 /* StruggleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StruggleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01EA73541F3D4B5E003A92F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				01EB1E421F47F6A600418E37 /* Methods.swift */,
 				01EB1E441F4846A400418E37 /* AffiliatedScript.swift */,
 				01EB1E461F4856E500418E37 /* Enumeration.swift */,
+				01792CEE1F4DC164003B22F9 /* ARC.swift */,
 			);
 			name = "Swift基础";
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				01EB1E431F47F6A600418E37 /* Methods.swift in Sources */,
 				01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */,
 				01EB1E401F474E0100418E37 /* Properties.swift in Sources */,
+				01792CEF1F4DC164003B22F9 /* ARC.swift in Sources */,
 				01EA73851F3D4D41003A92F6 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -52,6 +52,8 @@ class BaseController: UIViewController {
         let affiliatedScript = AffiliatedScript()
         affiliatedScript.printSomeThing()
         
+        self.arc()
+        
     }
     
 //    枚举
@@ -78,10 +80,10 @@ class BaseController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    
-    
-
+    func arc() {
+        let arc = ARC()
+        arc.printSomeThing()
+    }
     /*
     // MARK: - Navigation
 
