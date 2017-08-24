@@ -101,6 +101,8 @@ class BaseController: UIViewController {
         let affiliatedScript = AffiliatedScript()
         affiliatedScript.printSomeThing()
         
+        self.arc()
+     
     }
     
 //    枚举
@@ -136,8 +138,10 @@ class BaseController: UIViewController {
     
 
     
-    
-
+    func arc() {
+        let arc = ARC()
+        arc.printSomeThing()
+    }
     /*
     // MARK: - Navigation
 
