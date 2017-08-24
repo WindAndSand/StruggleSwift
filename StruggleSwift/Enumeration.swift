@@ -17,7 +17,7 @@ class Enumeration: NSObject {
     
     
 //    1.3
-    var productBarcode = Barcode.UPCA(8, 85909_51226, 3)    //提供的“标识符”值在整数字中有一个下划线，使其便于阅读条形码
+    var productBarcode = Barcode.UPCA(8, 859, 3)    //提供的“标识符”值在整数字中有一个下划线，使其便于阅读条形码
     
     
     
