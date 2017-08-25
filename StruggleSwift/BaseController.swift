@@ -7,13 +7,60 @@
 //
 
 import UIKit
+import SnapKit
+
+//UIImageView 博客：http://www.jianshu.com/p/f7fca80a7235
+//字符分割：http://www.jianshu.com/p/022f632e89bd
 
 class BaseController: UIViewController {
 
+    var fileButton:  UIButton!
+    
+    let typeImage = "image/gif,gif-3.gif"
+    
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.enumeration()
+
+        let a = 30.8
+        let b = 20.2
+        
+        let ab = String.init(format:"%.f,%.f", a,b)
+        
+        self.view.backgroundColor = UIColor.groupTableViewBackground
+        
+//        image/gif,gif-3.gif
+        let startRange = typeImage.range(of: "/")
+        let endRange = typeImage.range(of: ",")
+        let destinationStr = Range(uncheckedBounds: (lower: (startRange?.upperBound)!, upper: (endRange?.lowerBound)!))
+        let result = typeImage.substring(with: destinationStr)
+        
+        print("--startRange:\(String(describing: startRange))\n-----endRange:\(String(describing: endRange))")
+        
+        
+//        setBackgroundImage 和 seetImage 的区别：
+        /*
+        setBackgroundDrawable（drawable） 代表以这个drawable为背景来填充ImageView的宽高   及ImageView多高多宽，drawable也相应放大至多高多宽
+        setImageDrawable（drawable） 代表以这个drawable的实际大小放到ImageView中，并不会放大drawable的实际大小
+         */
+        
+        let backImage = UIImage(named: "bubble@2x.png")?.resizableImage(withCapInsets:  UIEdgeInsetsMake(20, 20, 15, 20), resizingMode: UIImageResizingMode.stretch)
+        fileButton = UIButton(frame: CGRect.zero)
+        fileButton.setBackgroundImage(backImage, for: UIControlState.normal)
+        self.fileButton.layer.cornerRadius = 10
+        self.view.addSubview(fileButton)
+        self.fileButton.backgroundColor = UIColor.red
+        self.fileButton.contentMode = .scaleToFill
+        self.fileButton.snp.makeConstraints { (make) in
+            make.width.equalTo(289)
+            make.height.equalTo(74)
+            make.center.equalTo(self.view)
+        }
+        
+//        self.enumeration()
         
 //        self.classAndStruct()
         
@@ -23,9 +70,8 @@ class BaseController: UIViewController {
         
 //        self.affiliatedScript()
         
-        
-        
-
+        self.arc()
+        self.initialization()
     }
     
     
@@ -34,7 +80,7 @@ class BaseController: UIViewController {
         let CAS = ClassAndStruct()
         CAS.printSomeThing()
     }
-    
+    /*
 //    属性
     func properties()  {
         let properties = Properties()
@@ -53,7 +99,11 @@ class BaseController: UIViewController {
         affiliatedScript.printSomeThing()
         
         self.arc()
+<<<<<<< HEAD
         
+=======
+     
+>>>>>>> 4ce749032a0db92dfd62d10e49aaf658343fd7af
     }
     
 //    枚举
@@ -62,11 +112,16 @@ class BaseController: UIViewController {
         enumeration.printSomeThing()
         
     }
+
+    */
     
-    
-    
-    
-    
+//    构造过程
+    func initialization() {
+        let initialization = Initialization()
+        initialization.printSomeThing()
+        
+    }
+     
     
     
     
@@ -80,6 +135,11 @@ class BaseController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> 4ce749032a0db92dfd62d10e49aaf658343fd7af
     func arc() {
         let arc = ARC()
         arc.printSomeThing()
