@@ -27,8 +27,7 @@ class ARC: NSObject {
 //    1.3 
     var john3: Customer?    //定义了一个叫john的可选类型Customer变量，用来保存某个特定消费者的引用
     
-<<<<<<< HEAD
-=======
+
 //    1.4
     var country = Country(name: "Canada", capitalName: "Ottawa")
     
@@ -40,10 +39,7 @@ class ARC: NSObject {
     var paragraph6:HTMLElement1? = HTMLElement1(name: "H", text: "Hello, arc")
     
     
-    
-    
->>>>>>> 4ce749032a0db92dfd62d10e49aaf658343fd7af
-    
+ 
     
     
     func printSomeThing()  {
@@ -89,22 +85,19 @@ class ARC: NSObject {
 //        Customer实例被销毁。然后，CreditCard实例的强引用也不复存在，因此CreditCard实例也被销毁
         john3 = nil
         
-<<<<<<< HEAD
-=======
         
 //        1.4 使用隐式展开的可选值满足了两个类的初始化函数的要求。初始化完成后，capitalCity属性就可以做为非可选值类型使用，却不会产生强引用环
-        print("1.4------------->\(country.name)'s captial is called \(country.capitalCity.name)")
-        
-        
-//        1.5
-        print("1.5-----\(paragraph!.asHTML())")
-        
-        
-//        1.6
-        print("1.6-----\(paragraph6!.asHTML())")
+//        print("1.4------------->\(country.name)'s captial is called \(country.capitalCity.name)")
+//        
+//        
+////        1.5
+//        print("1.5-----\(paragraph!.asHTML())")
+//        
+//        
+////        1.6
+//        print("1.6-----\(paragraph6!.asHTML())")
 
         
->>>>>>> 4ce749032a0db92dfd62d10e49aaf658343fd7af
     }
     
 
@@ -231,8 +224,7 @@ class CreditCard {
 }
 
 //    1.4 无主引用以及隐式展开的可选属性
-<<<<<<< HEAD
-=======
+
 //    存在第三种场景：两个属性都必须有值，且初始化完成后不能为nil。这种场景下，则要一个类用无主引用属性，另一个类用隐式展开的可选属性。
 
 class Country {
@@ -350,7 +342,6 @@ class HTMLElement1 {
     }
     
 }
->>>>>>> 4ce749032a0db92dfd62d10e49aaf658343fd7af
 
 
 

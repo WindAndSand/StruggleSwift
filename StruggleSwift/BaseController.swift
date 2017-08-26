@@ -71,7 +71,7 @@ class BaseController: UIViewController {
 //        self.affiliatedScript()
         
         self.arc()
-        self.initialization()
+//        self.initialization()
     }
     
     
@@ -116,12 +116,12 @@ class BaseController: UIViewController {
     */
     
 //    构造过程
-    func initialization() {
-        let initialization = Initialization()
-        initialization.printSomeThing()
-        
-    }
-     
+//    func initialization() {
+//        let initialization = Initialization()
+//        initialization.printSomeThing()
+//        
+//    }
+    
     
     
     
@@ -135,11 +135,6 @@ class BaseController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-<<<<<<< HEAD
-=======
-
-    
->>>>>>> 4ce749032a0db92dfd62d10e49aaf658343fd7af
     func arc() {
         let arc = ARC()
         arc.printSomeThing()
