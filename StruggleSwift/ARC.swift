@@ -271,10 +271,10 @@ class HTMLElement {
 //        注意：虽然闭包多次使用了self，它只占有HTMLElement实例的一个强引用。
         if let text = self.text{
         
-            return "<\(self.name)>\(text) </\(self.name)>"
+            return "<\(String(describing: self.name))>\(text) </\(String(describing: self.name))>"
         }else{
         
-            return "<\(self.name) />"
+            return "<\(String(describing: self.name)) />"
         }
     }
     
@@ -284,7 +284,7 @@ class HTMLElement {
     }
     
     deinit {
-        print("\(name) is being deinitialized")
+        print("\(String(describing: name)) is being deinitialized")
     }
     
 }

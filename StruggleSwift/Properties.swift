@@ -53,7 +53,7 @@ class Properties: NSObject
 //        1.4
         let initalSquareCenter = square.center
         square.center = Point(x: 15.0, y: 15.0)
-        print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
+        print("square.origin is now at (\(square.origin.x), \(square.origin.y))\n---initalSquareCenter:\(initalSquareCenter)")
         
 //        1.6
         stepCounter.totalSteps = 200

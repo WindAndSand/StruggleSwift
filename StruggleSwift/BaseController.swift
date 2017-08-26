@@ -29,6 +29,7 @@ class BaseController: UIViewController {
         let b = 20.2
         
         let ab = String.init(format:"%.f,%.f", a,b)
+        print("测试的ab值是：\(ab)")
         
         self.view.backgroundColor = UIColor.groupTableViewBackground
         
@@ -38,7 +39,7 @@ class BaseController: UIViewController {
         let destinationStr = Range(uncheckedBounds: (lower: (startRange?.upperBound)!, upper: (endRange?.lowerBound)!))
         let result = typeImage.substring(with: destinationStr)
         
-        print("--startRange:\(String(describing: startRange))\n-----endRange:\(String(describing: endRange))")
+        print("--startRange:\(String(describing: startRange))\n-----endRange:\(String(describing: endRange))\n---result:\(result)")
         
         
 //        setBackgroundImage 和 seetImage 的区别：
@@ -70,8 +71,9 @@ class BaseController: UIViewController {
         
 //        self.affiliatedScript()
         
-        self.arc()
-//        self.initialization()
+//        self.arc()
+        
+        self.initialization()
     }
     
     
@@ -80,7 +82,7 @@ class BaseController: UIViewController {
         let CAS = ClassAndStruct()
         CAS.printSomeThing()
     }
-    /*
+    
 //    属性
     func properties()  {
         let properties = Properties()
@@ -99,11 +101,7 @@ class BaseController: UIViewController {
         affiliatedScript.printSomeThing()
         
         self.arc()
-<<<<<<< HEAD
-        
-=======
-     
->>>>>>> 4ce749032a0db92dfd62d10e49aaf658343fd7af
+
     }
     
 //    枚举
@@ -113,14 +111,14 @@ class BaseController: UIViewController {
         
     }
 
-    */
+    
     
 //    构造过程
-//    func initialization() {
-//        let initialization = Initialization()
-//        initialization.printSomeThing()
-//        
-//    }
+    func initialization() {
+        let initialization = Initialization()
+        initialization.printSomeThing()
+        
+    }
     
     
     
@@ -139,14 +137,5 @@ class BaseController: UIViewController {
         let arc = ARC()
         arc.printSomeThing()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
