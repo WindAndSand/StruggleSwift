@@ -73,7 +73,9 @@ class BaseController: UIViewController {
         
 //        self.arc()
         
-        self.initialization()
+//        self.initialization()
+        
+        self.swiftExtension()
     }
     
     
@@ -121,7 +123,12 @@ class BaseController: UIViewController {
     }
     
     
-    
+//    扩展
+    func swiftExtension() {
+        let extensions = Extension()
+        extensions.printSomeThing()
+        
+    }
     
     
     
