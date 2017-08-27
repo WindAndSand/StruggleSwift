@@ -77,7 +77,9 @@ class BaseController: UIViewController {
         
 //        self.swiftExtension()
         
-        self.protocols()
+//        self.protocols()
+        
+        self.generics()
     }
     
     
@@ -136,6 +138,12 @@ class BaseController: UIViewController {
     func protocols() {
         let protocols = Protocols()
         protocols.printSomeThing()
+    }
+    
+//    泛型
+    func generics() {
+        let generics = Generics()
+        generics.printSomeThing()
     }
     
     
