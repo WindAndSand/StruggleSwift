@@ -75,7 +75,9 @@ class BaseController: UIViewController {
         
 //        self.initialization()
         
-        self.swiftExtension()
+//        self.swiftExtension()
+        
+        self.protocols()
     }
     
     
@@ -130,7 +132,11 @@ class BaseController: UIViewController {
         
     }
     
-    
+//    协议
+    func protocols() {
+        let protocols = Protocols()
+        protocols.printSomeThing()
+    }
     
     
     
