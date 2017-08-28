@@ -16,7 +16,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     private var controllers = [UIViewController]()
-    private var controllerTitles = ["Snapkit 约束", "setLayoutNeeds", "Swift 基础", "重力感应"]
+    private var controllerTitles = ["Snapkit 约束", "setLayoutNeeds", "Swift 基础"]
     
     
     

@@ -61,9 +61,9 @@ class Generics: NSObject {
         
         var arrayOfStrings = ["uno", "dos", "tres"]
         
-        if let a = self.allItemsMatch(someContainer: stackOfStrings8, anotherContainer: arrayOfStrings) {
-            
-        }
+//        if let a = self.allItemsMatch(someContainer: stackOfStrings8, anotherContainer: arrayOfStrings) {
+//            
+//        }
     }
     
     //    1.1 泛型所解决的问题
