@@ -16,7 +16,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     private var controllers = [UIViewController]()
-    private var controllerTitles = ["Snapkit 约束", "setLayoutNeeds", "Swift 基础"]
+    private var controllerTitles = ["Snapkit 约束", "setLayoutNeeds", "Swift 基础", "视频播放","个人收藏"]
     
     
     
@@ -45,12 +45,17 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         let controllerOne = ViewController()
         let controllerTwo = LayoutViewController()
         let baseController = BaseController()
+        let videoController = VideoController()
+        let personalCollection = PersonalCollectionController()
+        
 //        let accelerometerController = AccelerometerController()
         
         
         controllers.append(controllerOne)
         controllers.append(controllerTwo)
         controllers.append(baseController)
+        controllers.append(videoController)
+        controllers.append(personalCollection)
 //        controllers.append(accelerometerController)
         
         
