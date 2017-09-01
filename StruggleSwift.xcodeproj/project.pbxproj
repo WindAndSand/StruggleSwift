@@ -11,7 +11,6 @@
 		015522921F45CE7700C16EA0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015522911F45CE7700C16EA0 /* BaseController.swift */; };
 		01792CEF1F4DC164003B22F9 /* ARC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01792CEE1F4DC164003B22F9 /* ARC.swift */; };
 		01B31D651F555CEA005FC314 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B31D641F555CEA005FC314 /* VideoController.swift */; };
-		01B31D681F5565E8005FC314 /* PersonalCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B31D671F5565E8005FC314 /* PersonalCollectionController.swift */; };
 		01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */; };
 		01EA73551F3D4B5E003A92F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73541F3D4B5E003A92F6 /* ViewController.swift */; };
 		01EA73581F3D4B5E003A92F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EA73561F3D4B5E003A92F6 /* Main.storyboard */; };
@@ -29,6 +28,9 @@
 		01EB1E451F4846A400418E37 /* AffiliatedScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB1E441F4846A400418E37 /* AffiliatedScript.swift */; };
 		01EB1E471F4856E500418E37 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB1E461F4856E500418E37 /* Enumeration.swift */; };
 		01EFB5201F4490DE000121A9 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 01EFB51F1F4490DE000121A9 /* chat.png */; };
+		01F134D21F59567400EFA4D3 /* PersonalCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F134D11F59567400EFA4D3 /* PersonalCollectionController.swift */; };
+		01F134D41F59569D00EFA4D3 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F134D31F59569D00EFA4D3 /* CollectionCell.swift */; };
+		01F134D71F59578200EFA4D3 /* delete1.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F134D61F59578200EFA4D3 /* delete1.png */; };
 		01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D451F3FE1C9004F8B2C /* LayoutViewController.m */; };
 		01F64D491F3FE2E0004F8B2C /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D481F3FE2E0004F8B2C /* TestView.m */; };
 		01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D4E1F405159004F8B2C /* TheBasics.swift */; };
@@ -59,7 +61,6 @@
 		015522911F45CE7700C16EA0 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		01792CEE1F4DC164003B22F9 /* ARC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
 		01B31D641F555CEA005FC314 /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
-		01B31D671F5565E8005FC314 /* PersonalCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCollectionController.swift; sourceTree = "<group>"; };
 		01EA734F1F3D4B5E003A92F6 /* StruggleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StruggleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01EA73541F3D4B5E003A92F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +85,9 @@
 		01EB1E441F4846A400418E37 /* AffiliatedScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffiliatedScript.swift; sourceTree = "<group>"; };
 		01EB1E461F4856E500418E37 /* Enumeration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
 		01EFB51F1F4490DE000121A9 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
+		01F134D11F59567400EFA4D3 /* PersonalCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCollectionController.swift; sourceTree = "<group>"; };
+		01F134D31F59569D00EFA4D3 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		01F134D61F59578200EFA4D3 /* delete1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete1.png; sourceTree = "<group>"; };
 		01F64D441F3FE1C9004F8B2C /* LayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
 		01F64D451F3FE1C9004F8B2C /* LayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutViewController.m; sourceTree = "<group>"; };
 		01F64D471F3FE2E0004F8B2C /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
@@ -141,7 +145,8 @@
 		01B31D661F5565C5005FC314 /* 个人收藏 */ = {
 			isa = PBXGroup;
 			children = (
-				01B31D671F5565E8005FC314 /* PersonalCollectionController.swift */,
+				01F134D31F59569D00EFA4D3 /* CollectionCell.swift */,
+				01F134D11F59567400EFA4D3 /* PersonalCollectionController.swift */,
 			);
 			name = "个人收藏";
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			children = (
 				015522961F45F21700C16EA0 /* Swift3.0 教程 */,
 				01EA73511F3D4B5E003A92F6 /* StruggleSwift */,
+				01F134D51F5956EC00EFA4D3 /* Resources */,
 				01EA73661F3D4B5E003A92F6 /* StruggleSwiftTests */,
 				01EA73711F3D4B5E003A92F6 /* StruggleSwiftUITests */,
 				01EA73501F3D4B5E003A92F6 /* Products */,
@@ -204,6 +210,14 @@
 				01EA73741F3D4B5E003A92F6 /* Info.plist */,
 			);
 			path = StruggleSwiftUITests;
+			sourceTree = "<group>";
+		};
+		01F134D51F5956EC00EFA4D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01F134D61F59578200EFA4D3 /* delete1.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		01F64D421F3FDF57004F8B2C /* 约束 */ = {
@@ -378,6 +392,7 @@
 			files = (
 				01EA735D1F3D4B5E003A92F6 /* LaunchScreen.storyboard in Resources */,
 				01EA735A1F3D4B5E003A92F6 /* Assets.xcassets in Resources */,
+				01F134D71F59578200EFA4D3 /* delete1.png in Resources */,
 				01EA73581F3D4B5E003A92F6 /* Main.storyboard in Resources */,
 				01EFB5201F4490DE000121A9 /* chat.png in Resources */,
 			);
@@ -459,10 +474,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01EA73551F3D4B5E003A92F6 /* ViewController.swift in Sources */,
-				01B31D681F5565E8005FC314 /* PersonalCollectionController.swift in Sources */,
 				01EB1E471F4856E500418E37 /* Enumeration.swift in Sources */,
 				015522921F45CE7700C16EA0 /* BaseController.swift in Sources */,
 				01EB03161F52954000D09709 /* Generics.swift in Sources */,
+				01F134D21F59567400EFA4D3 /* PersonalCollectionController.swift in Sources */,
 				01EB03101F51285900D09709 /* Initialization.swift in Sources */,
 				01F64D531F4082E7004F8B2C /* Closures.swift in Sources */,
 				01EB1E451F4846A400418E37 /* AffiliatedScript.swift in Sources */,
@@ -477,6 +492,7 @@
 				01B31D651F555CEA005FC314 /* VideoController.swift in Sources */,
 				01EB1E401F474E0100418E37 /* Properties.swift in Sources */,
 				01792CEF1F4DC164003B22F9 /* ARC.swift in Sources */,
+				01F134D41F59569D00EFA4D3 /* CollectionCell.swift in Sources */,
 				01EB03141F51BA8A00D09709 /* Protocols.swift in Sources */,
 				01EA73851F3D4D41003A92F6 /* RootViewController.swift in Sources */,
 			);

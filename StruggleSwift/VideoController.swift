@@ -12,6 +12,8 @@ import AVKit
 import AVFoundation
 
 //资源：http://www.cocoachina.com/cms/data/sitemap.html,   http://www.jianshu.com/p/d35980045c2b
+
+//按钮：http://www.cocoachina.com/swift/20150730/12825.html
 class VideoController: UIViewController {
 
     var playViewController = AVPlayerViewController()
@@ -72,7 +74,7 @@ class VideoController: UIViewController {
 //    MARK - AVPlayerViewController
     func playerViewControllerPlayVideo() {
         //        定义一个视频路径："/Users/huanggang/Desktop/资源/万由里.mp4"
-        let filePath = "/Users/huanggang/Desktop/资源/万由里.mp4"
+        let filePath = "http://v6-tt.ixigua.com/video/m/2209e818d593af1430ba3f49aee80295ca6114637600003dffe79f96d9/?Expires=1504110503&AWSAccessKeyId=qh0h9TdcEMoS2oPj7aKX&Signature=%2FsroC3ri%2FVrkLdKbVVOKMzT4%2Bkw%3D"
         let videoURL = URL(fileURLWithPath: filePath)
         //        定义一个视频播放器，通过本地文件路径初始化
         let player = AVPlayer(url: videoURL)
@@ -86,7 +88,8 @@ class VideoController: UIViewController {
     
 //    MARK - 播放在线视频
     func playOnlineVideo() {
-        let filePath = "http://v1-tt.ixigua.com/55b964aa38c0008f77f4c037de778a8e/59a43863/video/m/220920fad442249428786043e2a098fa46311510c9300001a2fe6260dc3/"
+//        let filePath = "http://v6-tt.ixigua.com/video/m/2208a3b426c9b6f46c69a7cea530d715c6911510ec700005c29be1b61ae/?Expires=1504109874&AWSAccessKeyId=qh0h9TdcEMoS2oPj7aKX&Signature=aUQhjb8ikxNipSPRya%2B8I8I4XUM%3D"
+        let filePath = "http://v6-tt.ixigua.com/video/m/2209e818d593af1430ba3f49aee80295ca6114637600003dffe79f96d9/?Expires=1504110503&AWSAccessKeyId=qh0h9TdcEMoS2oPj7aKX&Signature=%2FsroC3ri%2FVrkLdKbVVOKMzT4%2Bkw%3D"
         let videoURL =  URL(string: filePath)!
         let player = AVPlayer(url: videoURL)
         let playerViewController = AVPlayerViewController()

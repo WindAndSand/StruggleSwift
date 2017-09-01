@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 
+//http://www.cnblogs.com/keqipu/p/6580215.html, http://www.jianshu.com/p/59af697fa6fd
 
 class RootViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
@@ -17,7 +18,6 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     private var controllers = [UIViewController]()
     private var controllerTitles = ["Snapkit 约束", "setLayoutNeeds", "Swift 基础", "视频播放","个人收藏"]
-    
     
     
     private var _controllerTitles = [String]()
@@ -39,6 +39,24 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.groupTableViewBackground
+        
+        var name: Array<String> = ["金科","李白","黄忠","安琪拉","大白","哑舍","老夫子","凯"]
+        for (index, value) in name.enumerated()
+        {
+            print("name \(index): \(value)")
+            
+            if value == "李白" {
+                name.remove(at: index)
+            }
+        
+        }
+        
+        for (index, value) in name.enumerated()
+        {
+            print("--->name \(index): \(value)")
+        }
+        
+        
         
         self.view.addSubview(tableView)
         
