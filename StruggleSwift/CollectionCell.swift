@@ -6,6 +6,8 @@
 //  Copyright © 2017年 heartsquare. All rights reserved.
 //
 
+//自定义cell：http://www.jianshu.com/p/67e800666901
+
 import UIKit
 
 class CollectionCell: UITableViewCell {

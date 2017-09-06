@@ -98,6 +98,13 @@ class PersonalCollectionController: UIViewController, UITableViewDelegate, UITab
     func setUpUI() {
         self.view.addSubview(self.searchBar)
         self.searchBar.placeholder = "搜索"
+//        self.searchBar.barTintColor = UIColor.init(red: 0xd1/255, green: 0xd1/255, blue: 0xd1/255, alpha: 1)
+        self.searchBar.barTintColor = UIColor.red
+//        let searchTextField = self.searchBar.subviews.first?.subviews.last
+        let searchTextField = self.searchBar.subviews[0].subviews[1]
+
+        searchTextField.backgroundColor = UIColor.blue
+//        self.searchBar.backgroundColor = UIColor.red
         self.searchBar.snp.makeConstraints { (make) in
             make.width.equalTo(self.view.frame.width).multipliedBy(0.6)
             make.height.equalTo(50)
@@ -147,13 +154,14 @@ class PersonalCollectionController: UIViewController, UITableViewDelegate, UITab
     @available(iOS 2.0, *)
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let collectionIdentifier = "collectionIdentifier"
-        var cell: CollectionCell?
+
+        var cell: CollectionCell? = tableView.dequeueReusableCell(withIdentifier: collectionIdentifier) as? CollectionCell
         
         let favorite: Favorite! = self.filterFavorites?[indexPath.row] as! Favorite
-//        if cell == nil
-//        {
+        if cell == nil
+        {
            cell = CollectionCell(style: UITableViewCellStyle.default, reuseIdentifier: collectionIdentifier)
-//        }
+        }
         
         cell?.collectionDelte.addTarget(self, action: #selector(deleteCell), for: UIControlEvents.touchUpInside)
         cell?.tag = indexPath.row
@@ -187,6 +195,7 @@ class PersonalCollectionController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         return 240
     }
     

@@ -6,6 +6,10 @@
 //  Copyright © 2017年 HuangGang. All rights reserved.
 //
 
+/*
+ 把当前别人的提交合到自己的或其他分支上
+ */
+
 import UIKit
 
 @UIApplicationMain

@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'StruggleSwift' do
    pod 'SnapKit', '3.2.0'
+   pod 'Alamofire', '~> 4.5.0'
 end
 
 

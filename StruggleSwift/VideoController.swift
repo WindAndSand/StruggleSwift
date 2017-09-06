@@ -44,6 +44,16 @@ class VideoController: UIViewController {
         onelineVideo.frame = CGRect(x: 20, y: 160, width: 200, height: 30)
         onelineVideo.setTitle("onelineVideo", for: .normal)
         onelineVideo.addTarget(self, action: #selector(playOnlineVideo), for: .touchUpInside)
+        
+        
+        let searchBar = UISearchBar(frame: CGRect(x: 20, y: 200, width: 300, height: 50))
+        
+        self.view.addSubview(searchBar)
+        
+        searchBar.showsCancelButton = true
+        let uiButton = searchBar.value(forKey: "cancelButton") as! UIButton
+        uiButton.setTitleColor(UIColor.blue, for: .normal)
+        uiButton.setTitle("搜索", for: .normal)
 
         
         self.view.addSubview(playerBtn)

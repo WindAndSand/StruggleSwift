@@ -18,6 +18,12 @@ class BaseController: UIViewController {
     
     let typeImage = "image/gif,gif-3.gif"
     
+//    chatMessageLeft 测试
+    private var bubble_view = UIView(frame: CGRect.zero)
+    private var chat_bubble_left = UIImageView(frame: CGRect.zero)
+    var message_label = UILabel(frame: CGRect.zero)
+    var avatar_button = UIButton(frame: CGRect.zero)
+    var contentView = UIView(frame: CGRect.zero)
     
 
     
@@ -61,11 +67,13 @@ class BaseController: UIViewController {
             make.center.equalTo(self.view)
         }
         
+        
+        self.chatMessageLeftTest()
 //        self.enumeration()
         
 //        self.classAndStruct()
         
-//        self.properties()
+        self.properties()
         
 //        self.method()
         
@@ -79,7 +87,63 @@ class BaseController: UIViewController {
         
 //        self.protocols()
         
-        self.generics()
+//        self.generics()
+    }
+    
+    
+    func chatMessageLeftTest() {
+        
+        self.view.addSubview(self.contentView)
+        self.contentView.backgroundColor = UIColor.orange
+        self.contentView.contentMode = UIViewContentMode.center
+        self.contentView.snp.makeConstraints { (make) in
+            make.width.equalTo(300)
+            make.height.equalTo(80)
+            make.top.equalTo(self.view.snp.top).offset(70)
+            make.left.equalTo(self.view.snp.left).offset(62)
+
+        }
+        
+        self.avatar_button.backgroundColor = UIColor.red
+        self.contentView.addSubview(self.avatar_button)
+        self.avatar_button.snp.makeConstraints { (make) in
+            make.width.height.equalTo(38)
+            
+            make.bottom.equalTo(self.contentView.snp.bottom).offset(-13)
+            make.left.equalTo(self.contentView.snp.left).offset(15)
+        }
+        
+        
+        self.contentView.addSubview(self.bubble_view)
+        self.bubble_view.backgroundColor = UIColor.yellow
+        self.bubble_view.snp.makeConstraints { (make) in
+            make.top.equalTo(self.avatar_button)
+            make.left.equalTo(self.avatar_button.snp.right).inset(-5)
+            make.bottom.equalTo(self.contentView).inset(10)
+            make.right.lessThanOrEqualTo(self.contentView).inset(67)
+        }
+        
+        
+        
+        self.bubble_view.addSubview(self.chat_bubble_left)
+        self.chat_bubble_left.backgroundColor = UIColor.red
+        let text_image = UIImage(named: "6.jpg")?.resizableImage(withCapInsets:  UIEdgeInsetsMake(20, 20, 15, 20), resizingMode: UIImageResizingMode.stretch)
+        self.chat_bubble_left.image = text_image
+        self.chat_bubble_left.snp.makeConstraints { (make) in
+            make.top.left.bottom.right.equalTo(self.bubble_view)
+        }
+        
+        self.bubble_view.addSubview(self.message_label)
+        self.message_label.numberOfLines = 0
+        self.message_label.font = UIFont.systemFont(ofSize: 14)
+        //        self.lineBreakMode = NSLineBreakByWordWrapping
+        self.message_label.sizeToFit()
+        self.message_label.snp.makeConstraints { (make) in
+            make.top.left.right.equalTo(self.bubble_view)
+            make.bottom.equalTo(contentView).offset(20)
+            
+        }
+
     }
     
     
