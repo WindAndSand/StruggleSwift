@@ -8,6 +8,8 @@
 
 import UIKit
 
+//约束修改：http://www.cnblogs.com/qiaomc/p/5868644.html， http://www.cocoachina.com/ios/20160530/16522.html， http://blog.csdn.net/zpz5789/article/details/50922469
+
 class ViewController: UIViewController {
     
     private let centerView = UIView()

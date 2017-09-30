@@ -10,7 +10,7 @@
 #import "LayoutViewController.h"
 #import "TestView.h"
 
-@interface LayoutViewController ()
+@interface LayoutViewController ()<UIAlertViewDelegate>
 
 @property(nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) TestView  *largeView;
@@ -29,6 +29,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    
+    NSString *remindMessage = [NSString stringWithFormat:@"确定添加%@为好友？",@"mi_hg"];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"警告" message:remindMessage delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    alertView.delegate = self;
+    
+    [alertView show];
     
     
 //  1、init初始化不会触发layoutSubviews [正确的]
@@ -52,6 +58,16 @@
 //    [self test_5];
     
     
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSLog(@"------->");
+    NSString *btnTitle = [alertView buttonTitleAtIndex:buttonIndex];
+    if ([btnTitle isEqualToString:@"取消"]) {
+        return ;
+    }else if([btnTitle isEqualToString:@"确定"]){
+        NSLog(@"发送成功！");
+    }
 }
 
 - (void)test_1
@@ -79,13 +95,13 @@
     
     
     
-    /*
+    
 //    3. 立即调用 layoutSubviews，有了setNeedsLayout 做标记后，再调用 layoutIfNeeded
      TestView *test1 = [TestView new];
      [test1 setNeedsLayout];
      [test1 layoutIfNeeded];
      [self.view addSubview:test1];
-     */
+    /* */
     
     
     

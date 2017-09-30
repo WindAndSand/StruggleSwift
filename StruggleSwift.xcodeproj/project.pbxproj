@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01035E0C1F6783F100AD94A0 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 01035E0B1F6783F100AD94A0 /* bubble.png */; };
 		015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */; };
 		015522921F45CE7700C16EA0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015522911F45CE7700C16EA0 /* BaseController.swift */; };
 		01792CEF1F4DC164003B22F9 /* ARC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01792CEE1F4DC164003B22F9 /* ARC.swift */; };
 		01B31D651F555CEA005FC314 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B31D641F555CEA005FC314 /* VideoController.swift */; };
+		01EA42BD1F60E7CA00EE9F8D /* jigsaw.png in Resources */ = {isa = PBXBuildFile; fileRef = 01EA42BC1F60E7CA00EE9F8D /* jigsaw.png */; };
+		01EA42BF1F60EB0A00EE9F8D /* stretche.png in Resources */ = {isa = PBXBuildFile; fileRef = 01EA42BE1F60EB0A00EE9F8D /* stretche.png */; };
 		01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */; };
 		01EA73551F3D4B5E003A92F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73541F3D4B5E003A92F6 /* ViewController.swift */; };
 		01EA73581F3D4B5E003A92F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EA73561F3D4B5E003A92F6 /* Main.storyboard */; };
@@ -38,6 +41,13 @@
 		01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D4E1F405159004F8B2C /* TheBasics.swift */; };
 		01F64D531F4082E7004F8B2C /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D521F4082E7004F8B2C /* Closures.swift */; };
 		01F70F3D1F540C75007FD5D4 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3C1F540C75007FD5D4 /* ChatController.m */; };
+		01FCF78D1F64010F00A09EFB /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF7891F64010F00A09EFB /* clock.png */; };
+		01FCF78E1F64010F00A09EFB /* hour.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF78A1F64010F00A09EFB /* hour.png */; };
+		01FCF78F1F64010F00A09EFB /* minute.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF78B1F64010F00A09EFB /* minute.png */; };
+		01FCF7901F64010F00A09EFB /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF78C1F64010F00A09EFB /* second.png */; };
+		01FD42981F60411000B9F243 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD42971F60411000B9F243 /* AnimationController.swift */; };
+		01FD429B1F604BA300B9F243 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FD429A1F604BA300B9F243 /* 8.jpg */; };
+		01FD429D1F6058E500B9F243 /* snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FD429C1F6058E500B9F243 /* snowman.png */; };
 		F69377A6478E57A2E6B16EF5 /* Pods_StruggleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,10 +69,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01035E0B1F6783F100AD94A0 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
 		0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassAndStruct.swift; sourceTree = "<group>"; };
 		015522911F45CE7700C16EA0 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		01792CEE1F4DC164003B22F9 /* ARC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
 		01B31D641F555CEA005FC314 /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		01EA42BC1F60E7CA00EE9F8D /* jigsaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jigsaw.png; sourceTree = "<group>"; };
+		01EA42BE1F60EB0A00EE9F8D /* stretche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stretche.png; sourceTree = "<group>"; };
 		01EA734F1F3D4B5E003A92F6 /* StruggleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StruggleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01EA73541F3D4B5E003A92F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +113,13 @@
 		01F64D521F4082E7004F8B2C /* Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		01F70F3B1F540C75007FD5D4 /* ChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
 		01F70F3C1F540C75007FD5D4 /* ChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
+		01FCF7891F64010F00A09EFB /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		01FCF78A1F64010F00A09EFB /* hour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hour.png; sourceTree = "<group>"; };
+		01FCF78B1F64010F00A09EFB /* minute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minute.png; sourceTree = "<group>"; };
+		01FCF78C1F64010F00A09EFB /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		01FD42971F60411000B9F243 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		01FD429A1F604BA300B9F243 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		01FD429C1F6058E500B9F243 /* snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowman.png; sourceTree = "<group>"; };
 		23D2F86C8C3A7123491CE3CA /* Pods-StruggleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		2809A0C99C9AD5265B888182 /* Pods-StruggleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StruggleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +151,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01606EEA1F7F781200CCC7E2 /* 二维码识别 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "二维码识别";
+			sourceTree = "<group>";
+		};
 		01B31D631F555CB8005FC314 /* 视频基础 */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				01EA73511F3D4B5E003A92F6 /* StruggleSwift */,
-				01F134D51F5956EC00EFA4D3 /* Resources */,
 				01EA73661F3D4B5E003A92F6 /* StruggleSwiftTests */,
 				01EA73711F3D4B5E003A92F6 /* StruggleSwiftUITests */,
 				01EA73501F3D4B5E003A92F6 /* Products */,
@@ -183,6 +209,8 @@
 				01F64D4B1F40503B004F8B2C /* Swift基础 */,
 				01B31D631F555CB8005FC314 /* 视频基础 */,
 				01B31D661F5565C5005FC314 /* 个人收藏 */,
+				01FD42961F6040C800B9F243 /* 核心动画 */,
+				01606EEA1F7F781200CCC7E2 /* 二维码识别 */,
 				01EA73561F3D4B5E003A92F6 /* Main.storyboard */,
 				01EA73591F3D4B5E003A92F6 /* Assets.xcassets */,
 				01EA735B1F3D4B5E003A92F6 /* LaunchScreen.storyboard */,
@@ -207,14 +235,6 @@
 				01EA73741F3D4B5E003A92F6 /* Info.plist */,
 			);
 			path = StruggleSwiftUITests;
-			sourceTree = "<group>";
-		};
-		01F134D51F5956EC00EFA4D3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				01F134D61F59578200EFA4D3 /* delete1.png */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		01F64D421F3FDF57004F8B2C /* 约束 */ = {
@@ -244,6 +264,7 @@
 			children = (
 				015522911F45CE7700C16EA0 /* BaseController.swift */,
 				01EE44301F5F9F5D00642715 /* 6.jpg */,
+				01035E0B1F6783F100AD94A0 /* bubble.png */,
 				01F64D4E1F405159004F8B2C /* TheBasics.swift */,
 				01F64D521F4082E7004F8B2C /* Closures.swift */,
 				01EB1E461F4856E500418E37 /* Enumeration.swift */,
@@ -258,6 +279,32 @@
 				01EB03151F52954000D09709 /* Generics.swift */,
 			);
 			name = "Swift基础";
+			sourceTree = "<group>";
+		};
+		01FCF7881F63CB3F00A09EFB /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				01EA42BC1F60E7CA00EE9F8D /* jigsaw.png */,
+				01FD429C1F6058E500B9F243 /* snowman.png */,
+				01EA42BE1F60EB0A00EE9F8D /* stretche.png */,
+				01FD429A1F604BA300B9F243 /* 8.jpg */,
+				01F134D61F59578200EFA4D3 /* delete1.png */,
+				01FCF7891F64010F00A09EFB /* clock.png */,
+				01FCF78A1F64010F00A09EFB /* hour.png */,
+				01FCF78B1F64010F00A09EFB /* minute.png */,
+				01FCF78C1F64010F00A09EFB /* second.png */,
+			);
+			name = Resourses;
+			sourceTree = "<group>";
+		};
+		01FD42961F6040C800B9F243 /* 核心动画 */ = {
+			isa = PBXGroup;
+			children = (
+				01FD42971F60411000B9F243 /* AnimationController.swift */,
+				01FCF7881F63CB3F00A09EFB /* Resourses */,
+			);
+			name = "核心动画";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		0AB2A122A174E1F1AF682903 /* Pods */ = {
@@ -390,11 +437,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				01EE44311F5F9F5D00642715 /* 6.jpg in Resources */,
+				01EA42BD1F60E7CA00EE9F8D /* jigsaw.png in Resources */,
+				01FD429D1F6058E500B9F243 /* snowman.png in Resources */,
 				01EA735D1F3D4B5E003A92F6 /* LaunchScreen.storyboard in Resources */,
+				01035E0C1F6783F100AD94A0 /* bubble.png in Resources */,
 				01EA735A1F3D4B5E003A92F6 /* Assets.xcassets in Resources */,
+				01FCF78E1F64010F00A09EFB /* hour.png in Resources */,
 				01F134D71F59578200EFA4D3 /* delete1.png in Resources */,
 				01EA73581F3D4B5E003A92F6 /* Main.storyboard in Resources */,
+				01FCF78D1F64010F00A09EFB /* clock.png in Resources */,
+				01FCF78F1F64010F00A09EFB /* minute.png in Resources */,
 				01EFB5201F4490DE000121A9 /* chat.png in Resources */,
+				01FD429B1F604BA300B9F243 /* 8.jpg in Resources */,
+				01EA42BF1F60EB0A00EE9F8D /* stretche.png in Resources */,
+				01FCF7901F64010F00A09EFB /* second.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,13 +511,35 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AGEmojiKeyboard/AGEmojiKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CircleProgressView/CircleProgressView.framework",
+				"${BUILT_PRODUCTS_DIR}/Objective-LevelDB/Objective_LevelDB.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YNLib/YNLib.framework",
+				"${BUILT_PRODUCTS_DIR}/chatkit/chatkit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/libCommonCrypto/CommonCrypto.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AGEmojiKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleProgressView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Objective_LevelDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YNLib.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/chatkit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonCrypto.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -475,6 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01FD42981F60411000B9F243 /* AnimationController.swift in Sources */,
 				01EA73551F3D4B5E003A92F6 /* ViewController.swift in Sources */,
 				01EB1E471F4856E500418E37 /* Enumeration.swift in Sources */,
 				015522921F45CE7700C16EA0 /* BaseController.swift in Sources */,

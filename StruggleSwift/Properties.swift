@@ -109,7 +109,7 @@ class DataManager
 {
     lazy var importer = DataImporter()
     var  data: Array<String> = Array<String>()
-    /*或者:
+    /*三种另类构造数组的方法:
     var data1: [String] = Array()
     var data2: [String] = []
     var data3: [String] = [String]()
