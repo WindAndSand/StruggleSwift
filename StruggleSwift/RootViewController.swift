@@ -73,10 +73,10 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         controllers.append(controllerOne)
         controllers.append(controllerTwo)
         controllers.append(baseController)
+        controllers.append(ocChat)
         controllers.append(videoController)
         controllers.append(personalCollection)
         controllers.append(animationController)
-        controllers.append(ocChat)
 //        controllers.append(accelerometerController)
         
         
