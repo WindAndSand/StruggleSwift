@@ -41,7 +41,6 @@
 		01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D4E1F405159004F8B2C /* TheBasics.swift */; };
 		01F64D531F4082E7004F8B2C /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D521F4082E7004F8B2C /* Closures.swift */; };
 		01F70F3D1F540C75007FD5D4 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3C1F540C75007FD5D4 /* ChatController.m */; };
-<<<<<<< Updated upstream
 		01FCF78D1F64010F00A09EFB /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF7891F64010F00A09EFB /* clock.png */; };
 		01FCF78E1F64010F00A09EFB /* hour.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF78A1F64010F00A09EFB /* hour.png */; };
 		01FCF78F1F64010F00A09EFB /* minute.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF78B1F64010F00A09EFB /* minute.png */; };
@@ -49,9 +48,7 @@
 		01FD42981F60411000B9F243 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD42971F60411000B9F243 /* AnimationController.swift */; };
 		01FD429B1F604BA300B9F243 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FD429A1F604BA300B9F243 /* 8.jpg */; };
 		01FD429D1F6058E500B9F243 /* snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FD429C1F6058E500B9F243 /* snowman.png */; };
-=======
 		01F70F401F540F0B007FD5D4 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3F1F540F0B007FD5D4 /* ChatCell.m */; };
->>>>>>> Stashed changes
 		F69377A6478E57A2E6B16EF5 /* Pods_StruggleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,7 +114,6 @@
 		01F64D521F4082E7004F8B2C /* Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		01F70F3B1F540C75007FD5D4 /* ChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
 		01F70F3C1F540C75007FD5D4 /* ChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
 		01FCF7891F64010F00A09EFB /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		01FCF78A1F64010F00A09EFB /* hour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hour.png; sourceTree = "<group>"; };
 		01FCF78B1F64010F00A09EFB /* minute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minute.png; sourceTree = "<group>"; };
@@ -125,10 +121,8 @@
 		01FD42971F60411000B9F243 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		01FD429A1F604BA300B9F243 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		01FD429C1F6058E500B9F243 /* snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowman.png; sourceTree = "<group>"; };
-=======
 		01F70F3E1F540F0B007FD5D4 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
 		01F70F3F1F540F0B007FD5D4 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 		23D2F86C8C3A7123491CE3CA /* Pods-StruggleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		2809A0C99C9AD5265B888182 /* Pods-StruggleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StruggleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
