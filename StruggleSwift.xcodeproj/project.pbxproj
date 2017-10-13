@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010126B51F90B91100BAC6C4 /* DeviceViewController.swift */; };
 		01035E0C1F6783F100AD94A0 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 01035E0B1F6783F100AD94A0 /* bubble.png */; };
 		015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */; };
 		015522921F45CE7700C16EA0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015522911F45CE7700C16EA0 /* BaseController.swift */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010126B51F90B91100BAC6C4 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		01035E0B1F6783F100AD94A0 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
 		0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassAndStruct.swift; sourceTree = "<group>"; };
 		015522911F45CE7700C16EA0 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010126B41F90B8E200BAC6C4 /* iOS 设备 */ = {
+			isa = PBXGroup;
+			children = (
+				010126B51F90B91100BAC6C4 /* DeviceViewController.swift */,
+			);
+			name = "iOS 设备";
+			sourceTree = "<group>";
+		};
 		01606EEA1F7F781200CCC7E2 /* 二维码识别 */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +225,7 @@
 				01B31D661F5565C5005FC314 /* 个人收藏 */,
 				01FD42961F6040C800B9F243 /* 核心动画 */,
 				01606EEA1F7F781200CCC7E2 /* 二维码识别 */,
+				010126B41F90B8E200BAC6C4 /* iOS 设备 */,
 				01EA73561F3D4B5E003A92F6 /* Main.storyboard */,
 				01EA73591F3D4B5E003A92F6 /* Assets.xcassets */,
 				01EA735B1F3D4B5E003A92F6 /* LaunchScreen.storyboard */,
@@ -568,6 +579,7 @@
 				01EB03161F52954000D09709 /* Generics.swift in Sources */,
 				01F134D21F59567400EFA4D3 /* PersonalCollectionController.swift in Sources */,
 				01EB03101F51285900D09709 /* Initialization.swift in Sources */,
+				010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */,
 				01F64D531F4082E7004F8B2C /* Closures.swift in Sources */,
 				01EB1E451F4846A400418E37 /* AffiliatedScript.swift in Sources */,
 				01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */,

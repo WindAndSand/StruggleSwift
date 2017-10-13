@@ -19,6 +19,8 @@
 
 import UIKit
 import AVFoundation
+import QuartzCore
+
 
 class AnimationController: UIViewController,UIAlertViewDelegate {
     private lazy var layerView: UIView? = UIView()  //懒加载初始化失败，可以用可选值加上 ？
@@ -81,6 +83,15 @@ class AnimationController: UIViewController,UIAlertViewDelegate {
 //    AVPlayerLayer
     private lazy var avPlayerView: UIView! = UIView()
     
+    
+//    属性动画
+    private lazy var attributeAnimation_View: UIView! = UIView()
+    private lazy var attributeAnimation_colorLayer: CALayer! = CALayer()
+    
+//    显示过渡
+    private lazy var transitionImageView: UIImageView! = UIImageView()
+    private var transitionImages: Array<UIImage>!
+    
 //    MARK: - 方法
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,6 +129,27 @@ class AnimationController: UIViewController,UIAlertViewDelegate {
         
 //        AVPlayerLayer
         self.avPlayerOfView();
+        
+//        属性动画
+//        self.attributeAnimation()
+        
+//        过渡动画
+        self.transitionAnimationOfView()
+        
+        
+        let btn1 = UIButton(type: .custom)
+        btn1.backgroundColor = UIColor.white
+        btn1.setTitle("属性动画", for: UIControlState.normal)
+        btn1.setTitleColor(UIColor.black, for: UIControlState.normal)
+        btn1.titleLabel?.font = UIFont.systemFont(ofSize: 5)
+        self.view.addSubview(btn1)
+        btn1.addTarget(self, action: #selector(transitionOfTouch(sender:)), for: .touchUpInside)
+        btn1.snp.makeConstraints { (make) in
+            make.bottom.equalTo(self.view)
+            make.right.equalTo(self.transitionImageView)
+            make.width.equalTo(25)
+            make.height.equalTo(66)
+        }
     }
     
     func constraintView() {
@@ -674,8 +706,93 @@ class AnimationController: UIViewController,UIAlertViewDelegate {
 //    MARK：图层行为
 //    每个UIView对它关联的图层都扮演了一个委托，并且提供了-actionForLayer:forKey的实现方法。当不在一个动画块的实现中，UIView对所有图层行为返回nil，但是在动画block范围之内，它就返回了一个非空值。
 
-//    MARK: ~~~~~~~~~~~~~~~~~~显示动画~~~~~~~~~~~~~~~~~~
+//    MARK: ~~~~~~~~~~~~~~~~~~显式动画~~~~~~~~~~~~~~~~~~
+//    MARK: 属性动画
+//    CAAnimationDelegate在任何头文件中都找不到，但是可以在CAAnimation头文件或者苹果开发者文档中找到相关函数。在这个例子中，我们用-animationDidStop:finished:方法在动画结束之后来更新图层的backgroundColor。
+//    当更新属性的时候，我们需要设置一个新的事务，并且禁用图层行为。否则动画会发生两次，一个是因为显式的CABasicAnimation，另一次是因为隐式动画
+    func attributeAnimation() {
+        self.attributeAnimation_colorLayer.frame = CGRect(x: 0, y: 0, width: 50, height: 30)
+        self.attributeAnimation_colorLayer.backgroundColor = UIColor.blue.cgColor
+        self.attributeAnimation_View.layer.addSublayer(self.attributeAnimation_colorLayer)
+        
+        self.attributeAnimation_View.backgroundColor = UIColor.orange
+        self.view.addSubview(self.attributeAnimation_View)
+        self.attributeAnimation_View.snp.makeConstraints { (make) in
+            make.top.equalTo(self.avPlayerView)
+            make.left.equalTo(self.avPlayerView.snp.right).inset(-10)
+            make.right.equalTo(self.view)
+            make.height.equalTo(self.avPlayerView)
+        }
+        
+        let btn = UIButton(type: .custom)
+        btn.backgroundColor = UIColor.yellow
+        btn.setTitle("属性动画", for: UIControlState.normal)
+        btn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 10)
+        self.attributeAnimation_View.addSubview(btn)
+        btn.snp.makeConstraints { (make) in
+            make.top.equalTo(self.attributeAnimation_View)
+            make.right.equalTo(self.attributeAnimation_View)
+            make.width.equalTo(25)
+            make.height.equalTo(66)
+        }
+        
+        
+    }
+    
+    
+//    MARK：动画组
+//    CABasicAnimation和CAKeyframeAnimation仅仅作用于单独的属性，而CAAnimationGroup可以把这些动画组合在一起。CAAnimationGroup是另一个继承于CAAnimation的子类，它添加了一个animations数组的属性，用来组合别的动画。我们把清单8.6那种关键帧动画和调整图层背景色的基础动画组合起来
+    
+//    MARK: 过渡
+//    有时候对于iOS应用程序来说，希望能通过属性动画来对比较难做动画的布局进行一些改变。比如交换一段文本和图片，或者用一段网格视图来替换，等等。属性动画只对图层的可动画属性起作用，所以如果要改变一个不能动画的属性（比如图片），或者从层级关系中添加或者移除图层，属性动画将不起作用。
+    
+//    于是就有了过渡的概念。过渡并不像属性动画那样平滑地在两个值之间做动画，而是影响到整个图层的变化。过渡动画首先展示之前的图层外观，然后通过一个交换过渡到新的外观。
 
+    func transitionAnimationOfView() {
+        let a = UIImage(named: "8.jpg")!
+          self.transitionImages = [a, UIImage(named: "delete1.png")!, UIImage(named: "clock.png")!, UIImage(named: "hour.png")!]
+        self.transformImageView.image = a
+        self.transitionImageView.backgroundColor = UIColor.orange
+        self.view.addSubview(self.transitionImageView)
+        self.transitionImageView.snp.makeConstraints { (make) in
+            make.top.equalTo(self.avPlayerView)
+            make.left.equalTo(self.avPlayerView.snp.right).inset(-10)
+            make.right.equalTo(self.view)
+            make.height.equalTo(self.avPlayerView)
+        }
+        
+//        let btn1 = UIButton(type: .custom)
+//        btn1.backgroundColor = UIColor.white
+//        btn1.setTitle("属性动画", for: UIControlState.normal)
+//        btn1.setTitleColor(UIColor.black, for: UIControlState.normal)
+//        btn1.titleLabel?.font = UIFont.systemFont(ofSize: 5)
+//        self.transitionImageView.addSubview(btn1)
+//        btn1.addTarget(self, action: #selector(transitionOfTouch(sender:)), for: .touchUpInside)
+//        btn1.snp.makeConstraints { (make) in
+//            make.top.equalTo(self.transitionImageView)
+//            make.right.equalTo(self.transitionImageView)
+//            make.width.equalTo(25)
+//            make.height.equalTo(66)
+//        }
+        
+    }
+    
+    func transitionOfTouch(sender: UIButton)  {
+        print("-------------->")
+        let transition = CATransition()
+        transition.type =  kCATransitionFade
+        self.transformImageView.layer.add(transition, forKey: nil)
+        
+        let currentImage = self.transformImageView.image
+        var index = self.transitionImages.index(of: currentImage!)
+        index = (index! + 1) % self.transitionImages.count
+        self.transformImageView.image = self.transitionImages[index!]
+        
+    }
+    
     
 }
+
+
 
