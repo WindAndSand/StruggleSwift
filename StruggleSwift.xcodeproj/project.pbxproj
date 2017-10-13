@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010126B51F90B91100BAC6C4 /* DeviceViewController.swift */; };
 		01035E0C1F6783F100AD94A0 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 01035E0B1F6783F100AD94A0 /* bubble.png */; };
 		015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */; };
 		015522921F45CE7700C16EA0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015522911F45CE7700C16EA0 /* BaseController.swift */; };
@@ -36,6 +37,7 @@
 		01F134D21F59567400EFA4D3 /* PersonalCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F134D11F59567400EFA4D3 /* PersonalCollectionController.swift */; };
 		01F134D41F59569D00EFA4D3 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F134D31F59569D00EFA4D3 /* CollectionCell.swift */; };
 		01F134D71F59578200EFA4D3 /* delete1.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F134D61F59578200EFA4D3 /* delete1.png */; };
+		01F39D471F822EE900255DAB /* neteaseCloudMusic.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F39D461F822EE800255DAB /* neteaseCloudMusic.png */; };
 		01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D451F3FE1C9004F8B2C /* LayoutViewController.m */; };
 		01F64D491F3FE2E0004F8B2C /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D481F3FE2E0004F8B2C /* TestView.m */; };
 		01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D4E1F405159004F8B2C /* TheBasics.swift */; };
@@ -70,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010126B51F90B91100BAC6C4 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		01035E0B1F6783F100AD94A0 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
 		0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassAndStruct.swift; sourceTree = "<group>"; };
 		015522911F45CE7700C16EA0 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
@@ -106,6 +109,9 @@
 		01F134D11F59567400EFA4D3 /* PersonalCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCollectionController.swift; sourceTree = "<group>"; };
 		01F134D31F59569D00EFA4D3 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		01F134D61F59578200EFA4D3 /* delete1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete1.png; sourceTree = "<group>"; };
+		01F39D461F822EE800255DAB /* neteaseCloudMusic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neteaseCloudMusic.png; sourceTree = "<group>"; };
+		01F39D481F83CB2D00255DAB /* BoRen.exo */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoRen.exo; sourceTree = "<group>"; };
+		01F39D491F83D10900255DAB /* IMG_0007.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_0007.MOV; sourceTree = "<group>"; };
 		01F64D441F3FE1C9004F8B2C /* LayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
 		01F64D451F3FE1C9004F8B2C /* LayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutViewController.m; sourceTree = "<group>"; };
 		01F64D471F3FE2E0004F8B2C /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
@@ -154,6 +160,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010126B41F90B8E200BAC6C4 /* iOS 设备 */ = {
+			isa = PBXGroup;
+			children = (
+				010126B51F90B91100BAC6C4 /* DeviceViewController.swift */,
+			);
+			name = "iOS 设备";
+			sourceTree = "<group>";
+		};
 		01606EEA1F7F781200CCC7E2 /* 二维码识别 */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +228,7 @@
 				01B31D661F5565C5005FC314 /* 个人收藏 */,
 				01FD42961F6040C800B9F243 /* 核心动画 */,
 				01606EEA1F7F781200CCC7E2 /* 二维码识别 */,
+				010126B41F90B8E200BAC6C4 /* iOS 设备 */,
 				01EA73561F3D4B5E003A92F6 /* Main.storyboard */,
 				01EA73591F3D4B5E003A92F6 /* Assets.xcassets */,
 				01EA735B1F3D4B5E003A92F6 /* LaunchScreen.storyboard */,
@@ -289,6 +304,9 @@
 		01FCF7881F63CB3F00A09EFB /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				01F39D481F83CB2D00255DAB /* BoRen.exo */,
+				01F39D491F83D10900255DAB /* IMG_0007.MOV */,
+				01F39D461F822EE800255DAB /* neteaseCloudMusic.png */,
 				01EA42BC1F60E7CA00EE9F8D /* jigsaw.png */,
 				01FD429C1F6058E500B9F243 /* snowman.png */,
 				01EA42BE1F60EB0A00EE9F8D /* stretche.png */,
@@ -446,6 +464,7 @@
 				01FD429D1F6058E500B9F243 /* snowman.png in Resources */,
 				01EA735D1F3D4B5E003A92F6 /* LaunchScreen.storyboard in Resources */,
 				01035E0C1F6783F100AD94A0 /* bubble.png in Resources */,
+				01F39D471F822EE900255DAB /* neteaseCloudMusic.png in Resources */,
 				01EA735A1F3D4B5E003A92F6 /* Assets.xcassets in Resources */,
 				01FCF78E1F64010F00A09EFB /* hour.png in Resources */,
 				01F134D71F59578200EFA4D3 /* delete1.png in Resources */,
@@ -565,6 +584,7 @@
 				01EB03161F52954000D09709 /* Generics.swift in Sources */,
 				01F134D21F59567400EFA4D3 /* PersonalCollectionController.swift in Sources */,
 				01EB03101F51285900D09709 /* Initialization.swift in Sources */,
+				010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */,
 				01F64D531F4082E7004F8B2C /* Closures.swift in Sources */,
 				01EB1E451F4846A400418E37 /* AffiliatedScript.swift in Sources */,
 				01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */,
