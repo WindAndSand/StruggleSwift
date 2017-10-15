@@ -13,6 +13,8 @@
 		015522921F45CE7700C16EA0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015522911F45CE7700C16EA0 /* BaseController.swift */; };
 		01792CEF1F4DC164003B22F9 /* ARC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01792CEE1F4DC164003B22F9 /* ARC.swift */; };
 		01B31D651F555CEA005FC314 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B31D641F555CEA005FC314 /* VideoController.swift */; };
+		01EA0C181F9360BE00FAA1CD /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA0C171F9360BE00FAA1CD /* TestViewController.swift */; };
+		01EA0C1A1F93610100FAA1CD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA0C191F93610100FAA1CD /* TestView.swift */; };
 		01EA42BD1F60E7CA00EE9F8D /* jigsaw.png in Resources */ = {isa = PBXBuildFile; fileRef = 01EA42BC1F60E7CA00EE9F8D /* jigsaw.png */; };
 		01EA42BF1F60EB0A00EE9F8D /* stretche.png in Resources */ = {isa = PBXBuildFile; fileRef = 01EA42BE1F60EB0A00EE9F8D /* stretche.png */; };
 		01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */; };
@@ -43,6 +45,7 @@
 		01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D4E1F405159004F8B2C /* TheBasics.swift */; };
 		01F64D531F4082E7004F8B2C /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D521F4082E7004F8B2C /* Closures.swift */; };
 		01F70F3D1F540C75007FD5D4 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3C1F540C75007FD5D4 /* ChatController.m */; };
+		01F70F401F540F0B007FD5D4 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3F1F540F0B007FD5D4 /* ChatCell.m */; };
 		01FCF78D1F64010F00A09EFB /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF7891F64010F00A09EFB /* clock.png */; };
 		01FCF78E1F64010F00A09EFB /* hour.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF78A1F64010F00A09EFB /* hour.png */; };
 		01FCF78F1F64010F00A09EFB /* minute.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF78B1F64010F00A09EFB /* minute.png */; };
@@ -50,7 +53,6 @@
 		01FD42981F60411000B9F243 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD42971F60411000B9F243 /* AnimationController.swift */; };
 		01FD429B1F604BA300B9F243 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FD429A1F604BA300B9F243 /* 8.jpg */; };
 		01FD429D1F6058E500B9F243 /* snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FD429C1F6058E500B9F243 /* snowman.png */; };
-		01F70F401F540F0B007FD5D4 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3F1F540F0B007FD5D4 /* ChatCell.m */; };
 		F69377A6478E57A2E6B16EF5 /* Pods_StruggleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		015522911F45CE7700C16EA0 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		01792CEE1F4DC164003B22F9 /* ARC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
 		01B31D641F555CEA005FC314 /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		01EA0C171F9360BE00FAA1CD /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		01EA0C191F93610100FAA1CD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		01EA42BC1F60E7CA00EE9F8D /* jigsaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jigsaw.png; sourceTree = "<group>"; };
 		01EA42BE1F60EB0A00EE9F8D /* stretche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stretche.png; sourceTree = "<group>"; };
 		01EA734F1F3D4B5E003A92F6 /* StruggleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StruggleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +124,8 @@
 		01F64D521F4082E7004F8B2C /* Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		01F70F3B1F540C75007FD5D4 /* ChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
 		01F70F3C1F540C75007FD5D4 /* ChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
+		01F70F3E1F540F0B007FD5D4 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		01F70F3F1F540F0B007FD5D4 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
 		01FCF7891F64010F00A09EFB /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		01FCF78A1F64010F00A09EFB /* hour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hour.png; sourceTree = "<group>"; };
 		01FCF78B1F64010F00A09EFB /* minute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minute.png; sourceTree = "<group>"; };
@@ -127,8 +133,6 @@
 		01FD42971F60411000B9F243 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		01FD429A1F604BA300B9F243 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		01FD429C1F6058E500B9F243 /* snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowman.png; sourceTree = "<group>"; };
-		01F70F3E1F540F0B007FD5D4 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
-		01F70F3F1F540F0B007FD5D4 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
 		23D2F86C8C3A7123491CE3CA /* Pods-StruggleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		2809A0C99C9AD5265B888182 /* Pods-StruggleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StruggleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +197,15 @@
 			name = "个人收藏";
 			sourceTree = "<group>";
 		};
+		01EA0C161F93604100FAA1CD /* 通信方式 */ = {
+			isa = PBXGroup;
+			children = (
+				01EA0C171F9360BE00FAA1CD /* TestViewController.swift */,
+				01EA0C191F93610100FAA1CD /* TestView.swift */,
+			);
+			name = "通信方式";
+			sourceTree = "<group>";
+		};
 		01EA73461F3D4B5E003A92F6 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +237,7 @@
 				01F64D421F3FDF57004F8B2C /* 约束 */,
 				01F64D431F3FDF70004F8B2C /* LayoutIfNeeds */,
 				01F64D4B1F40503B004F8B2C /* Swift基础 */,
+				01EA0C161F93604100FAA1CD /* 通信方式 */,
 				01B31D631F555CB8005FC314 /* 视频基础 */,
 				01B31D661F5565C5005FC314 /* 个人收藏 */,
 				01FD42961F6040C800B9F243 /* 核心动画 */,
@@ -577,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01EA0C1A1F93610100FAA1CD /* TestView.swift in Sources */,
 				01FD42981F60411000B9F243 /* AnimationController.swift in Sources */,
 				01EA73551F3D4B5E003A92F6 /* ViewController.swift in Sources */,
 				01EB1E471F4856E500418E37 /* Enumeration.swift in Sources */,
@@ -593,6 +608,7 @@
 				01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */,
 				01F70F3D1F540C75007FD5D4 /* ChatController.m in Sources */,
 				015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */,
+				01EA0C181F9360BE00FAA1CD /* TestViewController.swift in Sources */,
 				01F70F401F540F0B007FD5D4 /* ChatCell.m in Sources */,
 				01EB1E431F47F6A600418E37 /* Methods.swift in Sources */,
 				01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */,

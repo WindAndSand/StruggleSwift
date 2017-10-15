@@ -18,7 +18,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     private var controllers = [UIViewController]()
-    private var controllerTitles = ["Snapkit 约束", "setLayoutNeeds", "Swift 基础","OC 版chatCell", "视频播放","个人收藏","核心动画", "设备信息"]
+    private var controllerTitles = ["Snapkit 约束", "setLayoutNeeds", "Swift 基础","OC 版chatCell", "视频播放","个人收藏","核心动画", "设备信息", "通信方式"]
     
     private var _controllerTitles = [String]()
 //    var _name: String?
@@ -60,8 +60,8 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.view.addSubview(tableView)
         
-        let controllerOne = ViewController()
-        let controllerTwo = LayoutViewController()
+        let viewController = ViewController()
+        let layoutViewController = LayoutViewController()
         let baseController = BaseController()
         let videoController = VideoController()
         let personalCollection = PersonalCollectionController()
@@ -69,10 +69,11 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         let ocChat = ChatController()
 //        let accelerometerController = AccelerometerController()
         let deviceController = DeviceViewController()
+        let testController = TestViewController()
         
         
-        controllers.append(controllerOne)
-        controllers.append(controllerTwo)
+        controllers.append(viewController)
+        controllers.append(layoutViewController)
         controllers.append(baseController)
         controllers.append(ocChat)
         controllers.append(videoController)
@@ -80,6 +81,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         controllers.append(animationController)
 //        controllers.append(accelerometerController)
         controllers.append(deviceController)
+        controllers.append(testController)
         
         
         
