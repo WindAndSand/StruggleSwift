@@ -79,11 +79,13 @@ class BaseController: UIViewController {
         
         self.updateViewConstraint()
         
+        self.closures()
+        
 //        self.enumeration()
         
 //        self.classAndStruct()
         
-        self.properties()
+//        self.properties()
         
 //        self.method()
         
@@ -407,6 +409,13 @@ class BaseController: UIViewController {
     
     
 //    MARK: -- 调用基础知识测试案例
+    
+//    闭包
+    func closures() {
+        let closures = Closures()
+        closures.printSomeThing()
+        
+    }
 //    类和结构体
     func classAndStruct() {
         let CAS = ClassAndStruct()
