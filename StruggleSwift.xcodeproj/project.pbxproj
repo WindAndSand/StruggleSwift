@@ -33,6 +33,7 @@
 		01EB1E431F47F6A600418E37 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB1E421F47F6A600418E37 /* Methods.swift */; };
 		01EB1E451F4846A400418E37 /* AffiliatedScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB1E441F4846A400418E37 /* AffiliatedScript.swift */; };
 		01EB1E471F4856E500418E37 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB1E461F4856E500418E37 /* Enumeration.swift */; };
+		01EC96C01F93A7F900BD22FC /* MultithreadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EC96BF1F93A7F900BD22FC /* MultithreadingViewController.swift */; };
 		01EE44311F5F9F5D00642715 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01EE44301F5F9F5D00642715 /* 6.jpg */; };
 		01EECA9D1F5DA539006E3F16 /* DownloadVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA9C1F5DA539006E3F16 /* DownloadVideoController.swift */; };
 		01EFB5201F4490DE000121A9 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 01EFB51F1F4490DE000121A9 /* chat.png */; };
@@ -107,6 +108,7 @@
 		01EB1E421F47F6A600418E37 /* Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
 		01EB1E441F4846A400418E37 /* AffiliatedScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffiliatedScript.swift; sourceTree = "<group>"; };
 		01EB1E461F4856E500418E37 /* Enumeration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
+		01EC96BF1F93A7F900BD22FC /* MultithreadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultithreadingViewController.swift; sourceTree = "<group>"; };
 		01EE44301F5F9F5D00642715 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		01EECA9C1F5DA539006E3F16 /* DownloadVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadVideoController.swift; sourceTree = "<group>"; };
 		01EFB51F1F4490DE000121A9 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				01FD42961F6040C800B9F243 /* 核心动画 */,
 				01606EEA1F7F781200CCC7E2 /* 二维码识别 */,
 				010126B41F90B8E200BAC6C4 /* iOS 设备 */,
+				01EC96BE1F93A7C600BD22FC /* 多线程 */,
 				01EA73561F3D4B5E003A92F6 /* Main.storyboard */,
 				01EA73591F3D4B5E003A92F6 /* Assets.xcassets */,
 				01EA735B1F3D4B5E003A92F6 /* LaunchScreen.storyboard */,
@@ -267,6 +270,14 @@
 				01EA73741F3D4B5E003A92F6 /* Info.plist */,
 			);
 			path = StruggleSwiftUITests;
+			sourceTree = "<group>";
+		};
+		01EC96BE1F93A7C600BD22FC /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				01EC96BF1F93A7F900BD22FC /* MultithreadingViewController.swift */,
+			);
+			name = "多线程";
 			sourceTree = "<group>";
 		};
 		01F64D421F3FDF57004F8B2C /* 约束 */ = {
@@ -607,6 +618,7 @@
 				01F64D491F3FE2E0004F8B2C /* TestView.m in Sources */,
 				01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */,
 				01F70F3D1F540C75007FD5D4 /* ChatController.m in Sources */,
+				01EC96C01F93A7F900BD22FC /* MultithreadingViewController.swift in Sources */,
 				015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */,
 				01EA0C181F9360BE00FAA1CD /* TestViewController.swift in Sources */,
 				01F70F401F540F0B007FD5D4 /* ChatCell.m in Sources */,

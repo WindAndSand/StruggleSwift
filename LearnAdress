@@ -1,9 +1,7 @@
-CALayer 学习：http://blog.csdn.net/livesxu/article/details/50538606， http://www.cocoachina.com/ios/20161014/17747.html, https://www.kancloud.cn/manual/ios/97766,
-https://www.kancloud.cn/manual/ios/97766
+CALayer 学习：http://blog.csdn.net/livesxu/article/details/50538606， http://www.cocoachina.com/ios/20161014/17747.html,
 
-Snapkit 约束变量：https://yq.aliyun.com/ziliao/26468， http://blog.csdn.net/woaifen3344/article/details/50114451， http://www.jianshu.com/p/28dfe1d980e7
+Snapkit 约束变量： http://blog.csdn.net/woaifen3344/article/details/50114451
 
-swift 语法变化：http://www.jianshu.com/p/460b5424942a
 
 闭包整理：http://www.cocoachina.com/ios/20161201/18250.html
 oc与swift的闭包使用：http://www.jianshu.com/p/1279224d4820
@@ -14,3 +12,20 @@ swift3.0 语法变化：http://www.jianshu.com/p/460b5424942a
 
 Git学习：
 1.《简书》：http://www.jianshu.com/p/561a4fec4a96
+只要不把修改内容加入暂存区，就可以不停地切换分支吗？
+
+导航控制器的translucent：http://blog.csdn.net/G_eorge/article/details/51144017
+
+学习类库：
+ReactiveCocoa：http://www.jianshu.com/p/3a56d10e99a7， http://www.cnblogs.com/ludashi/p/6908859.html
+
+图层：http://www.jianshu.com/p/4e22c6ac114d
+
+
+问题： 
+导航栏设置问题：
+A 控制器为根控制器，push 到 B 控制器，B控制器的导航栏换为透明的，结果返回时 A 控制器也为透明的，若是将 B 控制器的导航栏隐藏，又会导致返回时 A 得内容会往下闪现一下。
+
+模态视图：让它像导航控制器那样推来推去，不是从底部突然的冒出来，用动画来实现
+
+Window: 的使用方法
