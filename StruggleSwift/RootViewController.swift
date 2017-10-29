@@ -69,7 +69,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         let ocChat = ChatController()
 //        let accelerometerController = AccelerometerController()
         let deviceController = DeviceViewController()
-        let testController = TestViewController()
+        let testController = TestViewControllerOne()
         let multithreadController = MultithreadingViewController()
         
         

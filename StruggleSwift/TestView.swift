@@ -6,6 +6,7 @@
 //  Copyright © 2017年 HuangGang. All rights reserved.
 //
 
+//demo: http://blog.csdn.net/minggeqingchun/article/details/54847735, 
 import UIKit
 
 class TestView: UIView {
@@ -25,7 +26,7 @@ class TestView: UIView {
     func closureCall()  {
         
         //        创建闭包按钮控件
-        self.createClosureButtonControl()
+//        self.createClosureButtonControl()
         
         //        调用函数requestData函数
         self.requestData(urlString: "http://www.baidu.com", succeed: { (data) -> (Void) in
@@ -81,7 +82,7 @@ class TestView: UIView {
     ///   - urlString: 请求接口    String
     ///   - succeed: 成功的回调  可选闭包
     ///   - failure: 失败的回调  可选闭包
-    func requestData(urlString:String,succeed: ((Any?)->(Void))?,failure:((Any?)->(Void))?){
+    func requestData(urlString:String, succeed: ((Any?)->(Void))?, failure:((Any?)->(Void))?){
         
         let request = URLRequest(url: URL(string: urlString)!);
         
@@ -106,7 +107,42 @@ class TestView: UIView {
         
     }
     
+//    MARK: - 闭包 UI 的demo
     
+//    MAKR: - 与 OC 相同的懒加载方法
+    lazy var alertWindow: UIWindow = {
+        let alertWindow = UIWindow(frame: UIScreen.main.bounds)
+//        显示优先级, 通常会有三个值, 优先级顺序为:UIWindowLevelAlert > UIWindowLevelStatusBar > UIWindowLevelNormal
+        alertWindow.windowLevel = UIWindowLevelAlert
+        alertWindow.backgroundColor = UIColor.yellow
+        alertWindow.becomeKey()
+        
+        let label = UILabel(frame: CGRect(x: 10.0, y: 10.0, width: (alertWindow.frame.width - 10.0*2.0), height: 180.0))
+        alertWindow.addSubview(label)
+        label.backgroundColor = UIColor.orange
+        label.numberOfLines = 0
+        label.font = UIFont.systemFont(ofSize: 13.0)
+        label.text = "UIWindow继承自UIView, 用来管理和协调各种视图。提供一个区域来显示视图, 将事件event分发给视图。\n每个iOS应用必须包含一个window用于展示APP的交互页面， 且一个APP通常只有一个UIWindow, 包含了APP的可视内容。\n显示优先级, 通常会有三个值, 优先级顺序为:UIWindowLevelAlert > UIWindowLevelStatusBar > UIWindowLevelNormal."
+        
+        let button = UIButton(frame: CGRect(x: alertWindow.frame.width - 10.0 - 80.0, y: label.frame.minX + label.frame.height + 10.0, width: 80.0, height: 30.0))
+        alertWindow.addSubview(button)
+        button.backgroundColor = UIColor.green
+        button.setTitle("hidden", for: .normal)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.setTitleColor(UIColor.red, for: .highlighted)
+        button.addTarget(self, action: #selector(TestView.hiddenClick), for: .touchUpInside)
+        return alertWindow
+        
+    }() //使用一个闭包来实例化该属性
+    
+    func hiddenClick()  
+    {  
+        if !(self.alertWindow.isEqual(nil))
+        {  
+            self.alertWindow.resignKey()
+            self.alertWindow.isHidden = true
+        }     
+    }  
     
     
     
