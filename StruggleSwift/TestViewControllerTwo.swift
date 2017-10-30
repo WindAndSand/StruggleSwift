@@ -11,6 +11,7 @@ import UIKit
 class TestViewControllerTwo: UIViewController {
     var textFiledWidth: Int?
     
+    var father: TestViewControllerOne!
     
     typealias titleBlock = (String) -> ()
     var block: titleBlock?
@@ -63,12 +64,15 @@ class TestViewControllerTwo: UIViewController {
     }
     
     func click(){
+        self.father.change { (label) in
+            label.text = self.textFieldOne.text
+        }
         changeTitleAndClosure?(self.textFieldOne.text!,UIColor.green)
         self.navigationController?.popViewController(animated: true)
     }
 
     func changeTestTwoController(backgroundColorOne: UIColor, changeClosureOne: ((String, UIColor) -> (Void)),title: String) {
-        changeClosureOne("self.textFieldOne.text!", UIColor.red)
+        changeClosureOne(self.textFieldOne.text!, UIColor.red)
         self.title =  title
         self.view.backgroundColor = backgroundColorOne
         print("------->多余的字符串是：\(title)")

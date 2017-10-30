@@ -29,17 +29,31 @@ class TestViewControllerOne: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 
         let VC = TestViewControllerTwo()
+        VC.father = self
         VC.getBlock(block: { (value) in
             self.title = value
         })
-        VC.changeTestTwoController(backgroundColorOne: UIColor.groupTableViewBackground, changeClosureOne: { (labelOne, backgroundColorOne) -> (Void) in
-            self.labelText.text = labelOne
-            self.labelText.backgroundColor = backgroundColorOne
-        }, title: "TestViewControllerTwo")
+//        VC.changeTestTwoController(backgroundColorOne: UIColor.groupTableViewBackground, changeClosureOne: { (labelOne, backgroundColorOne) -> (Void) in
+//            self.labelText.text = labelOne
+//            self.labelText.backgroundColor = backgroundColorOne
+//        }, title: "TestViewControllerTwo")
+        
         
         self.navigationController?.pushViewController(VC, animated: true)
     }
     
+    func changeTestTwoController(backgroundColorOne: UIColor, changeClosureOne: ((UILabel, UIColor) -> (Void)),title: String) {
+        changeClosureOne(self.labelText, self.labelText.backgroundColor!)
+        self.title =  title
+        self.view.backgroundColor = backgroundColorOne
+        print("------->多余的字符串是：\(title)")
+    }
+    
+    
+    func change(block: (UILabel)->()) {
+        block(self.labelText)
+//        self.labelText.text = text
+    }
     
 //    MARK: - 创建闭包View
     func createClourseView(){
