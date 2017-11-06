@@ -16,8 +16,10 @@ class TestViewControllerTwo: UIViewController {
     typealias titleBlock = (String) -> ()
     var block: titleBlock?
     
-    var changeTitleAndClosure: ((_ title: String, _ color: UIColor) -> Void)?
-    
+//    传值的页面 定义
+    typealias labelClosure = ((_ title: String, _ color: UIColor) -> Void)?
+//    生成
+//    var changeTitleAndClosure: labelClosure
     
     
 //    var myFunc = changeLastVcBacgroundColor?()
@@ -67,16 +69,22 @@ class TestViewControllerTwo: UIViewController {
         self.father.change { (label) in
             label.text = self.textFieldOne.text
         }
-        changeTitleAndClosure?(self.textFieldOne.text!,UIColor.green)
+//        changeTitleAndClosure?(self.textFieldOne.text!,UIColor.green)
         self.navigationController?.popViewController(animated: true)
     }
 
     func changeTestTwoController(backgroundColorOne: UIColor, changeClosureOne: ((String, UIColor) -> (Void)),title: String) {
-        changeClosureOne(self.textFieldOne.text!, UIColor.red)
+        changeClosureOne("self.textFieldOne.text!", UIColor.red)
         self.title =  title
         self.view.backgroundColor = backgroundColorOne
         print("------->多余的字符串是：\(title)")
     }
+    
+//    func changeLabelContent(backgroundColorTwo: UIColor, labelStyleClosure: changeTitleAndClosure, title: String) {
+//        labelStyleClosure(self.textField.text, UIColor.blue)
+//        backgroundColorTwo = UIColor.red
+//        title = "************"
+//    }
     
 //    MARK: - 懒加载
     fileprivate lazy var textField: UITextField = {

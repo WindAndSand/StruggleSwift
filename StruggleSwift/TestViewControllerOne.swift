@@ -7,6 +7,8 @@
 //
 
 import UIKit
+//Block传值，需要注意的是，谁传值就需要定义Block，捕获方仅仅需要传递Block给传值方，并处理捕获的值。
+
 
 class TestViewControllerOne: UIViewController {
 
@@ -33,10 +35,10 @@ class TestViewControllerOne: UIViewController {
         VC.getBlock(block: { (value) in
             self.title = value
         })
-//        VC.changeTestTwoController(backgroundColorOne: UIColor.groupTableViewBackground, changeClosureOne: { (labelOne, backgroundColorOne) -> (Void) in
-//            self.labelText.text = labelOne
-//            self.labelText.backgroundColor = backgroundColorOne
-//        }, title: "TestViewControllerTwo")
+        VC.changeTestTwoController(backgroundColorOne: UIColor.groupTableViewBackground, changeClosureOne: { (labelOne, backgroundColorOne) -> (Void) in
+            self.labelText.text = labelOne
+            self.labelText.backgroundColor = backgroundColorOne
+        }, title: "TestViewControllerTwo")
         
         
         self.navigationController?.pushViewController(VC, animated: true)

@@ -23,3 +23,9 @@ A 控制器为根控制器，push 到 B 控制器，B控制器的导航栏换为
 Window: 的使用方法
 
 安全码关闭时，获得关闭状态，除了用通知怎么用 block来实现
+
+看代码：看 Mata内部如何发送消息、视频等。
+
+学习NSFetchRequest：http://www.jianshu.com/p/898ea688128f
+
+学习：ReactiveSwift 类库，APNS(苹果的远程推送)
