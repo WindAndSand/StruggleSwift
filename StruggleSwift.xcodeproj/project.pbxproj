@@ -48,6 +48,7 @@
 		01F64D491F3FE2E0004F8B2C /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D481F3FE2E0004F8B2C /* TestView.m */; };
 		01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D4E1F405159004F8B2C /* TheBasics.swift */; };
 		01F64D531F4082E7004F8B2C /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F64D521F4082E7004F8B2C /* Closures.swift */; };
+		01F65FD41FB158C200FBCAB7 /* LXDDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F65FD31FB158C200FBCAB7 /* LXDDownloadManager.m */; };
 		01F70F3D1F540C75007FD5D4 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3C1F540C75007FD5D4 /* ChatController.m */; };
 		01F70F401F540F0B007FD5D4 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3F1F540F0B007FD5D4 /* ChatCell.m */; };
 		01FCF78D1F64010F00A09EFB /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF7891F64010F00A09EFB /* clock.png */; };
@@ -132,6 +133,8 @@
 		01F64D481F3FE2E0004F8B2C /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		01F64D4E1F405159004F8B2C /* TheBasics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheBasics.swift; sourceTree = "<group>"; };
 		01F64D521F4082E7004F8B2C /* Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		01F65FD21FB158C200FBCAB7 /* LXDDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXDDownloadManager.h; sourceTree = "<group>"; };
+		01F65FD31FB158C200FBCAB7 /* LXDDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXDDownloadManager.m; sourceTree = "<group>"; };
 		01F70F3B1F540C75007FD5D4 /* ChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
 		01F70F3C1F540C75007FD5D4 /* ChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
 		01F70F3E1F540F0B007FD5D4 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
@@ -217,6 +220,8 @@
 				012E1F681FB060C500901E7B /* FunctionTestOneController.m */,
 				012E1F6A1FB0614E00901E7B /* FunctionTestTwoController.h */,
 				012E1F6B1FB0614E00901E7B /* FunctionTestTwoController.m */,
+				01F65FD21FB158C200FBCAB7 /* LXDDownloadManager.h */,
+				01F65FD31FB158C200FBCAB7 /* LXDDownloadManager.m */,
 			);
 			name = "通信方式";
 			sourceTree = "<group>";
@@ -621,6 +626,7 @@
 				01EB1E471F4856E500418E37 /* Enumeration.swift in Sources */,
 				015522921F45CE7700C16EA0 /* BaseController.swift in Sources */,
 				01EB03161F52954000D09709 /* Generics.swift in Sources */,
+				01F65FD41FB158C200FBCAB7 /* LXDDownloadManager.m in Sources */,
 				01F134D21F59567400EFA4D3 /* PersonalCollectionController.swift in Sources */,
 				01EB03101F51285900D09709 /* Initialization.swift in Sources */,
 				010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */,

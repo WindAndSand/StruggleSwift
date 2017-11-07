@@ -18,7 +18,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     private var controllers = [UIViewController]()
-    private var controllerTitles = ["Snapkit 约束", "setLayoutNeeds", "Swift 基础","OC 版chatCell", "视频播放","个人收藏","核心动画", "设备信息", "通信方式", "多线程"]
+    private var controllerTitles = ["Snapkit 约束", "setLayoutNeeds", "Swift 基础","OC 版chatCell", "视频播放","个人收藏","核心动画", "设备信息", "通信方式", "OC 测试", "多线程"]
     
     private var _controllerTitles = [String]()
 //    var _name: String?
@@ -71,6 +71,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         let deviceController = DeviceViewController()
         let testController = TestViewControllerOne()
         let multithreadController = MultithreadingViewController()
+        let functionTestOneController = FunctionTestOneController();
         
         
         controllers.append(viewController)
@@ -83,6 +84,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
 //        controllers.append(accelerometerController)
         controllers.append(deviceController)
         controllers.append(testController)
+        controllers.append(functionTestOneController)
         controllers.append(multithreadController)
         
         
