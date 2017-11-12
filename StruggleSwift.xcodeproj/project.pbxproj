@@ -16,6 +16,7 @@
 		015522921F45CE7700C16EA0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015522911F45CE7700C16EA0 /* BaseController.swift */; };
 		01792CEF1F4DC164003B22F9 /* ARC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01792CEE1F4DC164003B22F9 /* ARC.swift */; };
 		01B31D651F555CEA005FC314 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B31D641F555CEA005FC314 /* VideoController.swift */; };
+		01E0CCE91FB8304A00355856 /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0CCE81FB8304A00355856 /* NetRequest.m */; };
 		01EA0C181F9360BE00FAA1CD /* TestViewControllerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA0C171F9360BE00FAA1CD /* TestViewControllerOne.swift */; };
 		01EA0C1A1F93610100FAA1CD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA0C191F93610100FAA1CD /* TestView.swift */; };
 		01EA42BD1F60E7CA00EE9F8D /* jigsaw.png in Resources */ = {isa = PBXBuildFile; fileRef = 01EA42BC1F60E7CA00EE9F8D /* jigsaw.png */; };
@@ -90,6 +91,8 @@
 		015522911F45CE7700C16EA0 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		01792CEE1F4DC164003B22F9 /* ARC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
 		01B31D641F555CEA005FC314 /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		01E0CCE71FB8304A00355856 /* NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
+		01E0CCE81FB8304A00355856 /* NetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
 		01EA0C171F9360BE00FAA1CD /* TestViewControllerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerOne.swift; sourceTree = "<group>"; };
 		01EA0C191F93610100FAA1CD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		01EA42BC1F60E7CA00EE9F8D /* jigsaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jigsaw.png; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 				012E1F6B1FB0614E00901E7B /* FunctionTestTwoController.m */,
 				01F65FD21FB158C200FBCAB7 /* LXDDownloadManager.h */,
 				01F65FD31FB158C200FBCAB7 /* LXDDownloadManager.m */,
+				01E0CCE71FB8304A00355856 /* NetRequest.h */,
+				01E0CCE81FB8304A00355856 /* NetRequest.m */,
 			);
 			name = "通信方式";
 			sourceTree = "<group>";
@@ -637,6 +642,7 @@
 				01F64D491F3FE2E0004F8B2C /* TestView.m in Sources */,
 				01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */,
 				01F70F3D1F540C75007FD5D4 /* ChatController.m in Sources */,
+				01E0CCE91FB8304A00355856 /* NetRequest.m in Sources */,
 				01EC96C01F93A7F900BD22FC /* MultithreadingViewController.swift in Sources */,
 				013788691FA5A91400D08BF5 /* TestViewControllerTwo.swift in Sources */,
 				015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */,

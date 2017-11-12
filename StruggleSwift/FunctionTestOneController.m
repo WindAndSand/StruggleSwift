@@ -10,6 +10,7 @@
 #import "FunctionTestOneController.h"
 #import "FunctionTestTwoController.h"
 #import "LXDDownloadManager.h"
+#import "NetRequest.h"
 
 #define QQMUSICURL @"https://www.baidu.com/link?url=UTiLwaXdh_-UZG31tkXPU62Jtsg2mSbZgSPSR3ME3YwOBSe97Hw6U6DNceQ2Ln1vXnb2krx0ezIuziBIuL4fWNi3dZ02t2NdN6946XwN0-a&wd=&eqid=ce6864b50004af120000000656fe235f"
 
@@ -25,6 +26,8 @@
 
 @property(nonatomic, retain)UIButton *btnOne;
 @property(nonatomic, retain)UILabel *labelOne;
+
+@property(nonatomic, retain) NSMutableArray *array;
 
 @end
 
@@ -43,14 +46,16 @@
     
     
     [self addControlsInTheView];
-//    [[LXDDownloadManager alloc] downloadWithURL: QQMUSICURL parameters: nil handler: ^(NSData * receiveData, NSError * error) {
-//        if (error) { NSLog(@"下载失败：%@", error); }
-//        else {
-//            //处理下载数据
-//        }
-//    } progress: ^(CGFloat progress) {
-//        NSLog(@"下载进度%lu%%", progress*100);
-//    }];
+    [[LXDDownloadManager alloc] downloadWithURL: QQMUSICURL parameters: nil handler: ^(NSData * receiveData, NSError * error) {
+        if (error) { NSLog(@"下载失败：%@", error); }
+        else {
+            //处理下载数据
+        }
+    } progress: ^(CGFloat progress) {
+        NSLog(@"下载进度%f%%", progress*100);
+    }];
+    
+    [self getDataFromNetRequest];
 }
 
 - (void)addControlsInTheView{
@@ -61,6 +66,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+//#pragma mark - 获取 NetRequest 的数据
+- (void)getDataFromNetRequest {
+    self.array = [NSMutableArray array];
+    self.title = @"新闻";
+    NSString *urlStr = @"http://ipad-bjwb.bjd.com.cn/DigitalPublication/publish/Handler/APINewsList.ashx";
+    NSString *bodyStr = @"date=20131129&startRecord=1&len=30&udid=1234567890&terminalType=Iphone&cid=213";
+    [NetRequest PostWithUrl:urlStr BodyOfRequestForString:bodyStr block:^(id result) {
+        self.array = [result objectForKey:@"news"];
+        
+    }];
 }
 
 - (UIButton *)btnOne{

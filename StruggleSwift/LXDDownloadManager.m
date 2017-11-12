@@ -7,7 +7,6 @@
 //
 
 #import "LXDDownloadManager.h"
-
 @implementation LXDDownloadManager
 {
     LXDDownloadProgressHandler _progress;
@@ -30,13 +29,17 @@
     [task resume];
 }
 
-- (NSURLRequest *)postRequestWithURL:(NSString *)urlString params:(NSString *)paramsString{
+- (NSURLRequest *)postRequestWithURL:(NSString *)urlString params:(NSDictionary *)paramsString{
     
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
     [request setHTTPMethod:@"POST"];
-    request.HTTPBody = [paramsString dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *name = [paramsString objectForKey: @"uname"];
+    NSString *upas = [paramsString objectForKey: @"upas"];
+//    设置要提交的参数
+    NSString *args=[NSString stringWithFormat:@"uname=%@&upas=%@&btn=login", name, upas];
+    request.HTTPBody = [args dataUsingEncoding:NSUTF8StringEncoding];
     
     [request setTimeoutInterval:10];
     
@@ -61,4 +64,9 @@
     double downloadProgress = totalBytesWritten / (double)totalBytesExpectedToWrite;
     if (_progress) { _progress(downloadProgress); }
 }
+
+- (void)URLSession:(nonnull NSURLSession *)session downloadTask:(nonnull NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(nonnull NSURL *)location {
+    
+}
+
 @end
