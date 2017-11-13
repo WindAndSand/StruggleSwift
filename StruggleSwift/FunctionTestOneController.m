@@ -56,11 +56,14 @@
     }];
     
     [self getDataFromNetRequest];
+    
+    [self compareAlertViewAndActionSheet];
 }
 
 - (void)addControlsInTheView{
     [self.view addSubview:self.btnOne];
     [self.view addSubview:self.labelOne];
+    [self.view addSubview:[self btnTwo]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -91,6 +94,15 @@
     return _btnOne;
 }
 
+- (UIButton *)btnTwo{
+    UIButton *tempBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    tempBtn.frame = CGRectMake(self.btnX,100 + self.btnHeight, self.btnWidth, self.btnHeight);
+    [tempBtn setTitle:@"点我创建一个window" forState:UIControlStateNormal];
+    // 通过按钮的点击事件生成不同windowLevel级别的window
+    [tempBtn addTarget:self action:@selector(createUIWindow) forControlEvents:UIControlEventTouchUpInside];
+    return  tempBtn;
+}
+
 - (UILabel *)labelOne{
     if (!_labelOne) {
         _labelOne = [[UILabel alloc] initWithFrame:CGRectMake(self.labelX, 74, self.labelWidth, self.labelHeight)];
@@ -113,14 +125,53 @@
     [self.navigationController pushViewController:fttc animated:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+# pragma  mark - useAndLearnUIWindow
+- (void)compareAlertViewAndActionSheet {
+//    根据window显示级别优先的原则，级别高的会显示在上面，级别低的在下面，我们程序正常显示的view位于最底层
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert View" message:@"Hello Wolrd, i'm AlertView!!!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:@"Cancel", nil];
+    
+    [alertView show];
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"ActionSheet" delegate:nil cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Don't do that!" otherButtonTitles:@"Hello Wolrd", nil];
+    
+    [actionSheet showInView:self.view];
+    
+  
 }
-*/
+
+- (void)createUIWindow {
+    // 创建window
+    if (self.myWindow1 == nil) {
+        
+        NSString *iOS9 = [UIDevice currentDevice].systemVersion;
+        if (iOS9.doubleValue >= 9.0) {//>=iOS9
+            self.myWindow1 =  [UIWindow new]; // 以后 默认了 window的大小
+        } else {
+            self.myWindow1 =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];//这么写在哪个版本系统上，一点毛病都没有
+        }
+        
+        UIButton *windowBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [windowBtn setTitle:@"点我 销毁黄色 window" forState:UIControlStateNormal];
+        windowBtn.backgroundColor = [UIColor redColor];
+        windowBtn.frame = CGRectMake(15, 64, self.view.frame.size.width - 15 * 2, 64);
+        [windowBtn addTarget:self action:@selector(clickWindowBtn:) forControlEvents:UIControlEventTouchUpInside];
+        [self.myWindow1 addSubview:windowBtn];
+        
+    }
+    // 设置window的颜色，这里设置成黄色，方便查看window的层级关系
+    self.myWindow1.backgroundColor = [UIColor yellowColor];
+    // 设置 window 的 windowLevel
+    self.myWindow1.windowLevel = UIWindowLevelStatusBar; //TODO: Normal，StatusBar，Alert 分别 为 0，1000，2000 可以修改这里体验 层级变化 对 展示 window的影响
+    self.myWindow1.hidden = NO;
+    [self.myWindow1  makeKeyAndVisible]; //成为keyWindow
+}
+
+- (void)clickWindowBtn:(id)sender
+{
+    //window 销毁
+    self.myWindow1.hidden = YES; //可有可无 看 UI效果
+    self.myWindow1 = nil; // 这个方法是真正移除 UIWindow
+}
 
 @end

@@ -25,11 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootVC = RootViewController()
         let nav = UINavigationController.init(rootViewController: rootVC)
         self.window?.rootViewController = nav
-        self.window?.makeKeyAndVisible()
-        
-        
+        self.window?.backgroundColor = UIColor.red
+        self.window?.makeKeyAndVisible()    //让窗口成为主窗口，并且显示出来, [self.window makeKeyWindow];//让UIWindow成为主窗口
+                
         return true
     }
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

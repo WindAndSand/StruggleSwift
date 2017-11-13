@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FunctionTestOneController : UIViewController
+// 创建属性
+@property (nonatomic, strong)UIWindow *myWindow1;
 
 @end
