@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010126B51F90B91100BAC6C4 /* DeviceViewController.swift */; };
 		01035E0C1F6783F100AD94A0 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 01035E0B1F6783F100AD94A0 /* bubble.png */; };
+		0103A37D1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103A37C1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift */; };
 		012E1F691FB060C500901E7B /* FunctionTestOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E1F681FB060C500901E7B /* FunctionTestOneController.m */; };
 		012E1F6C1FB0614E00901E7B /* FunctionTestTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E1F6B1FB0614E00901E7B /* FunctionTestTwoController.m */; };
 		013788691FA5A91400D08BF5 /* TestViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013788681FA5A91400D08BF5 /* TestViewControllerTwo.swift */; };
@@ -82,6 +83,7 @@
 /* Begin PBXFileReference section */
 		010126B51F90B91100BAC6C4 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		01035E0B1F6783F100AD94A0 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		0103A37C1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveSwiftViewController.swift; sourceTree = "<group>"; };
 		012E1F671FB060C500901E7B /* FunctionTestOneController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionTestOneController.h; sourceTree = "<group>"; };
 		012E1F681FB060C500901E7B /* FunctionTestOneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionTestOneController.m; sourceTree = "<group>"; };
 		012E1F6A1FB0614E00901E7B /* FunctionTestTwoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionTestTwoController.h; sourceTree = "<group>"; };
@@ -188,6 +190,14 @@
 			name = "iOS 设备";
 			sourceTree = "<group>";
 		};
+		0103A37B1FCDBCDA00EBB28A /* 类库练习 */ = {
+			isa = PBXGroup;
+			children = (
+				0103A37C1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift */,
+			);
+			name = "类库练习";
+			sourceTree = "<group>";
+		};
 		01606EEA1F7F781200CCC7E2 /* 二维码识别 */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +269,7 @@
 			children = (
 				01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */,
 				01EA73841F3D4D41003A92F6 /* RootViewController.swift */,
+				0103A37B1FCDBCDA00EBB28A /* 类库练习 */,
 				01F64D421F3FDF57004F8B2C /* 约束 */,
 				01F64D431F3FDF70004F8B2C /* LayoutIfNeeds */,
 				01F64D4B1F40503B004F8B2C /* Swift基础 */,
@@ -650,6 +661,7 @@
 				01F70F401F540F0B007FD5D4 /* ChatCell.m in Sources */,
 				01EB1E431F47F6A600418E37 /* Methods.swift in Sources */,
 				01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */,
+				0103A37D1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift in Sources */,
 				01EECA9D1F5DA539006E3F16 /* DownloadVideoController.swift in Sources */,
 				01B31D651F555CEA005FC314 /* VideoController.swift in Sources */,
 				01EB1E401F474E0100418E37 /* Properties.swift in Sources */,

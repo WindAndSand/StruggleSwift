@@ -1,3 +1,9 @@
+Mata 看代码：
+①气泡如何观察未读和已读消息的更新；
+②消息的发送，网络传值；
+③会话中如何请求网络数据，和吧历史消息的存储；
+④未打扰消息如何存入数据库，及数据库的存值和取值
+
 CALayer 学习：http://blog.csdn.net/livesxu/article/details/50538606， http://www.cocoachina.com/ios/20161014/17747.html,
 
 Snapkit 约束变量： http://blog.csdn.net/woaifen3344/article/details/50114451
@@ -28,5 +34,22 @@ Window: 的使用方法
 
 学习NSFetchRequest：http://www.jianshu.com/p/898ea688128f
 
-学习：ReactiveSwift 类库，APNS(苹果的远程推送)
+学习：ReactiveSwift 类库:https://www.cnblogs.com/zhangjie579/p/6636159.html 今晚回去要看完
+APNS(苹果的远程推送):
+
+网络请求：http://www.jianshu.com/p/5d4789db4310
+
+内存管理：http://www.cnblogs.com/zhengyc/p/4979066.html
+
+要学的知识：
+学习掌握：Keychain存储，知识点有：http://www.jianshu.com/search?q=kSecAttrService&page=1&type=note
+kSecClass：http://www.jianshu.com/p/17a0aefea14b
+kSecAttrAccount：
+kSecAttrService：
+kSecReturnAttributes：
+kSecClassGenericPassword：https://www.baidu.com/s?wd=kSecClassGenericPassword&tn=84053098_3_dg&ie=utf-8
+
+6种传值方式：https://segmentfault.com/a/1190000004516318
+
+
 

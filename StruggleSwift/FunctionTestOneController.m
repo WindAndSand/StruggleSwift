@@ -44,6 +44,7 @@
     self.btnWidth = 88;
     self.btnHeight = 30;
     
+    [self sortNumber];
     
     [self addControlsInTheView];
     [[LXDDownloadManager alloc] downloadWithURL: QQMUSICURL parameters: nil handler: ^(NSData * receiveData, NSError * error) {
@@ -58,12 +59,53 @@
     [self getDataFromNetRequest];
     
     [self compareAlertViewAndActionSheet];
+    
+    [self createUITextView];
 }
 
 - (void)addControlsInTheView{
     [self.view addSubview:self.btnOne];
     [self.view addSubview:self.labelOne];
     [self.view addSubview:[self btnTwo]];
+}
+
+- (void)sortNumber {
+    NSMutableArray *ma = [NSMutableArray arrayWithArray:@[@1, @2, @3, @2, @1, @4, @5]];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:16];
+    NSMutableIndexSet *removeSet = [NSMutableIndexSet indexSet];
+    int index = 0;
+    
+    for(id obj in ma)
+    {
+        NSLog(@"obj:%@, dict[%@]=%@",obj, obj, dict[obj]);
+        if(dict[obj] == nil)
+            dict[obj] = @YES;
+        else
+            [removeSet addIndex:index];
+        
+        index++;
+    }
+    
+    [ma removeObjectsAtIndexes:removeSet];
+    
+    NSLog(@"after remove: %@", ma);
+}
+
+- (void)createUITextView{
+    //初始化
+    UITextView *textview = [[UITextView alloc] initWithFrame:CGRectMake(20, 10, 280, 30)];
+    textview.backgroundColor=[UIColor whiteColor];
+    textview.scrollEnabled = NO;    //当文字超过视图的边框时是否允许滑动，默认为“YES”
+    textview.editable = YES;        //是否允许编辑内容，默认为“YES”
+    textview.delegate = self;       //设置代理方法的类给予
+    textview.font=[UIFont fontWithName:@"Arial" size:18.0]; //设置字体与大小;
+    textview.returnKeyType = UIReturnKeyDefault;//return键的类型
+    textview.keyboardType = UIKeyboardTypeDefault;//键盘类型
+    textview.textAlignment = NSTextAlignmentLeft; //文字的显示
+    textview.dataDetectorTypes = UIDataDetectorTypeAll; //显示数据类型的连接模式（如电话号码、网址、地址等）
+    textview.textColor = [UIColor blackColor];//文字颜色
+    textview.text = @"UITextView详解";//文本内容
+    [self.view addSubview:textview];//添加
 }
 
 - (void)didReceiveMemoryWarning {
