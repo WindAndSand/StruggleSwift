@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootVC = RootViewController()
         let nav = UINavigationController.init(rootViewController: rootVC)
         self.window?.rootViewController = nav
-        self.window?.backgroundColor = UIColor.red
         self.window?.makeKeyAndVisible()    //让窗口成为主窗口，并且显示出来, [self.window makeKeyWindow];//让UIWindow成为主窗口
                 
         return true
