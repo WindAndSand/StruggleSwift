@@ -1,8 +1,10 @@
 Mata 看代码：
 ①气泡如何观察未读和已读消息的更新；
 ②消息的发送，网络传值；
-③会话中如何请求网络数据，和吧历史消息的存储；
+③会话中如何请求网络数据，和历史消息的存储；
 ④未打扰消息如何存入数据库，及数据库的存值和取值
+
+增大点击区域，例如button
 
 CALayer 学习：http://blog.csdn.net/livesxu/article/details/50538606， http://www.cocoachina.com/ios/20161014/17747.html,
 
@@ -21,18 +23,25 @@ ReactiveCocoa：http://www.jianshu.com/p/3a56d10e99a7， http://www.cnblogs.com/
 
 
 问题： 
-导航栏设置问题：
+①.导航栏设置问题：
 A 控制器为根控制器，push 到 B 控制器，B控制器的导航栏换为透明的，结果返回时 A 控制器也为透明的，若是将 B 控制器的导航栏隐藏，又会导致返回时 A 得内容会往下闪现一下。
 
-模态视图：让它像导航控制器那样推来推去，不是从底部突然的冒出来，用动画来实现
+②. 模态视图：让它像导航控制器那样推来推去，不是从底部突然的冒出来，用动画来实现
 
-Window: 的使用方法
+③. Window: 的使用方法
+
 
 安全码关闭时，获得关闭状态，除了用通知怎么用 block来实现
 
 看代码：看 Mata内部如何发送消息、视频等。
 
-学习NSFetchRequest：http://www.jianshu.com/p/898ea688128f
+Core Data基础概念：
+①. 基础：http://blog.sina.com.cn/s/blog_53e8860a0100q2u6.html
+②. 学习NSFetchRequest：http://www.jianshu.com/p/898ea688128f
+
+怎样避免强制解包
+
+正则表达式的写法训练:
 
 学习：ReactiveSwift 类库:https://www.cnblogs.com/zhangjie579/p/6636159.html 今晚回去要看完
 APNS(苹果的远程推送):
@@ -49,7 +58,17 @@ kSecAttrService：
 kSecReturnAttributes：
 kSecClassGenericPassword：https://www.baidu.com/s?wd=kSecClassGenericPassword&tn=84053098_3_dg&ie=utf-8
 
+NSPredicate
+
 6种传值方式：https://segmentfault.com/a/1190000004516318
+
+控件：
+UISegmentedControl:
+UITextField： ①placeholder 居于左上角
+
+UIControl的基本用法：http://www.cocoachina.com/ios/20160111/14932.html
+抗拉伸和抗压缩：http://www.jianshu.com/p/5cf559435eb9
+
 
 
 

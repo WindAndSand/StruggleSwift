@@ -53,6 +53,7 @@
 		01F65FD41FB158C200FBCAB7 /* LXDDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F65FD31FB158C200FBCAB7 /* LXDDownloadManager.m */; };
 		01F70F3D1F540C75007FD5D4 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3C1F540C75007FD5D4 /* ChatController.m */; };
 		01F70F401F540F0B007FD5D4 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3F1F540F0B007FD5D4 /* ChatCell.m */; };
+		01FC20901FDBE196008FA532 /* MacroDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC208F1FDBE196008FA532 /* MacroDefinition.swift */; };
 		01FCF78D1F64010F00A09EFB /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF7891F64010F00A09EFB /* clock.png */; };
 		01FCF78E1F64010F00A09EFB /* hour.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF78A1F64010F00A09EFB /* hour.png */; };
 		01FCF78F1F64010F00A09EFB /* minute.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FCF78B1F64010F00A09EFB /* minute.png */; };
@@ -144,6 +145,7 @@
 		01F70F3C1F540C75007FD5D4 /* ChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
 		01F70F3E1F540F0B007FD5D4 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
 		01F70F3F1F540F0B007FD5D4 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		01FC208F1FDBE196008FA532 /* MacroDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroDefinition.swift; sourceTree = "<group>"; };
 		01FCF7891F64010F00A09EFB /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		01FCF78A1F64010F00A09EFB /* hour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hour.png; sourceTree = "<group>"; };
 		01FCF78B1F64010F00A09EFB /* minute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minute.png; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 		01EA73511F3D4B5E003A92F6 /* StruggleSwift */ = {
 			isa = PBXGroup;
 			children = (
+				01FC208F1FDBE196008FA532 /* MacroDefinition.swift */,
 				01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */,
 				01EA73841F3D4D41003A92F6 /* RootViewController.swift */,
 				0103A37B1FCDBCDA00EBB28A /* 类库练习 */,
@@ -663,6 +666,7 @@
 				01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */,
 				0103A37D1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift in Sources */,
 				01EECA9D1F5DA539006E3F16 /* DownloadVideoController.swift in Sources */,
+				01FC20901FDBE196008FA532 /* MacroDefinition.swift in Sources */,
 				01B31D651F555CEA005FC314 /* VideoController.swift in Sources */,
 				01EB1E401F474E0100418E37 /* Properties.swift in Sources */,
 				012E1F6C1FB0614E00901E7B /* FunctionTestTwoController.m in Sources */,
