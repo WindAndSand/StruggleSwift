@@ -35,6 +35,7 @@
     alertView.delegate = self;
     
     [alertView show];
+    [self createTextView];
     
     
 //  1、init初始化不会触发layoutSubviews [正确的]
@@ -58,6 +59,36 @@
 //    [self test_5];
     
     
+}
+
+
+- (void)createTextView {
+    UITextView *contentTextView = [[UITextView alloc] initWithFrame:CGRectMake(10, 300, 300, 60)];
+    contentTextView.layer.cornerRadius = 6;
+    contentTextView.layer.borderWidth = 0.6;
+    contentTextView.layer.borderColor = [UIColor grayColor].CGColor;
+    contentTextView.layer.masksToBounds = YES;
+    contentTextView.font = [UIFont systemFontOfSize:13];
+    //调用私有方法
+    [self setPlaceholder:@"这是placeholder文字..." placeholdColor:[UIColor lightGrayColor] textView: contentTextView];
+    [self.view addSubview:contentTextView];
+}
+
+-(void)setPlaceholder:(NSString *)placeholdStr placeholdColor:(UIColor *)placeholdColor  textView:(UITextView *)textView
+{
+    UILabel *placeHolderLabel = [[UILabel alloc] init];
+    placeHolderLabel.text = placeholdStr;
+    placeHolderLabel.numberOfLines = 0;
+    placeHolderLabel.textColor = placeholdColor;
+    placeHolderLabel.font = textView.font;
+    [placeHolderLabel sizeToFit];
+    [textView addSubview:placeHolderLabel];
+    
+    /*
+     [self setValue:(nullable id) forKey:(nonnull NSString *)]
+     ps: KVC键值编码，对UITextView的私有属性进行修改
+     */
+    [textView setValue:placeHolderLabel forKey:@"_placeholderLabel"];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{

@@ -14,10 +14,8 @@ Git学习：
 1.《简书》：http://www.jianshu.com/p/561a4fec4a96
 只要不把修改内容加入暂存区，就可以不停地切换分支吗？
 
-导航控制器的translucent：http://blog.csdn.net/G_eorge/article/details/51144017
 
 学习类库：
-ReactiveCocoa：http://www.jianshu.com/p/3a56d10e99a7， http://www.cnblogs.com/ludashi/p/6908859.html
 
 图层：http://www.jianshu.com/p/4e22c6ac114d
 
@@ -27,6 +25,7 @@ ReactiveCocoa：http://www.jianshu.com/p/3a56d10e99a7， http://www.cnblogs.com/
 A 控制器为根控制器，push 到 B 控制器，B控制器的导航栏换为透明的，结果返回时 A 控制器也为透明的，若是将 B 控制器的导航栏隐藏，又会导致返回时 A 得内容会往下闪现一下。
 
 ②. 模态视图：让它像导航控制器那样推来推去，不是从底部突然的冒出来，用动画来实现
+③NavigationController的 navigationBar隐藏，但是leftBarItem不隐藏
 
 
 
@@ -38,9 +37,9 @@ Core Data基础概念：
 ①. 基础：http://blog.sina.com.cn/s/blog_53e8860a0100q2u6.html
 ②. 学习NSFetchRequest：http://www.jianshu.com/p/898ea688128f
 
-怎样避免强制解包
+怎样避免强制解包: 申明一个可选变量，避免它强制解包
 
-正则表达式的写法训练:
+正则表达式的写法训练:http://www.jianshu.com/p/ea10003d224a
 
 学习：ReactiveSwift 类库:https://www.cnblogs.com/zhangjie579/p/6636159.html 今晚回去要看完
 APNS(苹果的远程推送):
@@ -67,6 +66,12 @@ UITextField： ①placeholder 居于左上角
 
 UIControl的基本用法：http://www.cocoachina.com/ios/20160111/14932.html
 抗拉伸和抗压缩：http://www.jianshu.com/p/5cf559435eb9
+
+学习的内容： 
+iPhone屏幕尺寸关系： 学习正则表达式
+元组的使用： 元组的申明，赋值，传值
+ReactiveSwift源码详解: https://www.cnblogs.com/ludashi/p/7026676.html?utm_source=itdadao&utm_medium=referral, http://www.jianshu.com/p/7a805e04916b
+
 
 
 
