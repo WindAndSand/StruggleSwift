@@ -108,6 +108,15 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        let jsonPare = JSONParse()
+        jsonPare.pareJSONOne()
+        jsonPare.pareJSONTwo()
+        jsonPare.pareJSONFour()
+        jsonPare.pareJSONFive()
+        jsonPare.pareJSONSeven()
+    }
+    
 //    MARK: - TableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int
     {
