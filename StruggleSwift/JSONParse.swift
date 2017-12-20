@@ -197,5 +197,48 @@ class JSONParse: NSObject, Codable {
         }
     }
     
+    func nativeJSONParsing() {
+        print("---------------------------将对象转成json字符串，再转回来----------------------------")
+        let user:[String: Any] = [
+            "uname": "张三",
+            "tel": ["mobile": "138", "home": "010"]
+        ]
+        
+//      首先判断能不能转换
+        if (!JSONSerialization.isValidJSONObject(user)) {
+            print("is not a valid json object")
+            return
+        }
+//        利用自带的json库转换成Data
+//        设置options为JSONSerialization.WritingOptions.prettyPrinted，则打印格式更好阅读
+        let data = try? JSONSerialization.data(withJSONObject: user, options: [])
+//        Data转换成String打印输出
+        let str = String(data:data!, encoding: String.Encoding.utf8)
+        print("Json Str:"); print(str ?? "json ERROR")
+        
+//        把Data对象转换回JSON对象
+        let json = try? JSONSerialization.jsonObject(with: data!,
+                                                     options:.allowFragments) as! [String: Any]
+        print("Json Object:", json ?? "json ERROR")
+        
+        let uname = json?["uname"]
+        let mobile = (json?["tel"] as! [String: Any])["mobile"]
+        print("get Json Object:","uname: \(String(describing: uname)), mobile: \(mobile)")
+
+        print("---------------------------解析json字符串----------------------------")
+        let string = "[{\"ID\":1,\"Name\":\"元台禅寺\",\"LineID\":1},{\"ID\":2,\"Name\":\"田坞里山塘\",\"LineID\":1},{\"ID\":3,\"Name\":\"滴水石\",\"LineID\":1}]"
+        let data1 = string.data(using: String.Encoding.utf8)
+        
+        let jsonArr = try! JSONSerialization.jsonObject(with: data1!,
+                                                        options: JSONSerialization.ReadingOptions.mutableContainers) as! [[String: Any]]
+        
+        print("记录数：\(jsonArr.count)")
+        for json in jsonArr {
+            print("ID：", json["ID"]!, "    Name：", json["Name"]!)
+        }
+        
+
+    }
+    
     
 }

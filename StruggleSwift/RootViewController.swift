@@ -115,6 +115,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         jsonPare.pareJSONFour()
         jsonPare.pareJSONFive()
         jsonPare.pareJSONSeven()
+        jsonPare.nativeJSONParsing()
     }
     
 //    MARK: - TableViewDataSource
