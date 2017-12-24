@@ -10,4 +10,8 @@
 
 @interface SSKeyChain : NSObject
 
++ (void)save:(NSString *)service data:(id)data;
++ (id)load:(NSString *)service;
++ (void)delete:(NSString *)service;
+
 @end

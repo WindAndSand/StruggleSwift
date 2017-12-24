@@ -8,44 +8,71 @@
 
 import UIKit
 
-class ModelTableController: UITableViewController {
+enum SectionCellType: Int {
+    case section_keyChain = 0
+    case section_numers
+    
+}
 
+enum RowCellType: Int {
+    case row_keyChain = 0
+}
+
+class ModelTableController: UITableViewController {
+    let  cellIdentifier = "cellIdentifier"
+    var itemArray:NSMutableArray = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.tableView.backgroundColor = UIColor.groupTableViewBackground
+        self.navigationController?.title = "Model"
+        
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        
+        self.loadData()
+    }
+    
+    func loadData() {
+        self.itemArray = NSMutableArray.init(array: ["SSKeyChain"])
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+
+        return SectionCellType.section_numers.rawValue
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+
+        return 1
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        cell.textLabel?.text = String(describing: self.itemArray[indexPath.row])
+        cell.selectionStyle = .none
         return cell
     }
-    */
+    
+//    MARK: - UITableViewDelegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.section == SectionCellType.section_keyChain.rawValue {
+            if indexPath.row == RowCellType.row_keyChain.rawValue{
+                let sskcc = SSKeyChainController()
+                self.navigationController?.pushViewController(sskcc, animated: true)
+            }
+        }
+        
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
