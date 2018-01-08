@@ -34,6 +34,8 @@ class ReactiveSwiftViewController: UIViewController, UITextFieldDelegate {
         self.bindSignal1()
         //        热信号
         self.bindSignal2()
+//        self.bindSiganl2_1()
+//        self.bindSiganl2_2()
         //        信号合并
         self.bindSignal4()
         //        信号的联合
@@ -122,7 +124,8 @@ class ReactiveSwiftViewController: UIViewController, UITextFieldDelegate {
 //    MARK: - 热信号
     func bindSignal2(){
         
-        //2.热信号 (通过管道创建)
+        //2.热信号 (通过管道创建)：创建信号和观察者
+        //通过Signal.pipe()函数来初始化一个热信号. 这个函数会返回一个元组, 元组的第一个值是output(类型为Signal), 第二个值是input(类型为Observer). 我们通过output来订阅信号, 通过input来向信号发生信息.
         let (signalA, observerA) = Signal<String, NoError>.pipe()
         let (signalB, observerB) = Signal<Int, NoError>.pipe()
         
@@ -143,7 +146,47 @@ class ReactiveSwiftViewController: UIViewController, UITextFieldDelegate {
         //不sendCompleted和sendError 热信号一直激活
 //                observerB.sendCompleted()
     }
+    /*
+    func bindSignal2_1(){
+        //1.创建signal(output)和innerObserver(input)
+        let (signal, innerObserver) = Signal.pipe()
+        
+        //2.创建Observer
+        let outerObserver1 = Signal.Observer(value: { (value) in
+            print("did received value: (value)")
+        })
+        //2.还是创建Observer
+        let outerObserver2 = Signal.Observer { (event) in
+            switch event {
+            case let .value(value):
+                print("did received value: (value)")
+            default: break
+            }
+        }
+        
+        signal.observe(outerObserver1)//3.向signal中添加Observer
+        signal.observe(outerObserver2)//3.还是向signal中添加Observer
+        
+        innerObserver.send(value: 1)//4.向signal发生信息(执行signal保存的所有Observer对象的Event处理逻辑)
+        innerObserver.sendCompleted()//4.还是执向signal发生信息
+    }
     
+    typealias NSignal = ReactiveSwift.Signal
+    func bindSignal2_2()  {
+        //1.创建signal(output)和innerObserver(input)
+        let (signal, innerObserver) = NSignal.pipe()
+        
+        signal.observeValues { (value) in   //2&3.创建Observer并添加到Signal中
+            print("did received value: (value)")
+        }
+        signal.observeValues { (value) in   //2&3.还是创建Observer并添加到Signal中
+            print("did received value: (value)")
+        }
+        
+        innerObserver.send(value: 1) //4. ...
+        innerObserver.sendCompleted() //4. ...
+    }
+    */
     //    MARK: - 监听文本框
     func bindSignal3(){
         //2文本输入框的监听

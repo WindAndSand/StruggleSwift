@@ -4,12 +4,9 @@ Mata 看代码：
 ③会话中如何请求网络数据，和历史消息的存储；
 ④未打扰消息如何存入数据库，及数据库的存值和取值
 
-增大点击区域，例如button
+ 
 
-CALayer 学习：http://blog.csdn.net/livesxu/article/details/50538606， http://www.cocoachina.com/ios/20161014/17747.html,
-
-Snapkit 约束变量： http://blog.csdn.net/woaifen3344/article/details/50114451
-
+ 
 Git学习：
 1.《简书》：http://www.jianshu.com/p/561a4fec4a96
 只要不把修改内容加入暂存区，就可以不停地切换分支吗？
@@ -29,7 +26,6 @@ A 控制器为根控制器，push 到 B 控制器，B控制器的导航栏换为
 
 
 
-安全码关闭时，获得关闭状态，除了用通知怎么用 block来实现
 
 看代码：看 Mata内部如何发送消息、视频等。
 
@@ -41,7 +37,7 @@ Core Data基础概念：
 
 正则表达式的写法训练:http://www.jianshu.com/p/ea10003d224a
 
-学习：ReactiveSwift 类库:https://www.cnblogs.com/zhangjie579/p/6636159.html 今晚回去要看完
+学习：ReactiveSwift 类库:https://www.cnblogs.com/zhangjie579/p/6636159.html， http://www.cocoachina.com/special/20171204/21412.html，   http://www.cocoachina.com/ios/20160729/17244.html， http://ios.jobbole.com/87517/ 今晚回去要看完
 APNS(苹果的远程推送):
 
 网络请求：http://www.jianshu.com/p/5d4789db4310
