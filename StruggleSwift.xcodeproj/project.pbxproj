@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010126B51F90B91100BAC6C4 /* DeviceViewController.swift */; };
 		01035E0C1F6783F100AD94A0 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 01035E0B1F6783F100AD94A0 /* bubble.png */; };
-		0103A37D1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103A37C1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift */; };
 		01174D0A1FE3F386006EABF1 /* LNString.m in Sources */ = {isa = PBXBuildFile; fileRef = 01174D091FE3F386006EABF1 /* LNString.m */; };
 		012E1F691FB060C500901E7B /* FunctionTestOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E1F681FB060C500901E7B /* FunctionTestOneController.m */; };
 		012E1F6C1FB0614E00901E7B /* FunctionTestTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E1F6B1FB0614E00901E7B /* FunctionTestTwoController.m */; };
+		0136528A1FEF787800DE175B /* ModelTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013652891FEF787800DE175B /* ModelTableController.swift */; };
+		0136528C1FEF8C8700DE175B /* SSKeyChainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0136528B1FEF8C8700DE175B /* SSKeyChainController.swift */; };
 		013788691FA5A91400D08BF5 /* TestViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013788681FA5A91400D08BF5 /* TestViewControllerTwo.swift */; };
 		015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */; };
 		015522921F45CE7700C16EA0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015522911F45CE7700C16EA0 /* BaseController.swift */; };
@@ -64,6 +65,8 @@
 		01FD42981F60411000B9F243 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD42971F60411000B9F243 /* AnimationController.swift */; };
 		01FD429B1F604BA300B9F243 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FD429A1F604BA300B9F243 /* 8.jpg */; };
 		01FD429D1F6058E500B9F243 /* snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FD429C1F6058E500B9F243 /* snowman.png */; };
+		01FF34621FEF472B00F18BA5 /* SSKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FF34611FEF472B00F18BA5 /* SSKeyChain.m */; };
+		01FF34641FEF6A9600F18BA5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FF34631FEF6A9600F18BA5 /* Security.framework */; };
 		F69377A6478E57A2E6B16EF5 /* Pods_StruggleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,13 +90,14 @@
 /* Begin PBXFileReference section */
 		010126B51F90B91100BAC6C4 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		01035E0B1F6783F100AD94A0 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
-		0103A37C1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveSwiftViewController.swift; sourceTree = "<group>"; };
 		01174D081FE3F386006EABF1 /* LNString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNString.h; sourceTree = "<group>"; };
 		01174D091FE3F386006EABF1 /* LNString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNString.m; sourceTree = "<group>"; };
 		012E1F671FB060C500901E7B /* FunctionTestOneController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionTestOneController.h; sourceTree = "<group>"; };
 		012E1F681FB060C500901E7B /* FunctionTestOneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionTestOneController.m; sourceTree = "<group>"; };
 		012E1F6A1FB0614E00901E7B /* FunctionTestTwoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionTestTwoController.h; sourceTree = "<group>"; };
 		012E1F6B1FB0614E00901E7B /* FunctionTestTwoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionTestTwoController.m; sourceTree = "<group>"; };
+		013652891FEF787800DE175B /* ModelTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTableController.swift; sourceTree = "<group>"; };
+		0136528B1FEF8C8700DE175B /* SSKeyChainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSKeyChainController.swift; sourceTree = "<group>"; };
 		013788681FA5A91400D08BF5 /* TestViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerTwo.swift; sourceTree = "<group>"; };
 		0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassAndStruct.swift; sourceTree = "<group>"; };
 		015522911F45CE7700C16EA0 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
@@ -161,6 +165,9 @@
 		01FD42971F60411000B9F243 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		01FD429A1F604BA300B9F243 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		01FD429C1F6058E500B9F243 /* snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowman.png; sourceTree = "<group>"; };
+		01FF34601FEF472B00F18BA5 /* SSKeyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSKeyChain.h; sourceTree = "<group>"; };
+		01FF34611FEF472B00F18BA5 /* SSKeyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSKeyChain.m; sourceTree = "<group>"; };
+		01FF34631FEF6A9600F18BA5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		23D2F86C8C3A7123491CE3CA /* Pods-StruggleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		2809A0C99C9AD5265B888182 /* Pods-StruggleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StruggleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StruggleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01FF34641FEF6A9600F18BA5 /* Security.framework in Frameworks */,
 				F69377A6478E57A2E6B16EF5 /* Pods_StruggleSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,9 +211,13 @@
 		01036D831FE3DD72002556F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				013652891FEF787800DE175B /* ModelTableController.swift */,
 				01174D081FE3F386006EABF1 /* LNString.h */,
 				01174D091FE3F386006EABF1 /* LNString.m */,
 				01FA6E991FE8EF6600AC3D2F /* JSONParse.swift */,
+				0136528B1FEF8C8700DE175B /* SSKeyChainController.swift */,
+				01FF34601FEF472B00F18BA5 /* SSKeyChain.h */,
+				01FF34611FEF472B00F18BA5 /* SSKeyChain.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,7 +225,6 @@
 		0103A37B1FCDBCDA00EBB28A /* 类库练习 */ = {
 			isa = PBXGroup;
 			children = (
-				0103A37C1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift */,
 			);
 			name = "类库练习";
 			sourceTree = "<group>";
@@ -433,6 +444,7 @@
 		62FD716F38AD6EF7376B4518 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01FF34631FEF6A9600F18BA5 /* Security.framework */,
 				620F37946A2B1B1B154B5E1F /* Pods_StruggleSwift.framework */,
 			);
 			name = Frameworks;
@@ -626,35 +638,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AGEmojiKeyboard/AGEmojiKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/CircleProgressView/CircleProgressView.framework",
-				"${BUILT_PRODUCTS_DIR}/Objective-LevelDB/Objective_LevelDB.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/YNLib/YNLib.framework",
-				"${BUILT_PRODUCTS_DIR}/chatkit/chatkit.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/libCommonCrypto/CommonCrypto.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AGEmojiKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleProgressView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Objective_LevelDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YNLib.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/chatkit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonCrypto.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -677,6 +667,7 @@
 				01F65FD41FB158C200FBCAB7 /* LXDDownloadManager.m in Sources */,
 				01F134D21F59567400EFA4D3 /* PersonalCollectionController.swift in Sources */,
 				01EB03101F51285900D09709 /* Initialization.swift in Sources */,
+				01FF34621FEF472B00F18BA5 /* SSKeyChain.m in Sources */,
 				01FA6E9A1FE8EF6600AC3D2F /* JSONParse.swift in Sources */,
 				010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */,
 				01F64D531F4082E7004F8B2C /* Closures.swift in Sources */,
@@ -691,14 +682,15 @@
 				01EC96C01F93A7F900BD22FC /* MultithreadingViewController.swift in Sources */,
 				013788691FA5A91400D08BF5 /* TestViewControllerTwo.swift in Sources */,
 				015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */,
+				0136528A1FEF787800DE175B /* ModelTableController.swift in Sources */,
 				01EA0C181F9360BE00FAA1CD /* TestViewControllerOne.swift in Sources */,
 				01F70F401F540F0B007FD5D4 /* ChatCell.m in Sources */,
 				01EB1E431F47F6A600418E37 /* Methods.swift in Sources */,
 				01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */,
-				0103A37D1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift in Sources */,
 				01EECA9D1F5DA539006E3F16 /* DownloadVideoController.swift in Sources */,
 				01FC20901FDBE196008FA532 /* MacroDefinition.swift in Sources */,
 				01FC20961FDBE9E4008FA532 /* CustomAlertViewController.m in Sources */,
+				0136528C1FEF8C8700DE175B /* SSKeyChainController.swift in Sources */,
 				01B31D651F555CEA005FC314 /* VideoController.swift in Sources */,
 				01EB1E401F474E0100418E37 /* Properties.swift in Sources */,
 				012E1F6C1FB0614E00901E7B /* FunctionTestTwoController.m in Sources */,
