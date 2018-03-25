@@ -74,7 +74,6 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         let multithreadController = MultithreadingViewController()
         let functionTestOneController = FunctionTestOneController();
         let customAlerView = CustomAlertViewController()
-        let reactiveSwift = ReactiveSwiftViewController()
         
         
         
@@ -92,7 +91,6 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         controllers.append(functionTestOneController)
         controllers.append(multithreadController)
         controllers.append(customAlerView)
-        controllers.append(reactiveSwift)
         
         
         

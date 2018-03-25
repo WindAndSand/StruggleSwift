@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010126B51F90B91100BAC6C4 /* DeviceViewController.swift */; };
 		01035E0C1F6783F100AD94A0 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 01035E0B1F6783F100AD94A0 /* bubble.png */; };
-		0103A37D1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103A37C1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift */; };
 		01174D0A1FE3F386006EABF1 /* LNString.m in Sources */ = {isa = PBXBuildFile; fileRef = 01174D091FE3F386006EABF1 /* LNString.m */; };
 		012E1F691FB060C500901E7B /* FunctionTestOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E1F681FB060C500901E7B /* FunctionTestOneController.m */; };
 		012E1F6C1FB0614E00901E7B /* FunctionTestTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E1F6B1FB0614E00901E7B /* FunctionTestTwoController.m */; };
@@ -91,7 +90,6 @@
 /* Begin PBXFileReference section */
 		010126B51F90B91100BAC6C4 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		01035E0B1F6783F100AD94A0 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
-		0103A37C1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveSwiftViewController.swift; sourceTree = "<group>"; };
 		01174D081FE3F386006EABF1 /* LNString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNString.h; sourceTree = "<group>"; };
 		01174D091FE3F386006EABF1 /* LNString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNString.m; sourceTree = "<group>"; };
 		012E1F671FB060C500901E7B /* FunctionTestOneController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionTestOneController.h; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 		0103A37B1FCDBCDA00EBB28A /* 类库练习 */ = {
 			isa = PBXGroup;
 			children = (
-				0103A37C1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift */,
 			);
 			name = "类库练习";
 			sourceTree = "<group>";
@@ -641,35 +638,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AGEmojiKeyboard/AGEmojiKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/CircleProgressView/CircleProgressView.framework",
-				"${BUILT_PRODUCTS_DIR}/Objective-LevelDB/Objective_LevelDB.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/YNLib/YNLib.framework",
-				"${BUILT_PRODUCTS_DIR}/chatkit/chatkit.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/libCommonCrypto/CommonCrypto.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AGEmojiKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleProgressView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Objective_LevelDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YNLib.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/chatkit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonCrypto.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -712,7 +687,6 @@
 				01F70F401F540F0B007FD5D4 /* ChatCell.m in Sources */,
 				01EB1E431F47F6A600418E37 /* Methods.swift in Sources */,
 				01F64D4F1F405159004F8B2C /* TheBasics.swift in Sources */,
-				0103A37D1FCDBE9D00EBB28A /* ReactiveSwiftViewController.swift in Sources */,
 				01EECA9D1F5DA539006E3F16 /* DownloadVideoController.swift in Sources */,
 				01FC20901FDBE196008FA532 /* MacroDefinition.swift in Sources */,
 				01FC20961FDBE9E4008FA532 /* CustomAlertViewController.m in Sources */,
