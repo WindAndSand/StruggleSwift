@@ -60,7 +60,7 @@ class TestViewControllerOne: UIViewController {
 //    MARK: - 创建闭包View
     func createClourseView(){
 //    创建CustomView对象
-        let cutomeView = TestView(frame: CGRect(x: 0, y: 64, width: self.view.frame.width, height: 200));
+        let cutomeView = TestViewOne(frame: CGRect(x: 0, y: 64, width: self.view.frame.width, height: 200));
         cutomeView.backgroundColor = UIColor.yellow
         self.view.addSubview(cutomeView)
 //    给cutomeView的btnClickBlock闭包属性赋值

@@ -18,21 +18,9 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     private var controllers = [UIViewController]()
-    private var controllerTitles = ["Snapkit 约束","Model", "setLayoutNeeds", "Swift 基础","OC 版chatCell", "视频播放","个人收藏","核心动画", "设备信息", "通信方式", "OC 测试", "多线程", "自定义AlertView", "ReactiveSwift"]
+    private var controllerTitles = ["Snapkit 约束","Model", "setLayoutNeeds", "Swift 基础","OC 版chatCell", "视频播放","个人收藏","核心动画", "设备信息", "通信方式", "OC 测试", "多线程", "自定义AlertView", "Runtime"]
     
     private var _controllerTitles = [String]()
-//    var _name: String?
-//    
-//    var name: String? {
-//        get{
-//        return self.name
-//        }
-//        
-//        set{
-//        self.name = newValue
-//            
-//        }
-//    }
     
     
     override func viewDidLoad()
@@ -74,6 +62,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         let multithreadController = MultithreadingViewController()
         let functionTestOneController = FunctionTestOneController();
         let customAlerView = CustomAlertViewController()
+        let runtime = RuntimeController()
         
         
         
@@ -91,6 +80,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         controllers.append(functionTestOneController)
         controllers.append(multithreadController)
         controllers.append(customAlerView)
+        controllers.append(runtime)
         
         
         

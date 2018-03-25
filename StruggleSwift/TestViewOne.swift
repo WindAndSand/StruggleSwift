@@ -9,7 +9,7 @@
 //demo: http://blog.csdn.net/minggeqingchun/article/details/54847735, 
 import UIKit
 
-class TestView: UIView {
+class TestViewOne: UIView {
 
 //    声明一个属性btnClickBlock，type为闭包可选类型
 //    闭包类型：()->() ，无参数，无返回值
@@ -60,7 +60,7 @@ class TestView: UIView {
         btn.backgroundColor = UIColor.blue;
         
 //        绑定事件
-        btn.addTarget(self, action: #selector(TestView.btnClick(sender:)), for: .touchDown);
+        btn.addTarget(self, action: #selector(TestViewOne.btnClick(sender:)), for: .touchDown);
         
 //        添加
         self.addSubview(btn)
@@ -130,7 +130,7 @@ class TestView: UIView {
         button.setTitle("hidden", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.setTitleColor(UIColor.red, for: .highlighted)
-        button.addTarget(self, action: #selector(TestView.hiddenClick), for: .touchUpInside)
+        button.addTarget(self, action: #selector(TestViewOne.hiddenClick), for: .touchUpInside)
         return alertWindow
         
     }() //使用一个闭包来实例化该属性

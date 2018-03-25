@@ -15,13 +15,16 @@
 		0136528A1FEF787800DE175B /* ModelTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013652891FEF787800DE175B /* ModelTableController.swift */; };
 		0136528C1FEF8C8700DE175B /* SSKeyChainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0136528B1FEF8C8700DE175B /* SSKeyChainController.swift */; };
 		013788691FA5A91400D08BF5 /* TestViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013788681FA5A91400D08BF5 /* TestViewControllerTwo.swift */; };
+		014C81522067D5C600D9B3CF /* Biology.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C814E2067D5C600D9B3CF /* Biology.m */; };
+		014C81532067D5C600D9B3CF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C81512067D5C600D9B3CF /* Person.m */; };
+		014C81562067D5EF00D9B3CF /* RuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C81552067D5EF00D9B3CF /* RuntimeController.m */; };
 		015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */; };
 		015522921F45CE7700C16EA0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015522911F45CE7700C16EA0 /* BaseController.swift */; };
 		01792CEF1F4DC164003B22F9 /* ARC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01792CEE1F4DC164003B22F9 /* ARC.swift */; };
 		01B31D651F555CEA005FC314 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B31D641F555CEA005FC314 /* VideoController.swift */; };
 		01E0CCE91FB8304A00355856 /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0CCE81FB8304A00355856 /* NetRequest.m */; };
 		01EA0C181F9360BE00FAA1CD /* TestViewControllerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA0C171F9360BE00FAA1CD /* TestViewControllerOne.swift */; };
-		01EA0C1A1F93610100FAA1CD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA0C191F93610100FAA1CD /* TestView.swift */; };
+		01EA0C1A1F93610100FAA1CD /* TestViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA0C191F93610100FAA1CD /* TestViewOne.swift */; };
 		01EA42BD1F60E7CA00EE9F8D /* jigsaw.png in Resources */ = {isa = PBXBuildFile; fileRef = 01EA42BC1F60E7CA00EE9F8D /* jigsaw.png */; };
 		01EA42BF1F60EB0A00EE9F8D /* stretche.png in Resources */ = {isa = PBXBuildFile; fileRef = 01EA42BE1F60EB0A00EE9F8D /* stretche.png */; };
 		01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */; };
@@ -99,6 +102,13 @@
 		013652891FEF787800DE175B /* ModelTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTableController.swift; sourceTree = "<group>"; };
 		0136528B1FEF8C8700DE175B /* SSKeyChainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSKeyChainController.swift; sourceTree = "<group>"; };
 		013788681FA5A91400D08BF5 /* TestViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerTwo.swift; sourceTree = "<group>"; };
+		014C814B2067D45C00D9B3CF /* MacroDefinition.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.pch; sourceTree = "<group>"; };
+		014C814E2067D5C600D9B3CF /* Biology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Biology.m; sourceTree = "<group>"; };
+		014C814F2067D5C600D9B3CF /* Biology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Biology.h; sourceTree = "<group>"; };
+		014C81502067D5C600D9B3CF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		014C81512067D5C600D9B3CF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		014C81542067D5EF00D9B3CF /* RuntimeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeController.h; sourceTree = "<group>"; };
+		014C81552067D5EF00D9B3CF /* RuntimeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeController.m; sourceTree = "<group>"; };
 		0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassAndStruct.swift; sourceTree = "<group>"; };
 		015522911F45CE7700C16EA0 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		01792CEE1F4DC164003B22F9 /* ARC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
@@ -106,7 +116,7 @@
 		01E0CCE71FB8304A00355856 /* NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
 		01E0CCE81FB8304A00355856 /* NetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
 		01EA0C171F9360BE00FAA1CD /* TestViewControllerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerOne.swift; sourceTree = "<group>"; };
-		01EA0C191F93610100FAA1CD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		01EA0C191F93610100FAA1CD /* TestViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewOne.swift; sourceTree = "<group>"; };
 		01EA42BC1F60E7CA00EE9F8D /* jigsaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jigsaw.png; sourceTree = "<group>"; };
 		01EA42BE1F60EB0A00EE9F8D /* stretche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stretche.png; sourceTree = "<group>"; };
 		01EA734F1F3D4B5E003A92F6 /* StruggleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StruggleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +221,7 @@
 		01036D831FE3DD72002556F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				014C814C2067D59500D9B3CF /* Runtime */,
 				013652891FEF787800DE175B /* ModelTableController.swift */,
 				01174D081FE3F386006EABF1 /* LNString.h */,
 				01174D091FE3F386006EABF1 /* LNString.m */,
@@ -227,6 +238,27 @@
 			children = (
 			);
 			name = "类库练习";
+			sourceTree = "<group>";
+		};
+		014C814C2067D59500D9B3CF /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				014C81542067D5EF00D9B3CF /* RuntimeController.h */,
+				014C81552067D5EF00D9B3CF /* RuntimeController.m */,
+				014C814D2067D5A800D9B3CF /* 序列化和反序列化 */,
+			);
+			name = Runtime;
+			sourceTree = "<group>";
+		};
+		014C814D2067D5A800D9B3CF /* 序列化和反序列化 */ = {
+			isa = PBXGroup;
+			children = (
+				014C814F2067D5C600D9B3CF /* Biology.h */,
+				014C814E2067D5C600D9B3CF /* Biology.m */,
+				014C81502067D5C600D9B3CF /* Person.h */,
+				014C81512067D5C600D9B3CF /* Person.m */,
+			);
+			name = "序列化和反序列化";
 			sourceTree = "<group>";
 		};
 		01606EEA1F7F781200CCC7E2 /* 二维码识别 */ = {
@@ -258,7 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				01EA0C171F9360BE00FAA1CD /* TestViewControllerOne.swift */,
-				01EA0C191F93610100FAA1CD /* TestView.swift */,
+				01EA0C191F93610100FAA1CD /* TestViewOne.swift */,
 				013788681FA5A91400D08BF5 /* TestViewControllerTwo.swift */,
 				012E1F671FB060C500901E7B /* FunctionTestOneController.h */,
 				012E1F681FB060C500901E7B /* FunctionTestOneController.m */,
@@ -279,6 +311,7 @@
 				01EA73661F3D4B5E003A92F6 /* StruggleSwiftTests */,
 				01EA73711F3D4B5E003A92F6 /* StruggleSwiftUITests */,
 				01EA73501F3D4B5E003A92F6 /* Products */,
+				014C814B2067D45C00D9B3CF /* MacroDefinition.pch */,
 				0AB2A122A174E1F1AF682903 /* Pods */,
 				62FD716F38AD6EF7376B4518 /* Frameworks */,
 				01EA73801F3D4D10003A92F6 /* StruggleSwift-Bridging-Header.h */,
@@ -658,23 +691,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01EA0C1A1F93610100FAA1CD /* TestView.swift in Sources */,
+				01EA0C1A1F93610100FAA1CD /* TestViewOne.swift in Sources */,
 				01FD42981F60411000B9F243 /* AnimationController.swift in Sources */,
 				01EA73551F3D4B5E003A92F6 /* ViewController.swift in Sources */,
 				01EB1E471F4856E500418E37 /* Enumeration.swift in Sources */,
 				015522921F45CE7700C16EA0 /* BaseController.swift in Sources */,
 				01EB03161F52954000D09709 /* Generics.swift in Sources */,
 				01F65FD41FB158C200FBCAB7 /* LXDDownloadManager.m in Sources */,
+				014C81522067D5C600D9B3CF /* Biology.m in Sources */,
 				01F134D21F59567400EFA4D3 /* PersonalCollectionController.swift in Sources */,
 				01EB03101F51285900D09709 /* Initialization.swift in Sources */,
 				01FF34621FEF472B00F18BA5 /* SSKeyChain.m in Sources */,
 				01FA6E9A1FE8EF6600AC3D2F /* JSONParse.swift in Sources */,
 				010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */,
 				01F64D531F4082E7004F8B2C /* Closures.swift in Sources */,
+				014C81562067D5EF00D9B3CF /* RuntimeController.m in Sources */,
 				01EB1E451F4846A400418E37 /* AffiliatedScript.swift in Sources */,
 				01174D0A1FE3F386006EABF1 /* LNString.m in Sources */,
 				01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */,
 				01EB03121F51660500D09709 /* Extension.swift in Sources */,
+				014C81532067D5C600D9B3CF /* Person.m in Sources */,
 				01F64D491F3FE2E0004F8B2C /* TestView.m in Sources */,
 				01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */,
 				01F70F3D1F540C75007FD5D4 /* ChatController.m in Sources */,
@@ -855,6 +891,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 38NM2Z2XRN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MacroDefinition.pch";
 				INFOPLIST_FILE = StruggleSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -873,6 +911,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 38NM2Z2XRN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MacroDefinition.pch";
 				INFOPLIST_FILE = StruggleSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
