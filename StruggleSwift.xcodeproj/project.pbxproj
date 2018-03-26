@@ -12,6 +12,7 @@
 		01174D0A1FE3F386006EABF1 /* LNString.m in Sources */ = {isa = PBXBuildFile; fileRef = 01174D091FE3F386006EABF1 /* LNString.m */; };
 		012E1F691FB060C500901E7B /* FunctionTestOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E1F681FB060C500901E7B /* FunctionTestOneController.m */; };
 		012E1F6C1FB0614E00901E7B /* FunctionTestTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012E1F6B1FB0614E00901E7B /* FunctionTestTwoController.m */; };
+		013092CD2068A5300015C830 /* UIViewController+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 013092CC2068A5300015C830 /* UIViewController+Method.m */; };
 		0136528A1FEF787800DE175B /* ModelTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013652891FEF787800DE175B /* ModelTableController.swift */; };
 		0136528C1FEF8C8700DE175B /* SSKeyChainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0136528B1FEF8C8700DE175B /* SSKeyChainController.swift */; };
 		013788691FA5A91400D08BF5 /* TestViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013788681FA5A91400D08BF5 /* TestViewControllerTwo.swift */; };
@@ -102,6 +103,8 @@
 		012E1F681FB060C500901E7B /* FunctionTestOneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionTestOneController.m; sourceTree = "<group>"; };
 		012E1F6A1FB0614E00901E7B /* FunctionTestTwoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionTestTwoController.h; sourceTree = "<group>"; };
 		012E1F6B1FB0614E00901E7B /* FunctionTestTwoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionTestTwoController.m; sourceTree = "<group>"; };
+		013092CB2068A5300015C830 /* UIViewController+Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Method.h"; sourceTree = "<group>"; };
+		013092CC2068A5300015C830 /* UIViewController+Method.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Method.m"; sourceTree = "<group>"; };
 		013652891FEF787800DE175B /* ModelTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTableController.swift; sourceTree = "<group>"; };
 		0136528B1FEF8C8700DE175B /* SSKeyChainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSKeyChainController.swift; sourceTree = "<group>"; };
 		013788681FA5A91400D08BF5 /* TestViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerTwo.swift; sourceTree = "<group>"; };
@@ -245,11 +248,29 @@
 			name = "类库练习";
 			sourceTree = "<group>";
 		};
+		013092C9206894160015C830 /* 复用与解耦 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "复用与解耦";
+			sourceTree = "<group>";
+		};
+		013092CA2068A4F20015C830 /* 方法操作 */ = {
+			isa = PBXGroup;
+			children = (
+				013092CB2068A5300015C830 /* UIViewController+Method.h */,
+				013092CC2068A5300015C830 /* UIViewController+Method.m */,
+			);
+			name = "方法操作";
+			sourceTree = "<group>";
+		};
 		014C814C2067D59500D9B3CF /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
 				014C81542067D5EF00D9B3CF /* RuntimeController.h */,
 				014C81552067D5EF00D9B3CF /* RuntimeController.m */,
+				013092CA2068A4F20015C830 /* 方法操作 */,
+				013092C9206894160015C830 /* 复用与解耦 */,
 				014C814D2067D5A800D9B3CF /* 序列化和反序列化 */,
 			);
 			name = Runtime;
@@ -729,6 +750,7 @@
 				01EB03101F51285900D09709 /* Initialization.swift in Sources */,
 				01FF34621FEF472B00F18BA5 /* SSKeyChain.m in Sources */,
 				01FA6E9A1FE8EF6600AC3D2F /* JSONParse.swift in Sources */,
+				013092CD2068A5300015C830 /* UIViewController+Method.m in Sources */,
 				010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */,
 				01F64D531F4082E7004F8B2C /* Closures.swift in Sources */,
 				014C81562067D5EF00D9B3CF /* RuntimeController.m in Sources */,

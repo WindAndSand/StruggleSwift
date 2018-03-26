@@ -21,6 +21,13 @@
     [self createControls];
 }
 
+
+- (void)viewDidAppear:(BOOL)animated {
+         [super viewDidAppear:animated];
+    
+         NSLog(@"我在 ViewController 中的 viewDidAppear 中");
+     }
+
 - (void) createControls {
     
     
