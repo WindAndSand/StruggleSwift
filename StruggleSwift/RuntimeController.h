@@ -10,4 +10,7 @@
 
 @interface RuntimeController : UIViewController
 
+- (int) parameter:(int) a other:(int) b;
+- (int )testOriginal;
+
 @end

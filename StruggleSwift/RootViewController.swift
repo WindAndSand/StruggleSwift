@@ -16,7 +16,6 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
 {
     private let tableView = UITableView()
     
-    
     private var controllers = [UIViewController]()
     private var controllerTitles = ["Snapkit 约束","Model", "setLayoutNeeds", "Swift 基础","OC 版chatCell", "视频播放","个人收藏","核心动画", "设备信息", "通信方式", "OC 测试", "多线程", "自定义AlertView", "Runtime"]
     
@@ -27,6 +26,14 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.groupTableViewBackground
+        
+        let date = NSDate()
+        let name1: AnyClass! = object_getClass(date)
+        print("---___>\(name1)")
+        print("-------->\(NSDate.self)")
+        let date1 = NSDate()
+        let name2 = type(of:date1)
+        print("---->2\(name2)")
         
         var name: Array<String> = ["金科","李白","黄忠","安琪拉","大白","哑舍","老夫子","凯"]
         for (index, value) in name.enumerated()

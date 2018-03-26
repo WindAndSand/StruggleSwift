@@ -7,7 +7,6 @@
 //
 
 #import "RuntimeController.h"
-
 @interface RuntimeController ()
 
 @end
@@ -19,14 +18,24 @@
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     
     [self createControls];
+    
+//    运行时交换方法
+    int a = [self parameter:10 other:20];
+    NSLog(@"a 的值是：%d", a);
+    
 }
 
 
 - (void)viewDidAppear:(BOOL)animated {
-         [super viewDidAppear:animated];
-    
-         NSLog(@"我在 ViewController 中的 viewDidAppear 中");
-     }
+     [super viewDidAppear:animated];
+     NSLog(@"我在 RuntimeController 中的 viewDidAppear 中");
+}
+
+- (int) parameter:(int) a other:(int) b {
+    NSLog(@"------->RuntimeController 的 a + b = %d", a+b+70);
+    return  a + b + 70;
+}
+
 
 - (void) createControls {
     
