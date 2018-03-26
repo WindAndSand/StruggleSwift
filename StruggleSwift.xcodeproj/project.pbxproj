@@ -34,6 +34,8 @@
 		01E998CB2067E6E400E095EF /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E998C02067E6E300E095EF /* clock.png */; };
 		01E998CC2067E6E400E095EF /* snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E998C12067E6E300E095EF /* snowman.png */; };
 		01E998CD2067E6E400E095EF /* jigsaw.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E998C22067E6E300E095EF /* jigsaw.png */; };
+		01E998D22067EBAC00E095EF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E998D02067EBAC00E095EF /* icon@2x.png */; };
+		01E998D32067EBAC00E095EF /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E998D12067EBAC00E095EF /* icon@3x.png */; };
 		01EA0C181F9360BE00FAA1CD /* TestViewControllerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA0C171F9360BE00FAA1CD /* TestViewControllerOne.swift */; };
 		01EA0C1A1F93610100FAA1CD /* TestViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA0C191F93610100FAA1CD /* TestViewOne.swift */; };
 		01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */; };
@@ -127,6 +129,8 @@
 		01E998C02067E6E300E095EF /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		01E998C12067E6E300E095EF /* snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowman.png; sourceTree = "<group>"; };
 		01E998C22067E6E300E095EF /* jigsaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jigsaw.png; sourceTree = "<group>"; };
+		01E998D02067EBAC00E095EF /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		01E998D12067EBAC00E095EF /* icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3x.png"; sourceTree = "<group>"; };
 		01EA0C171F9360BE00FAA1CD /* TestViewControllerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerOne.swift; sourceTree = "<group>"; };
 		01EA0C191F93610100FAA1CD /* TestViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewOne.swift; sourceTree = "<group>"; };
 		01EA734F1F3D4B5E003A92F6 /* StruggleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StruggleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,6 +310,23 @@
 			path = Resourses;
 			sourceTree = "<group>";
 		};
+		01E998CE2067EB2300E095EF /* SSResources */ = {
+			isa = PBXGroup;
+			children = (
+				01E998CF2067EB9300E095EF /* icons */,
+			);
+			path = SSResources;
+			sourceTree = "<group>";
+		};
+		01E998CF2067EB9300E095EF /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				01E998D02067EBAC00E095EF /* icon@2x.png */,
+				01E998D12067EBAC00E095EF /* icon@3x.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
 		01EA0C161F93604100FAA1CD /* 通信方式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,9 +349,11 @@
 			isa = PBXGroup;
 			children = (
 				01EA73511F3D4B5E003A92F6 /* StruggleSwift */,
+				01E998CE2067EB2300E095EF /* SSResources */,
 				01EA73661F3D4B5E003A92F6 /* StruggleSwiftTests */,
 				01EA73711F3D4B5E003A92F6 /* StruggleSwiftUITests */,
 				01EA73501F3D4B5E003A92F6 /* Products */,
+				01FC208F1FDBE196008FA532 /* MacroDefinition.swift */,
 				014C814B2067D45C00D9B3CF /* MacroDefinition.pch */,
 				0AB2A122A174E1F1AF682903 /* Pods */,
 				62FD716F38AD6EF7376B4518 /* Frameworks */,
@@ -351,7 +374,6 @@
 		01EA73511F3D4B5E003A92F6 /* StruggleSwift */ = {
 			isa = PBXGroup;
 			children = (
-				01FC208F1FDBE196008FA532 /* MacroDefinition.swift */,
 				01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */,
 				01EA73841F3D4D41003A92F6 /* RootViewController.swift */,
 				01036D831FE3DD72002556F6 /* Model */,
@@ -609,8 +631,10 @@
 				01EA73581F3D4B5E003A92F6 /* Main.storyboard in Resources */,
 				01E998CC2067E6E400E095EF /* snowman.png in Resources */,
 				01E998C52067E6E400E095EF /* hour.png in Resources */,
+				01E998D32067EBAC00E095EF /* icon@3x.png in Resources */,
 				01E998C42067E6E400E095EF /* 8.jpg in Resources */,
 				01E998C32067E6E400E095EF /* delete1.png in Resources */,
+				01E998D22067EBAC00E095EF /* icon@2x.png in Resources */,
 				01E998C62067E6E400E095EF /* minute.png in Resources */,
 				01EFB5201F4490DE000121A9 /* chat.png in Resources */,
 			);
