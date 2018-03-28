@@ -23,6 +23,9 @@
     int a = [self parameter:10 other:20];
     NSLog(@"a 的值是：%d", a);
     
+//    运行时交换类方法
+    [RuntimeController classMethodTwo];
+    
 }
 
 
@@ -110,6 +113,10 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
++ (void) classMethodTwo {
+    NSLog(@"RuntimeController---------> 我是子类方法");
 }
 
 

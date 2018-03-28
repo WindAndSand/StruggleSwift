@@ -32,6 +32,14 @@
 //    Method origMethod2 = class_getInstanceMethod([RuntimeController class], origSel2);
 //    Method swizMethod2 = class_getInstanceMethod([UIViewController class], swizSel2);
 //    method_exchangeImplementations(origMethod2, swizMethod2);
+    
+//    交换类方法
+    SEL origSel3 = @selector(classMethodTwo);
+    SEL swizSel3 = @selector(classMethodOne);
+    //    class_getClassMethod,注意这是类方法，不是实例方法
+    Method origMethod3 = class_getClassMethod([RuntimeController class], origSel3);
+    Method swizMethod3 = class_getClassMethod([UIViewController class], swizSel3);
+    method_exchangeImplementations(origMethod3, swizMethod3);
 
 }
 
@@ -72,6 +80,10 @@
     int c = [self methodParameter:a other:b];
 //    int c = [self methodOriginal];
     return  c;
+}
+
++ (void) classMethodOne {
+    NSLog(@"UIViewController+Method  ---->我是父类方法");
 }
 
 

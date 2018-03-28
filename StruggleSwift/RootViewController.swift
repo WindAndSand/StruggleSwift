@@ -27,32 +27,6 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.groupTableViewBackground
         
-        let date = NSDate()
-        let name1: AnyClass! = object_getClass(date)
-        print("---___>\(name1)")
-        print("-------->\(NSDate.self)")
-        let date1 = NSDate()
-        let name2 = type(of:date1)
-        print("---->2\(name2)")
-        
-        var name: Array<String> = ["金科","李白","黄忠","安琪拉","大白","哑舍","老夫子","凯"]
-        for (index, value) in name.enumerated()
-        {
-            print("name \(index): \(value)")
-            
-            if value == "李白" {
-                name.remove(at: index)
-            }
-        
-        }
-        
-        for (index, value) in name.enumerated()
-        {
-            print("--->name \(index): \(value)")
-        }
-        
-        
-        
         self.view.addSubview(tableView)
         
         let viewController = ViewController()
@@ -98,11 +72,6 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         make.top.right.bottom.left.equalTo(self.view)
         }
-        
-//        self.name = "黄刚"
-//        print("self.name:%@",self.name ?? NSString())
-//        
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -152,27 +121,14 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
 //    MARK:  - TableViewDelegate
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.navigationController?.pushViewController(controllers[indexPath.row], animated: true)
     }
    
-    
-//    MARK: - lodata
-//    func loadData(viewControllers controllers:NSArray, titlesArrays titles: NSArray) -> NSArray
-//    {
-//        var conrollerOne = ViewController()
-//        controllers = [conrollerOne]
-//        
-//        
-//    }
-    
-    
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     

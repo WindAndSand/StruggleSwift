@@ -13,4 +13,7 @@
 - (int) methodParameter: (int ) a other: (int)b;
 
 - (int) methodOriginal;
+
++ (void) classMethodOne;
+
 @end

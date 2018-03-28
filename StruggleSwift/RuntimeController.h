@@ -12,5 +12,5 @@
 
 - (int) parameter:(int) a other:(int) b;
 - (int )testOriginal;
-
++ (void) classMethodTwo;
 @end

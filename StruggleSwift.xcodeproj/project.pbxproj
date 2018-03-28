@@ -19,6 +19,8 @@
 		014C81522067D5C600D9B3CF /* Biology.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C814E2067D5C600D9B3CF /* Biology.m */; };
 		014C81532067D5C600D9B3CF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C81512067D5C600D9B3CF /* Person.m */; };
 		014C81562067D5EF00D9B3CF /* RuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C81552067D5EF00D9B3CF /* RuntimeController.m */; };
+		014D090E20693B4E008814BD /* ConclusionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D090D20693B4E008814BD /* ConclusionController.swift */; };
+		014D091120693EB9008814BD /* GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 014D091020693EB9008814BD /* GCD.m */; };
 		015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */; };
 		015522921F45CE7700C16EA0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015522911F45CE7700C16EA0 /* BaseController.swift */; };
 		01792CEF1F4DC164003B22F9 /* ARC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01792CEE1F4DC164003B22F9 /* ARC.swift */; };
@@ -115,6 +117,9 @@
 		014C81512067D5C600D9B3CF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		014C81542067D5EF00D9B3CF /* RuntimeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeController.h; sourceTree = "<group>"; };
 		014C81552067D5EF00D9B3CF /* RuntimeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeController.m; sourceTree = "<group>"; };
+		014D090D20693B4E008814BD /* ConclusionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConclusionController.swift; sourceTree = "<group>"; };
+		014D090F20693EB9008814BD /* GCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		014D091020693EB9008814BD /* GCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD.m; sourceTree = "<group>"; };
 		0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassAndStruct.swift; sourceTree = "<group>"; };
 		015522911F45CE7700C16EA0 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		01792CEE1F4DC164003B22F9 /* ARC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
@@ -287,6 +292,14 @@
 			name = "序列化和反序列化";
 			sourceTree = "<group>";
 		};
+		014D090C20693B13008814BD /* 总结 */ = {
+			isa = PBXGroup;
+			children = (
+				014D090D20693B4E008814BD /* ConclusionController.swift */,
+			);
+			name = "总结";
+			sourceTree = "<group>";
+		};
 		01606EEA1F7F781200CCC7E2 /* 二维码识别 */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +410,7 @@
 			children = (
 				01EA73521F3D4B5E003A92F6 /* AppDelegate.swift */,
 				01EA73841F3D4D41003A92F6 /* RootViewController.swift */,
+				014D090C20693B13008814BD /* 总结 */,
 				01036D831FE3DD72002556F6 /* Model */,
 				01FC20911FDBE8D7008FA532 /* Controls */,
 				0103A37B1FCDBCDA00EBB28A /* 类库练习 */,
@@ -439,6 +453,8 @@
 			isa = PBXGroup;
 			children = (
 				01EC96BF1F93A7F900BD22FC /* MultithreadingViewController.swift */,
+				014D090F20693EB9008814BD /* GCD.h */,
+				014D091020693EB9008814BD /* GCD.m */,
 			);
 			name = "多线程";
 			sourceTree = "<group>";
@@ -738,6 +754,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014D090E20693B4E008814BD /* ConclusionController.swift in Sources */,
 				01EA0C1A1F93610100FAA1CD /* TestViewOne.swift in Sources */,
 				01FD42981F60411000B9F243 /* AnimationController.swift in Sources */,
 				01EA73551F3D4B5E003A92F6 /* ViewController.swift in Sources */,
@@ -759,6 +776,7 @@
 				01EA73531F3D4B5E003A92F6 /* AppDelegate.swift in Sources */,
 				01EB03121F51660500D09709 /* Extension.swift in Sources */,
 				014C81532067D5C600D9B3CF /* Person.m in Sources */,
+				014D091120693EB9008814BD /* GCD.m in Sources */,
 				01F64D491F3FE2E0004F8B2C /* TestView.m in Sources */,
 				01F64D461F3FE1C9004F8B2C /* LayoutViewController.m in Sources */,
 				01F70F3D1F540C75007FD5D4 /* ChatController.m in Sources */,

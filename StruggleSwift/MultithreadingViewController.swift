@@ -8,6 +8,8 @@
 
 import UIKit
 //http://www.cocoachina.com/swift/20170906/20481.html
+//http://www.jianshu.com/p/2728ae223a5a
+
 class MultithreadingViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -34,12 +36,46 @@ class MultithreadingViewController: UIViewController {
         self.basicOperation()
         self.CreatBasicBlockOperation()
         self.startBasicDemo()
+        
+        self.controlsTheLayout()
 
     }
+    
+    func controlsTheLayout() {
+    
+        let gcd = UIButton.init(frame: CGRect(x: 0, y: 170, width: 50, height: 30))
+        gcd.setTitle("GCD", for: .normal)
+        gcd.backgroundColor = UIColor.red
+        gcd.addTarget(self, action: #selector(practiceForGCD), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(gcd)
+        
+    }
+    
+//    MARK: GCD
+    func practiceForGCD() {
+        let gcd = GCD()
+        
+//        同步执行 + 串行队列
+//        gcd.syncSerial()
+        
+//        异步执行 + 串行队列
+//        gcd.asyncSerial()
+        
+//        同步执行 + 主队列
+//        gcd.syncMain();// 卡住不能执行
+        
+//        其他线程中调用同步执行 + 主队列
+        
+        
+        
+        print("<-------------------------线程结束-------------------------->")
+    }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 //    MARK: - Operation
@@ -64,7 +100,7 @@ class MultithreadingViewController: UIViewController {
         let operation = BlockOperation.init
         {
             //打印，看看在哪个线程中
-            print(#function,#line,Thread.current)
+//            print(#function,#line,Thread.current)
         }
         
         //直接运行operation，看看运行在哪个线程中
@@ -80,13 +116,13 @@ class MultithreadingViewController: UIViewController {
         let activityIndicator = UIActivityIndicatorView()
         activityIndicator.startAnimating()
         
-        let a = UIImageView(frame: CGRect(x: 0, y: 64, width: 414, height: 100))
+        let a = UIImageView(frame: CGRect(x: 0, y: 64, width: 70, height: 100))
         self.view.addSubview(a)
-        let b = UIImageView(frame: CGRect(x: 0, y: 164, width: 414, height: 100))
+        let b = UIImageView(frame: CGRect(x: 80, y: 64, width: 70, height: 100))
         self.view.addSubview(b)
-        let c = UIImageView(frame: CGRect(x: 0, y: 264, width: 414, height: 100))
+        let c = UIImageView(frame: CGRect(x: 160, y: 64, width: 70, height: 100))
         self.view.addSubview(c)
-        let d = UIImageView(frame: CGRect(x: 0, y: 364, width: 414, height: 100))
+        let d = UIImageView(frame: CGRect(x: 240, y: 64, width: 70, height: 100))
         self.view.addSubview(d)
         
         
@@ -122,6 +158,5 @@ class MultithreadingViewController: UIViewController {
             }
     }
     
-//    http://www.jianshu.com/p/2728ae223a5a
 
 }
