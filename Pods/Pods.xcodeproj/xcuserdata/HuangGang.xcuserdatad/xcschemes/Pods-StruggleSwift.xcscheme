@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0E200CA55116375A6481F5B4C3DD2EB0"
+               BlueprintIdentifier = "A353B3161018B7D462FEA6DF6AA3E276"
                BuildableName = "Pods_StruggleSwift.framework"
                BlueprintName = "Pods-StruggleSwift"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0E200CA55116375A6481F5B4C3DD2EB0"
+            BlueprintIdentifier = "A353B3161018B7D462FEA6DF6AA3E276"
             BuildableName = "Pods_StruggleSwift.framework"
             BlueprintName = "Pods-StruggleSwift"
             ReferencedContainer = "container:Pods.xcodeproj">

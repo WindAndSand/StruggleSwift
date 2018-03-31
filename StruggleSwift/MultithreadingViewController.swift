@@ -33,9 +33,9 @@ class MultithreadingViewController: UIViewController {
         
         
 //        Operation
-        self.basicOperation()
-        self.CreatBasicBlockOperation()
-        self.startBasicDemo()
+//        self.basicOperation()
+//        self.CreatBasicBlockOperation()
+//        self.startBasicDemo()
         
         self.controlsTheLayout()
 
@@ -48,6 +48,12 @@ class MultithreadingViewController: UIViewController {
         gcd.backgroundColor = UIColor.red
         gcd.addTarget(self, action: #selector(practiceForGCD), for: UIControlEvents.touchUpInside)
         self.view.addSubview(gcd)
+        
+        let operation = UIButton.init(frame: CGRect(x: 70, y: 170, width: 110, height: 30))
+        operation.setTitle("NSOperation", for: .normal)
+        operation.backgroundColor = UIColor.orange
+        operation.addTarget(self, action: #selector(practiceForNSOperation), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(operation)
         
     }
     
@@ -65,10 +71,51 @@ class MultithreadingViewController: UIViewController {
 //        gcd.syncMain();// 卡住不能执行
         
 //        其他线程中调用同步执行 + 主队列
+//        gcd.otherThreadExecuteForSyncMain()
         
+//        异步执行 + 主队列
+//        gcd.asyncMain()
         
+//        GCD 线程间的通信
+//        gcd.communication()
+        
+//        GCD 栅栏方法
+//        gcd.barrier()
+        
+//        延时执行
+//        gcd.after()
+        
+//         一次性代码（只执行一次）
+//        gcd.once()
+        
+//          快速迭代方法 dispatch_apply
+//            gcd.apply()
+        
+//        监听 group 中任务的完成状态
+//        gcd.groupNotify()
+        
+//        dispatch_group_wait
+//        gcd.groupWait()
+        
+//        队列组 dispatch_group_enter、dispatch_group_leave
+//        gcd.groupEnterAndLeave()
+        
+//        semaphore 线程同步
+//        gcd.semaphoreSync()
+        
+//        非线程安全：不使用 semaphore
+//        gcd.initTicketStatusNotSave()
+        
+//        线程安全
+        gcd.initTicketStatusSave();
         
         print("<-------------------------线程结束-------------------------->")
+    }
+    
+    
+    //    MARK: NSOperation
+    func practiceForNSOperation() {
+        
     }
     
     

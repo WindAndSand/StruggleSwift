@@ -6,6 +6,7 @@ use_frameworks!
 target 'StruggleSwift' do
    pod 'SnapKit', '3.2.0'
    pod 'Alamofire', '~> 4.5.0'
+   pod 'ObjectMapper', '~> 3.1.0'
 end
 
 
@@ -17,3 +18,7 @@ post_install do |installer|
         end
     end
 end
+
+
+# 文件路径: /Users/huanggang/Documents/StruggleSwift
+# 更新库: pod install --verbose

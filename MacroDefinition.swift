@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ObjectMapper
 
 //MARK: - 系统版本
 let kIOS7 = (UIDevice().systemVersion as NSString).doubleValue >= 7.0 ? 1 :0

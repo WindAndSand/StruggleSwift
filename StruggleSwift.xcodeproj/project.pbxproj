@@ -23,7 +23,9 @@
 		014D091120693EB9008814BD /* GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 014D091020693EB9008814BD /* GCD.m */; };
 		015522901F45CBE900C16EA0 /* ClassAndStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */; };
 		015522921F45CE7700C16EA0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015522911F45CE7700C16EA0 /* BaseController.swift */; };
+		015E8690206E14F9002B3F56 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015E868F206E14F9002B3F56 /* User.swift */; };
 		01792CEF1F4DC164003B22F9 /* ARC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01792CEE1F4DC164003B22F9 /* ARC.swift */; };
+		017DFD7E206CA37D00CED224 /* ThirdPartyLibrariesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017DFD7D206CA37D00CED224 /* ThirdPartyLibrariesController.swift */; };
 		01B31D651F555CEA005FC314 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B31D641F555CEA005FC314 /* VideoController.swift */; };
 		01E0CCE91FB8304A00355856 /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0CCE81FB8304A00355856 /* NetRequest.m */; };
 		01E998C32067E6E400E095EF /* delete1.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E998B82067E6E300E095EF /* delete1.png */; };
@@ -122,7 +124,9 @@
 		014D091020693EB9008814BD /* GCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD.m; sourceTree = "<group>"; };
 		0155228F1F45CBE900C16EA0 /* ClassAndStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassAndStruct.swift; sourceTree = "<group>"; };
 		015522911F45CE7700C16EA0 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		015E868F206E14F9002B3F56 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		01792CEE1F4DC164003B22F9 /* ARC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
+		017DFD7D206CA37D00CED224 /* ThirdPartyLibrariesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyLibrariesController.swift; sourceTree = "<group>"; };
 		01B31D641F555CEA005FC314 /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		01E0CCE71FB8304A00355856 /* NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
 		01E0CCE81FB8304A00355856 /* NetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
@@ -246,11 +250,13 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		0103A37B1FCDBCDA00EBB28A /* 类库练习 */ = {
+		0103A37B1FCDBCDA00EBB28A /* 第三方类库 */ = {
 			isa = PBXGroup;
 			children = (
+				017DFD7D206CA37D00CED224 /* ThirdPartyLibrariesController.swift */,
+				017DFD7C206C9DF600CED224 /* Model */,
 			);
-			name = "类库练习";
+			name = "第三方类库";
 			sourceTree = "<group>";
 		};
 		013092C9206894160015C830 /* 复用与解耦 */ = {
@@ -305,6 +311,14 @@
 			children = (
 			);
 			name = "二维码识别";
+			sourceTree = "<group>";
+		};
+		017DFD7C206C9DF600CED224 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				015E868F206E14F9002B3F56 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		01B31D631F555CB8005FC314 /* 视频基础 */ = {
@@ -413,7 +427,7 @@
 				014D090C20693B13008814BD /* 总结 */,
 				01036D831FE3DD72002556F6 /* Model */,
 				01FC20911FDBE8D7008FA532 /* Controls */,
-				0103A37B1FCDBCDA00EBB28A /* 类库练习 */,
+				0103A37B1FCDBCDA00EBB28A /* 第三方类库 */,
 				01F64D421F3FDF57004F8B2C /* 约束 */,
 				01F64D431F3FDF70004F8B2C /* LayoutIfNeeds */,
 				01F64D4B1F40503B004F8B2C /* Swift基础 */,
@@ -735,11 +749,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StruggleSwift/Pods-StruggleSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -795,7 +811,9 @@
 				0136528C1FEF8C8700DE175B /* SSKeyChainController.swift in Sources */,
 				01B31D651F555CEA005FC314 /* VideoController.swift in Sources */,
 				01EB1E401F474E0100418E37 /* Properties.swift in Sources */,
+				015E8690206E14F9002B3F56 /* User.swift in Sources */,
 				012E1F6C1FB0614E00901E7B /* FunctionTestTwoController.m in Sources */,
+				017DFD7E206CA37D00CED224 /* ThirdPartyLibrariesController.swift in Sources */,
 				01792CEF1F4DC164003B22F9 /* ARC.swift in Sources */,
 				012E1F691FB060C500901E7B /* FunctionTestOneController.m in Sources */,
 				01F134D41F59569D00EFA4D3 /* CollectionCell.swift in Sources */,

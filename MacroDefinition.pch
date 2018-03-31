@@ -9,6 +9,7 @@
 #ifndef MacroDefinition_pch
 #define MacroDefinition_pch
 #import <objc/runtime.h>
+#import <ObjectMapper/ObjectMapper-Swift.h>
 
 
 #import "RuntimeController.h"
