@@ -109,13 +109,48 @@ class MultithreadingViewController: UIViewController {
 //        线程安全
         gcd.initTicketStatusSave();
         
-        print("<-------------------------线程结束-------------------------->")
+        print("<-------------------------GCD线程结束-------------------------->")
     }
     
     
     //    MARK: NSOperation
     func practiceForNSOperation() {
+        let operationAndQueue = NSOperationAndQueue()
         
+//        使用子类 NSInvocationOperation
+//        operationAndQueue.useInvocationOperation()
+//        使用子类 NSInvocationOperation 在其他线程中执行
+//        operationAndQueue.useInvocationOperationInOtherThread()
+        
+//        使用子类 NSBlockOperation
+//         operationAndQueue.useBlockOperation()
+//        调用方法 AddExecutionBlock:
+//         operationAndQueue.useBlockOperationAddExecutionBlock()
+        
+//        使用自定义继承自 NSOperation 的子类
+//         operationAndQueue.useCustomOperation()
+        
+//        使用 addOperation: 将操作加入到操作队列中
+//        operationAndQueue.addOperationToQueue()
+        
+//        使用 addOperationWithBlock: 将操作加入到操作队列中
+//        operationAndQueue.addOperationWithBlockToQueue()
+        
+//        设置 MaxConcurrentOperationCount（最大并发操作数）
+//         operationAndQueue.setMaxConcurrentOperationCount()
+        
+//        NSOperation 操作依赖
+//        operationAndQueue.addDependency()
+        
+//        线程间的通信
+//        operationAndQueue.communication()
+        
+//        非线程安全：不使用 NSLock
+//        operationAndQueue.initTicketStatusNotSave()
+//        线程安全：使用 NSLock
+        operationAndQueue.initTicketStatusSave()
+        
+        print("<-------------------------NSOperationAndQueue 线程结束-------------------------->")
     }
     
     

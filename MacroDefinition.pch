@@ -17,6 +17,8 @@
 #import "Biology.h"
 #import "StruggleSwift-Swift.h"
 #import "GCD.h"
+#import "NSOperationAndQueue.h"
+#import "SSOperation.h"
 
 
 

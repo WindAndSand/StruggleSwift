@@ -72,6 +72,8 @@
 		01F65FD41FB158C200FBCAB7 /* LXDDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F65FD31FB158C200FBCAB7 /* LXDDownloadManager.m */; };
 		01F70F3D1F540C75007FD5D4 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3C1F540C75007FD5D4 /* ChatController.m */; };
 		01F70F401F540F0B007FD5D4 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F70F3F1F540F0B007FD5D4 /* ChatCell.m */; };
+		01F957B1206F582100DDC191 /* NSOperationAndQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F957B0206F582100DDC191 /* NSOperationAndQueue.m */; };
+		01F957B4206F6F0200DDC191 /* SSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F957B3206F6F0200DDC191 /* SSOperation.m */; };
 		01FA6E9A1FE8EF6600AC3D2F /* JSONParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FA6E991FE8EF6600AC3D2F /* JSONParse.swift */; };
 		01FC20901FDBE196008FA532 /* MacroDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC208F1FDBE196008FA532 /* MacroDefinition.swift */; };
 		01FC20961FDBE9E4008FA532 /* CustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FC20951FDBE9E4008FA532 /* CustomAlertViewController.m */; };
@@ -187,6 +189,10 @@
 		01F70F3C1F540C75007FD5D4 /* ChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
 		01F70F3E1F540F0B007FD5D4 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
 		01F70F3F1F540F0B007FD5D4 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		01F957AF206F582100DDC191 /* NSOperationAndQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationAndQueue.h; sourceTree = "<group>"; };
+		01F957B0206F582100DDC191 /* NSOperationAndQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationAndQueue.m; sourceTree = "<group>"; };
+		01F957B2206F6F0200DDC191 /* SSOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSOperation.h; sourceTree = "<group>"; };
+		01F957B3206F6F0200DDC191 /* SSOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSOperation.m; sourceTree = "<group>"; };
 		01FA6E991FE8EF6600AC3D2F /* JSONParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParse.swift; sourceTree = "<group>"; };
 		01FC208F1FDBE196008FA532 /* MacroDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroDefinition.swift; sourceTree = "<group>"; };
 		01FC20941FDBE9E4008FA532 /* CustomAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomAlertViewController.h; sourceTree = "<group>"; };
@@ -469,6 +475,10 @@
 				01EC96BF1F93A7F900BD22FC /* MultithreadingViewController.swift */,
 				014D090F20693EB9008814BD /* GCD.h */,
 				014D091020693EB9008814BD /* GCD.m */,
+				01F957AF206F582100DDC191 /* NSOperationAndQueue.h */,
+				01F957B0206F582100DDC191 /* NSOperationAndQueue.m */,
+				01F957B2206F6F0200DDC191 /* SSOperation.h */,
+				01F957B3206F6F0200DDC191 /* SSOperation.m */,
 			);
 			name = "多线程";
 			sourceTree = "<group>";
@@ -786,6 +796,7 @@
 				013092CD2068A5300015C830 /* UIViewController+Method.m in Sources */,
 				010126B61F90B91100BAC6C4 /* DeviceViewController.swift in Sources */,
 				01F64D531F4082E7004F8B2C /* Closures.swift in Sources */,
+				01F957B4206F6F0200DDC191 /* SSOperation.m in Sources */,
 				014C81562067D5EF00D9B3CF /* RuntimeController.m in Sources */,
 				01EB1E451F4846A400418E37 /* AffiliatedScript.swift in Sources */,
 				01174D0A1FE3F386006EABF1 /* LNString.m in Sources */,
@@ -810,6 +821,7 @@
 				01FC20961FDBE9E4008FA532 /* CustomAlertViewController.m in Sources */,
 				0136528C1FEF8C8700DE175B /* SSKeyChainController.swift in Sources */,
 				01B31D651F555CEA005FC314 /* VideoController.swift in Sources */,
+				01F957B1206F582100DDC191 /* NSOperationAndQueue.m in Sources */,
 				01EB1E401F474E0100418E37 /* Properties.swift in Sources */,
 				015E8690206E14F9002B3F56 /* User.swift in Sources */,
 				012E1F6C1FB0614E00901E7B /* FunctionTestTwoController.m in Sources */,
