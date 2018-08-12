@@ -77,9 +77,9 @@ class BaseController: UIViewController {
         
         self.imageAndBackImageDifferent()
         
-        self.updateViewConstraint()
+//        self.updateViewConstraint()
         
-        self.closures()
+//        self.closures()
         
 //        self.enumeration()
         
@@ -99,7 +99,7 @@ class BaseController: UIViewController {
         
 //        self.protocols()
         
-//        self.generics()
+        self.generics()
     }
     
 //    MARK: -- chatMessageView 测试

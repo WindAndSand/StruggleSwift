@@ -60,4 +60,7 @@
 //初始化火车票数量、卖票窗口(线程安全)、并开始卖票
 - (void)initTicketStatusSave;
 
+- (NSString *) produceUUID;
+- (NSString *)createCUID:(NSString *)prefix;
+
 @end

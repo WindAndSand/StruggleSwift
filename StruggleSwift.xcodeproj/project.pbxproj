@@ -16,6 +16,7 @@
 		0136528A1FEF787800DE175B /* ModelTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013652891FEF787800DE175B /* ModelTableController.swift */; };
 		0136528C1FEF8C8700DE175B /* SSKeyChainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0136528B1FEF8C8700DE175B /* SSKeyChainController.swift */; };
 		013788691FA5A91400D08BF5 /* TestViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013788681FA5A91400D08BF5 /* TestViewControllerTwo.swift */; };
+		013FA4062071FF5F00D05ABA /* NSThreadLSS.m in Sources */ = {isa = PBXBuildFile; fileRef = 013FA4052071FF5F00D05ABA /* NSThreadLSS.m */; };
 		014C81522067D5C600D9B3CF /* Biology.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C814E2067D5C600D9B3CF /* Biology.m */; };
 		014C81532067D5C600D9B3CF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C81512067D5C600D9B3CF /* Person.m */; };
 		014C81562067D5EF00D9B3CF /* RuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 014C81552067D5EF00D9B3CF /* RuntimeController.m */; };
@@ -114,6 +115,8 @@
 		013652891FEF787800DE175B /* ModelTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTableController.swift; sourceTree = "<group>"; };
 		0136528B1FEF8C8700DE175B /* SSKeyChainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSKeyChainController.swift; sourceTree = "<group>"; };
 		013788681FA5A91400D08BF5 /* TestViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerTwo.swift; sourceTree = "<group>"; };
+		013FA4042071FF5F00D05ABA /* NSThreadLSS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadLSS.h; sourceTree = "<group>"; };
+		013FA4052071FF5F00D05ABA /* NSThreadLSS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSThreadLSS.m; sourceTree = "<group>"; };
 		014C814B2067D45C00D9B3CF /* MacroDefinition.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.pch; sourceTree = "<group>"; };
 		014C814E2067D5C600D9B3CF /* Biology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Biology.m; sourceTree = "<group>"; };
 		014C814F2067D5C600D9B3CF /* Biology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Biology.h; sourceTree = "<group>"; };
@@ -479,6 +482,8 @@
 				01F957B0206F582100DDC191 /* NSOperationAndQueue.m */,
 				01F957B2206F6F0200DDC191 /* SSOperation.h */,
 				01F957B3206F6F0200DDC191 /* SSOperation.m */,
+				013FA4042071FF5F00D05ABA /* NSThreadLSS.h */,
+				013FA4052071FF5F00D05ABA /* NSThreadLSS.m */,
 			);
 			name = "多线程";
 			sourceTree = "<group>";
@@ -819,6 +824,7 @@
 				01EECA9D1F5DA539006E3F16 /* DownloadVideoController.swift in Sources */,
 				01FC20901FDBE196008FA532 /* MacroDefinition.swift in Sources */,
 				01FC20961FDBE9E4008FA532 /* CustomAlertViewController.m in Sources */,
+				013FA4062071FF5F00D05ABA /* NSThreadLSS.m in Sources */,
 				0136528C1FEF8C8700DE175B /* SSKeyChainController.swift in Sources */,
 				01B31D651F555CEA005FC314 /* VideoController.swift in Sources */,
 				01F957B1206F582100DDC191 /* NSOperationAndQueue.m in Sources */,
@@ -992,7 +998,7 @@
 				INFOPLIST_FILE = StruggleSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HongBeiXin.StruggleSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = AppleProduct.StruggleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "StruggleSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1012,7 +1018,7 @@
 				INFOPLIST_FILE = StruggleSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HongBeiXin.StruggleSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = AppleProduct.StruggleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "StruggleSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

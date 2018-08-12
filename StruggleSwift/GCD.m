@@ -17,6 +17,75 @@
 
 @implementation GCD
 
+- (NSString *) produceUUID {
+    
+    NSDate* date = [NSDate dateWithTimeIntervalSinceNow:0];//获取当前时间0秒后的时间
+    NSTimeInterval time=[date timeIntervalSince1970]*1000;// *1000 是精确到毫秒，不乘就是精确到秒
+    NSString *str1 = [NSString stringWithFormat:@"%.0f", time];
+//    [str stringwithf:@"huanggang_nickName"];
+   NSString *str = [NSString stringWithFormat:@"%@%@%@%@",@"huanggangAT",@"str1000 是精确到毫秒，不乘就是精确到秒",@"注册了这个app账号dateWithTimeIntervalSinceNow:",str1];
+    NSLog(@"---------->%@",str);
+    
+//        NSString *str = @"o3ODreamLee_zhLuMsEbM-6GZSkhSI";
+    NSData *dataStr = [str dataUsingEncoding:NSUTF8StringEncoding];
+    Byte *byter = (Byte *)[dataStr bytes];
+    NSString *changeStr = [[NSUUID alloc] initWithUUIDBytes:byter].UUIDString;
+    return changeStr;
+}
+
+
+- (NSString *)createCUID:(NSString *)prefix
+
+{
+    NSDate* date = [NSDate dateWithTimeIntervalSinceNow:0];//获取当前时间0秒后的时间
+    NSTimeInterval time=[date timeIntervalSince1970]*1000;// *1000 是精确到毫秒，不乘就是精确到秒
+    NSString *str1 = [NSString stringWithFormat:@"%.0f", time];
+    
+//    CFUUIDRef uuid_ref = CFUUIDCreate(NULL);
+//
+//    CFStringRef uuid_string_ref= CFUUIDCreateString(NULL, uuid_ref);
+//
+//    NSString *uuid = [NSString stringWithString:(__bridge NSString *)uuid_string_ref];
+//
+//    CFRelease(uuid_ref);
+//
+//    CFRelease(uuid_string_ref);
+//    NSLog(@"UUID是：%@", [uuid lowercaseString]);
+//
+//    return [uuid lowercaseString];
+
+    
+//          NSString *  result;
+//
+//         CFUUIDRef  uuid;
+//
+//         CFStringRef uuidStr;
+//
+//          uuid = CFUUIDCreate(NULL);
+//
+//          uuidStr = CFUUIDCreateString(NULL, uuid);
+//
+//          result =[NSString stringWithFormat:@"%@-%@", str1,uuidStr];
+//
+//         CFRelease(uuidStr);
+//
+//         CFRelease(uuid);
+//
+//         return result;
+    
+
+            CFUUIDRef uuid_ref = CFUUIDCreate(NULL);
+            CFStringRef uuid_string_ref= CFUUIDCreateString(NULL, uuid_ref);
+            NSString *uuid = [NSString stringWithString:(__bridge NSString *)uuid_string_ref];
+           CFRelease(uuid_ref);
+           CFRelease(uuid_string_ref);
+           return [uuid lowercaseString];
+
+    
+}
+
+
+
 #pragma mark - GCD 的基本使用
 //同步执行 + 串行队列
 - (void)syncSerial {

@@ -40,22 +40,7 @@ class MultithreadingViewController: UIViewController {
         self.controlsTheLayout()
 
     }
-    
-    func controlsTheLayout() {
-    
-        let gcd = UIButton.init(frame: CGRect(x: 0, y: 170, width: 50, height: 30))
-        gcd.setTitle("GCD", for: .normal)
-        gcd.backgroundColor = UIColor.red
-        gcd.addTarget(self, action: #selector(practiceForGCD), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(gcd)
-        
-        let operation = UIButton.init(frame: CGRect(x: 70, y: 170, width: 110, height: 30))
-        operation.setTitle("NSOperation", for: .normal)
-        operation.backgroundColor = UIColor.orange
-        operation.addTarget(self, action: #selector(practiceForNSOperation), for: UIControlEvents.touchUpInside)
-        self.view.addSubview(operation)
-        
-    }
+
     
 //    MARK: GCD
     func practiceForGCD() {
@@ -109,11 +94,16 @@ class MultithreadingViewController: UIViewController {
 //        线程安全
         gcd.initTicketStatusSave();
         
+//        let a = gcd.produceUUID()
+//        print("---------uuid:\(a)")//31353232-3539-3936-3335-303738000000
+    
+//        let b = gcd.createCUID("31353232-3539-3936-3335-303738000000")
+//        print("b---------uuid:\(b)")
         print("<-------------------------GCD线程结束-------------------------->")
     }
     
     
-    //    MARK: NSOperation
+//    MARK: NSOperation
     func practiceForNSOperation() {
         let operationAndQueue = NSOperationAndQueue()
         
@@ -149,11 +139,37 @@ class MultithreadingViewController: UIViewController {
 //        operationAndQueue.initTicketStatusNotSave()
 //        线程安全：使用 NSLock
         operationAndQueue.initTicketStatusSave()
+    
         
         print("<-------------------------NSOperationAndQueue 线程结束-------------------------->")
     }
     
+//    MARK: - NSThread
+    func practiceForNSThread() {
+        let thread = NSThreadLSS()
+        
+//        MARK: - 创建、启动线程
+//        thread.createThread()
+        
+//        创建线程后自动启动线程
+//        thread.createThradOne()
+        
+//        线程之间的通信
+//        thread.downloadImageOnSubThread()
+        
+//        线程非安全
+        thread.initTicketStatusNotSave()
+        
+//        线程安全
+        thread.initTicketStatusSave()
+ 
+        print("<-------------------------NSThread线程结束-------------------------->")
+    }
     
+    func practiceForRunLoop() {
+        
+        print("<-------------------------RunLoop结束-------------------------->")
+    }
     
 
     override func didReceiveMemoryWarning() {
@@ -240,5 +256,34 @@ class MultithreadingViewController: UIViewController {
             }
     }
     
-
+    func controlsTheLayout() {
+        
+        let gcd = UIButton.init(frame: CGRect(x: 0, y: 170, width: 50, height: 30))
+        gcd.setTitle("GCD", for: .normal)
+        gcd.backgroundColor = UIColor.red
+        gcd.addTarget(self, action: #selector(practiceForGCD), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(gcd)
+        
+        let operation = UIButton.init(frame: CGRect(x: 70, y: 170, width: 110, height: 30))
+        operation.setTitle("NSOperation", for: .normal)
+        operation.backgroundColor = UIColor.orange
+        operation.addTarget(self, action: #selector(practiceForNSOperation), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(operation)
+        
+        
+        let thread = UIButton.init(frame: CGRect(x: 200, y: 170, width: 110, height: 30))
+        thread.setTitle("NSThread", for: .normal)
+        thread.backgroundColor = UIColor.yellow
+        thread.setTitleColor(UIColor.black, for: .normal)
+        thread.addTarget(self, action: #selector(practiceForNSThread), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(thread)
+        
+        let runLoop = UIButton.init(frame: CGRect(x: 0, y: 210, width: 110, height: 30))
+        runLoop.setTitle("RunLoop", for: .normal)
+        runLoop.backgroundColor = UIColor.green
+        runLoop.setTitleColor(UIColor.black, for: .normal)
+        runLoop.addTarget(self, action: #selector(practiceForRunLoop), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(runLoop)
+        
+    }
 }

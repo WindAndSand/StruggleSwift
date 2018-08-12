@@ -15,4 +15,6 @@
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) NSInteger age;
+//@property (nonatomic, assign)  NSMutableDictionary *dic; //不能加字典，否则会报错
+@property (nonatomic, copy) NSString *imagePath;
 @end

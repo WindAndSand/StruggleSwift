@@ -23,8 +23,8 @@ class Generics: NSObject {
 //        1.1 
         var someInt = 3
         var anotherInt = 107
-        self.swapTwoInts(a: &someInt, b: &anotherInt)
-        print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
+//        self.swapTwoInts(a: &someInt, b: &anotherInt)
+//        print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
         
         
 //        1.2
@@ -34,6 +34,7 @@ class Generics: NSObject {
         var someString = "hello"
         var anotherString = "world"
         swapTwoValues(a: &someString, b: &anotherString)
+        print("----->someString:\(someString), anotherString:\(anotherString)")
         
         
         //    1.5
@@ -62,7 +63,7 @@ class Generics: NSObject {
         var arrayOfStrings = ["uno", "dos", "tres"]
         
 //        if let a = self.allItemsMatch(someContainer: stackOfStrings8, anotherContainer: arrayOfStrings) {
-//            
+//
 //        }
     }
     
