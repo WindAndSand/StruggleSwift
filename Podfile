@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-source 'http://gitlab.x.yunio.com/ios/PodSpecs.git'
+#source 'http://gitlab.x.yunio.com/ios/PodSpecs.git'
 platform :ios,'8.0'
 use_frameworks!
 

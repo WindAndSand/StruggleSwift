@@ -30,20 +30,12 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     
-    NSString *remindMessage = [NSString stringWithFormat:@"确定添加%@为好友？",@"mi_hg"];
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"警告" message:remindMessage delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-    alertView.delegate = self;
-    
-    [alertView show];
-    [self createTextView];
-    
-    
 //  1、init初始化不会触发layoutSubviews [正确的]
 //  2、addSubview会触发layoutSubviews [不完全正确,当frame为0时是不会触发的]
 //  3、设置view的Frame会触发layoutSubviews，当然前提是frame的值设置前后发生了变化 [正确]
     
 //    不会触发 layoutSubviews,因 frame 的值为 0
-    [self test_1];
+//    [self test_1];
     
 //    会触发 layoutSubviews,因 frame 的值不为 0
 //    [self test_2];
@@ -56,12 +48,21 @@
     
     
 // 5、改变一个UIView大小的时候也会触发父UIView上的layoutSubviews事件
-//    [self test_5];
+    [self test_5];
     
     
 }
 
+#pragma mark -- 提示视图代理
+- (void) remindDelegateAlert {
+    NSString *remindMessage = [NSString stringWithFormat:@"确定添加%@为好友？",@"mi_hg"];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"警告" message:remindMessage delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    alertView.delegate = self;
+    
+    [alertView show];
+}
 
+#pragma mark -- 左上角对齐TextField
 - (void)createTextView {
     UITextView *contentTextView = [[UITextView alloc] initWithFrame:CGRectMake(10, 300, 300, 60)];
     contentTextView.layer.cornerRadius = 6;
@@ -104,46 +105,40 @@
 - (void)test_1
 {
     /*
-     解释:走了initWithFrame:方法,但是又有frame值为{{0, 0}, {0, 0}},并不需要绘制任何的东西,所以即使添加了test1,也没必要绘制它,同时也验证了addSubview会触发layoutSubviews是错误的,只有当被添加的view有着尺寸的时候才会触发layoutSubviews
+     解释:走了initWithFrame:方法,但是又有frame值为{{0, 0}, {0, 0}},并不需要绘制任何的东西。添加了test1,要绘制它,验证了addSubview会触发layoutSubviews是对的,只有当被添加的view有着尺寸的时候才会触发layoutSubviews
      */
-//  1.不会调用 layoutSubviews
-//    TestView *test1 = [TestView new];
+//  1.不会调用 layoutSubviews  CGRectMake(70, 70, 100, 100)
+//    TestView *test1 = [[TestView alloc] initWithFrame:CGRectMake(70, 70, 100, 100)];
 //    [self.view addSubview:test1];
     
    
     
     
-    /*
 //    2.调用 layoutSubviews
-    TestView *test1 = [TestView new];
-     [test1 setNeedsLayout];     //setNeedsLayout会默认调用layoutSubViews，就可以处理子视图中的一些数据。若没有这个方法，不会调用 layoutSubViews 方法，因为 rect 为0.在 test1 标上一个需要被重新布局的标记，在系统runloop的下一个周期自动调用layoutSubviews
-
-
-    [self.view addSubview:test1];       
+//    TestView *test1 = [TestView new];
+//    [test1 setNeedsLayout];     //setNeedsLayout会默认调用layoutSubViews，就可以处理子视图中的一些数据。若没有这个方法，不会调用 layoutSubViews 方法，因为 rect 为0.在 test1 标上一个需要被重新布局的标记，在系统runloop的下一个周期自动调用layoutSubviews
+//
+//
+//    [self.view addSubview:test1];
+    
      
-     */
     
     
     
     
     
 //    3. 立即调用 layoutSubviews，有了setNeedsLayout 做标记后，再调用 layoutIfNeeded
-     TestView *test1 = [TestView new];
-     [test1 setNeedsLayout];
-     [test1 layoutIfNeeded];
-     [self.view addSubview:test1];
-    /* */
+//     TestView *test1 = [TestView new];
+//     [test1 setNeedsLayout];
+//     [test1 layoutIfNeeded];
+//     [self.view addSubview:test1];
     
     
     
-    /*
-//    4.直接调用setNeedsDisplay，或者setNeedsDisplayInRect:触发drawRect:，但是有个前提条件是rect不能为0。
-    TestView *test1 = [[TestView alloc] initWithFrame:CGRectMake(50, 74, 200, 200)]; //只要 rect 不为 0，也可也调用 drawRect
-    test1.backgroundColor = [UIColor yellowColor];
-    [test1 setNeedsDisplay];    //setNeedsDisplay会调用自动调用drawRect方法，这样可以拿到UIGraphicsGetCurrentContext，就可以画画了。
-    [self.view addSubview:test1];
-     */
-
+//    4.直接调用setNeedsDisplay，或者setNeedsDisplayInRect:触发drawRect:，但是有个前提条件是rect不能为0。 CGRectMake(50, 74, 200, 200)
+//    TestView *test1 = [[TestView alloc] initWithFrame: CGRectZero]; //只要 rect 不为 0，也可也调用 drawRect
+//    [test1 setNeedsDisplay];    //setNeedsDisplay会调用自动调用drawRect方法，这样可以拿到UIGraphicsGetCurrentContext，就可以画画了。
+//    [self.view addSubview:test1];
 
 }
 
